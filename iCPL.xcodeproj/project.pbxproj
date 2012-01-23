@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D48F70B314CDF82000ABB169 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B214CDF82000ABB169 /* UIKit.framework */; };
+		D48F70B514CDF82000ABB169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B414CDF82000ABB169 /* Foundation.framework */; };
+		D48F70B714CDF82000ABB169 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B614CDF82000ABB169 /* CoreGraphics.framework */; };
+		D48F70BD14CDF82000ABB169 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D48F70BB14CDF82000ABB169 /* InfoPlist.strings */; };
+		D48F70BF14CDF82000ABB169 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D48F70BE14CDF82000ABB169 /* main.m */; };
+		D48F70C314CDF82000ABB169 /* CPLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D48F70C214CDF82000ABB169 /* CPLAppDelegate.m */; };
+		D4FB071A14CDFB6500FE4B0D /* CPLFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FB071814CDFB6500FE4B0D /* CPLFirstView.m */; };
+		D4FB071B14CDFB6500FE4B0D /* CPLFirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4FB071914CDFB6500FE4B0D /* CPLFirstView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D48F70AE14CDF82000ABB169 /* iCPL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCPL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48F70B214CDF82000ABB169 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D48F70B414CDF82000ABB169 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D48F70B614CDF82000ABB169 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D48F70BA14CDF82000ABB169 /* iCPL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCPL-Info.plist"; sourceTree = "<group>"; };
+		D48F70BC14CDF82000ABB169 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D48F70BE14CDF82000ABB169 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D48F70C014CDF82000ABB169 /* iCPL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iCPL-Prefix.pch"; sourceTree = "<group>"; };
+		D48F70C114CDF82000ABB169 /* CPLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPLAppDelegate.h; sourceTree = "<group>"; };
+		D48F70C214CDF82000ABB169 /* CPLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPLAppDelegate.m; sourceTree = "<group>"; };
+		D4FB071714CDFB6500FE4B0D /* CPLFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLFirstView.h; sourceTree = "<group>"; };
+		D4FB071814CDFB6500FE4B0D /* CPLFirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLFirstView.m; sourceTree = "<group>"; };
+		D4FB071914CDFB6500FE4B0D /* CPLFirstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPLFirstView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D48F70AB14CDF82000ABB169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48F70B314CDF82000ABB169 /* UIKit.framework in Frameworks */,
+				D48F70B514CDF82000ABB169 /* Foundation.framework in Frameworks */,
+				D48F70B714CDF82000ABB169 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D48F70A314CDF82000ABB169 = {
+			isa = PBXGroup;
+			children = (
+				D48F70B814CDF82000ABB169 /* iCPL */,
+				D48F70B114CDF82000ABB169 /* Frameworks */,
+				D48F70AF14CDF82000ABB169 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D48F70AF14CDF82000ABB169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D48F70AE14CDF82000ABB169 /* iCPL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D48F70B114CDF82000ABB169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D48F70B214CDF82000ABB169 /* UIKit.framework */,
+				D48F70B414CDF82000ABB169 /* Foundation.framework */,
+				D48F70B614CDF82000ABB169 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D48F70B814CDF82000ABB169 /* iCPL */ = {
+			isa = PBXGroup;
+			children = (
+				D48F70C114CDF82000ABB169 /* CPLAppDelegate.h */,
+				D48F70C214CDF82000ABB169 /* CPLAppDelegate.m */,
+				D4FB071614CDFA8400FE4B0D /* FirstView */,
+				D48F70B914CDF82000ABB169 /* Supporting Files */,
+			);
+			path = iCPL;
+			sourceTree = "<group>";
+		};
+		D48F70B914CDF82000ABB169 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D48F70BA14CDF82000ABB169 /* iCPL-Info.plist */,
+				D48F70BB14CDF82000ABB169 /* InfoPlist.strings */,
+				D48F70BE14CDF82000ABB169 /* main.m */,
+				D48F70C014CDF82000ABB169 /* iCPL-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4FB071614CDFA8400FE4B0D /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				D4FB071714CDFB6500FE4B0D /* CPLFirstView.h */,
+				D4FB071814CDFB6500FE4B0D /* CPLFirstView.m */,
+				D4FB071914CDFB6500FE4B0D /* CPLFirstView.xib */,
+			);
+			name = FirstView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D48F70AD14CDF82000ABB169 /* iCPL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48F70CC14CDF82000ABB169 /* Build configuration list for PBXNativeTarget "iCPL" */;
+			buildPhases = (
+				D48F70AA14CDF82000ABB169 /* Sources */,
+				D48F70AB14CDF82000ABB169 /* Frameworks */,
+				D48F70AC14CDF82000ABB169 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCPL;
+			productName = iCPL;
+			productReference = D48F70AE14CDF82000ABB169 /* iCPL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D48F70A514CDF82000ABB169 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Bits and Books";
+			};
+			buildConfigurationList = D48F70A814CDF82000ABB169 /* Build configuration list for PBXProject "iCPL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D48F70A314CDF82000ABB169;
+			productRefGroup = D48F70AF14CDF82000ABB169 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D48F70AD14CDF82000ABB169 /* iCPL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D48F70AC14CDF82000ABB169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48F70BD14CDF82000ABB169 /* InfoPlist.strings in Resources */,
+				D4FB071B14CDFB6500FE4B0D /* CPLFirstView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D48F70AA14CDF82000ABB169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48F70BF14CDF82000ABB169 /* main.m in Sources */,
+				D48F70C314CDF82000ABB169 /* CPLAppDelegate.m in Sources */,
+				D4FB071A14CDFB6500FE4B0D /* CPLFirstView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D48F70BB14CDF82000ABB169 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D48F70BC14CDF82000ABB169 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D48F70CA14CDF82000ABB169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D48F70CB14CDF82000ABB169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D48F70CD14CDF82000ABB169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iCPL/iCPL-Prefix.pch";
+				INFOPLIST_FILE = "iCPL/iCPL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D48F70CE14CDF82000ABB169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iCPL/iCPL-Prefix.pch";
+				INFOPLIST_FILE = "iCPL/iCPL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D48F70A814CDF82000ABB169 /* Build configuration list for PBXProject "iCPL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48F70CA14CDF82000ABB169 /* Debug */,
+				D48F70CB14CDF82000ABB169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48F70CC14CDF82000ABB169 /* Build configuration list for PBXNativeTarget "iCPL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48F70CD14CDF82000ABB169 /* Debug */,
+				D48F70CE14CDF82000ABB169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D48F70A514CDF82000ABB169 /* Project object */;
+}
