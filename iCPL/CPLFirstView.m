@@ -10,6 +10,9 @@
 
 @implementation CPLFirstView
 
+@synthesize showOneBranchButton;
+@synthesize showBranchListingButton;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -37,9 +40,9 @@
 
 - (void)viewDidUnload
 {
+    [showOneBranchButton release], showOneBranchButton = nil;
+    [showBranchListingButton release], showBranchListingButton = nil;
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -48,4 +51,14 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)showOneBranchButtonTapped:(id)sender {
+}
+
+- (IBAction)showBranchListingButtonTapped:(id)sender {
+}
+- (void)dealloc {
+    [showOneBranchButton release];
+    [showBranchListingButton release];
+    [super dealloc];
+}
 @end
