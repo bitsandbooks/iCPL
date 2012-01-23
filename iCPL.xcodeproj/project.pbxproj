@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D400D14514CDFF58009473CB /* BranchList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D400D14214CDFF58009473CB /* BranchList.plist */; };
+		D400D14614CDFF58009473CB /* Holidays.plist in Resources */ = {isa = PBXBuildFile; fileRef = D400D14314CDFF58009473CB /* Holidays.plist */; };
+		D400D14714CDFF58009473CB /* ServiceHours.plist in Resources */ = {isa = PBXBuildFile; fileRef = D400D14414CDFF58009473CB /* ServiceHours.plist */; };
+		D400D14914CDFF5F009473CB /* branchImages in Resources */ = {isa = PBXBuildFile; fileRef = D400D14814CDFF5F009473CB /* branchImages */; };
 		D48F70B314CDF82000ABB169 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B214CDF82000ABB169 /* UIKit.framework */; };
 		D48F70B514CDF82000ABB169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B414CDF82000ABB169 /* Foundation.framework */; };
 		D48F70B714CDF82000ABB169 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B614CDF82000ABB169 /* CoreGraphics.framework */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D400D14214CDFF58009473CB /* BranchList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BranchList.plist; sourceTree = "<group>"; };
+		D400D14314CDFF58009473CB /* Holidays.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Holidays.plist; sourceTree = "<group>"; };
+		D400D14414CDFF58009473CB /* ServiceHours.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ServiceHours.plist; sourceTree = "<group>"; };
+		D400D14814CDFF5F009473CB /* branchImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = branchImages; sourceTree = "<group>"; };
 		D48F70AE14CDF82000ABB169 /* iCPL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCPL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48F70B214CDF82000ABB169 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D48F70B414CDF82000ABB169 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,6 +55,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D400D14114CDFF22009473CB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D400D14814CDFF5F009473CB /* branchImages */,
+				D400D14214CDFF58009473CB /* BranchList.plist */,
+				D400D14314CDFF58009473CB /* Holidays.plist */,
+				D400D14414CDFF58009473CB /* ServiceHours.plist */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		D48F70A314CDF82000ABB169 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +99,7 @@
 				D48F70C114CDF82000ABB169 /* CPLAppDelegate.h */,
 				D48F70C214CDF82000ABB169 /* CPLAppDelegate.m */,
 				D4FB071614CDFA8400FE4B0D /* FirstView */,
+				D400D14114CDFF22009473CB /* Assets */,
 				D48F70B914CDF82000ABB169 /* Supporting Files */,
 			);
 			path = iCPL;
@@ -159,6 +179,10 @@
 			files = (
 				D48F70BD14CDF82000ABB169 /* InfoPlist.strings in Resources */,
 				D4FB071B14CDFB6500FE4B0D /* CPLFirstView.xib in Resources */,
+				D400D14514CDFF58009473CB /* BranchList.plist in Resources */,
+				D400D14614CDFF58009473CB /* Holidays.plist in Resources */,
+				D400D14714CDFF58009473CB /* ServiceHours.plist in Resources */,
+				D400D14914CDFF5F009473CB /* branchImages in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

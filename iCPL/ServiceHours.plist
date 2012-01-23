@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>A</key>
+	<dict>
+		<key>Monday</key>
+		<string>Closed</string>
+		<key>Tuesday</key>
+		<string>12:00 p.m.—8:00 p.m.</string>
+		<key>Wednesday</key>
+		<string>10:00 a.m.—6:00 p.m.</string>
+		<key>Thursday</key>
+		<string>12:00 p.m.—8:00 p.m.</string>
+		<key>Friday</key>
+		<string>9:00 a.m.—5:00 p.m.</string>
+		<key>Saturday</key>
+		<string>9:00 a.m.—5:00 p.m.</string>
+		<key>Sunday</key>
+		<string>Closed</string>
+	</dict>
+	<key>B</key>
+	<dict>
+		<key>Monday</key>
+		<string>Closed</string>
+		<key>Tuesday</key>
+		<string>10:00 a.m.—6:00 p.m.</string>
+		<key>Wednesday</key>
+		<string>12:00 p.m.—8:00 p.m.</string>
+		<key>Thursday</key>
+		<string>10:00 a.m.—6:00 p.m.</string>
+		<key>Friday</key>
+		<string>9:00 a.m.—5:00 p.m.</string>
+		<key>Saturday</key>
+		<string>9:00 a.m.—5:00 p.m.</string>
+		<key>Sunday</key>
+		<string>Closed</string>
+	</dict>
+	<key>G</key>
+	<dict>
+		<key>Monday</key>
+		<string>Closed</string>
+		<key>Tuesday</key>
+		<string>10:00 a.m.—6:00 p.m.</string>
+		<key>Wednesday</key>
+		<string>10:00 a.m.—6:00 p.m.</string>
+		<key>Thursday</key>
+		<string>10:00 a.m.—6:00 p.m.</string>
+		<key>Friday</key>
+		<string>9:00 a.m.—5:00 p.m.</string>
+		<key>Saturday</key>
+		<string>Closed</string>
+		<key>Sunday</key>
+		<string>Closed</string>
+	</dict>
+	<key>N</key>
+	<string>Not Currently Open</string>
+	<key>R</key>
+	<dict>
+		<key>Monday</key>
+		<string>9:00 a.m.—9:00 p.m.</string>
+		<key>Tuesday</key>
+		<string>9:00 a.m.—9:00 p.m.</string>
+		<key>Wednesday</key>
+		<string>9:00 a.m.—9:00 p.m.</string>
+		<key>Thursday</key>
+		<string>9:00 a.m.—9:00 p.m.</string>
+		<key>Friday</key>
+		<string>9:00 a.m.—5:00 p.m.</string>
+		<key>Saturday</key>
+		<string>9:00 a.m.—5:00 p.m.</string>
+		<key>Sunday</key>
+		<string>1:00 p.m.—5:00 p.m.</string>
+	</dict>
+	<key>W</key>
+	<dict>
+		<key>Monday</key>
+		<string>9:00 a.m.—7:00 p.m.</string>
+		<key>Tuesday</key>
+		<string>9:00 a.m.—7:00 p.m.</string>
+		<key>Wednesday</key>
+		<string>9:00 a.m.—7:00 p.m.</string>
+		<key>Thursday</key>
+		<string>9:00 a.m.—7:00 p.m.</string>
+		<key>Friday</key>
+		<string>9:00 a.m.—5:00 p.m.</string>
+		<key>Saturday</key>
+		<string>9:00 a.m.—5:00 p.m.</string>
+		<key>Sunday</key>
+		<string>1:00 p.m.—5:00 p.m.</string>
+	</dict>
+</dict>
+</plist>

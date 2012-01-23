@@ -1,0 +1,1800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Albany Park</key>
+	<dict>
+		<key>abbrev</key>
+		<string>ALBANY</string>
+		<key>streetAddress</key>
+		<string>5150 N Kimball Ave</string>
+		<key>endecaBranch</key>
+		<string>42</string>
+		<key>geoLat</key>
+		<string>41.974849</string>
+		<key>geoLong</key>
+		<string>-87.713658</string>
+		<key>longName</key>
+		<string>Albany Park</string>
+		<key>shortName</key>
+		<string>Albany Park</string>
+		<key>phone</key>
+		<string>1 (312) 744-1933</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60625</string>
+	</dict>
+	<key>Altgeld</key>
+	<dict>
+		<key>abbrev</key>
+		<string>ATGELD</string>
+		<key>streetAddress</key>
+		<string>13281 S Corliss Ave</string>
+		<key>endecaBranch</key>
+		<string>44</string>
+		<key>geoLat</key>
+		<string>41.654654</string>
+		<key>geoLong</key>
+		<string>-87.602308</string>
+		<key>longName</key>
+		<string>Altgeld</string>
+		<key>shortName</key>
+		<string>Altgeld</string>
+		<key>phone</key>
+		<string>1 (312) 747-3270</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60827</string>
+	</dict>
+	<key>Archer Heights</key>
+	<dict>
+		<key>abbrev</key>
+		<string>ARCHER</string>
+		<key>streetAddress</key>
+		<string>5055 S Archer Ave</string>
+		<key>endecaBranch</key>
+		<string>43</string>
+		<key>geoLat</key>
+		<string>41.801321</string>
+		<key>geoLong</key>
+		<string>-87.726664</string>
+		<key>longName</key>
+		<string>Archer Heights</string>
+		<key>shortName</key>
+		<string>Archer Heights</string>
+		<key>phone</key>
+		<string>1 (312) 747-9241</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60632</string>
+	</dict>
+	<key>Austin</key>
+	<dict>
+		<key>abbrev</key>
+		<string>AUSTIN</string>
+		<key>streetAddress</key>
+		<string>5615 W Race Ave</string>
+		<key>endecaBranch</key>
+		<string>62</string>
+		<key>geoLat</key>
+		<string>41.889231</string>
+		<key>geoLong</key>
+		<string>-87.765638</string>
+		<key>longName</key>
+		<string>Austin</string>
+		<key>shortName</key>
+		<string>Austin</string>
+		<key>phone</key>
+		<string>1 (312) 746-5038</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60644</string>
+	</dict>
+	<key>Austin-Irving</key>
+	<dict>
+		<key>abbrev</key>
+		<string>AIRVNG</string>
+		<key>streetAddress</key>
+		<string>6100 W Irving Park Rd</string>
+		<key>endecaBranch</key>
+		<string>41</string>
+		<key>geoLat</key>
+		<string>41.952831</string>
+		<key>geoLong</key>
+		<string>-87.779159</string>
+		<key>longName</key>
+		<string>Austin–Irving</string>
+		<key>shortName</key>
+		<string>Austin–Irving</string>
+		<key>phone</key>
+		<string>1 (312) 744-6222</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60634</string>
+	</dict>
+	<key>Avalon</key>
+	<dict>
+		<key>abbrev</key>
+		<string>AVALON</string>
+		<key>streetAddress</key>
+		<string>8148 S Stony Island Ave</string>
+		<key>endecaBranch</key>
+		<string>46</string>
+		<key>geoLat</key>
+		<string>41.746952</string>
+		<key>geoLong</key>
+		<string>-87.585698</string>
+		<key>longName</key>
+		<string>Avalon</string>
+		<key>shortName</key>
+		<string>Avalon</string>
+		<key>phone</key>
+		<string>1 (312) 747-5234</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60617</string>
+	</dict>
+	<key>Beverly</key>
+	<dict>
+		<key>abbrev</key>
+		<string>BEVERL</string>
+		<key>streetAddress</key>
+		<string>1962 W 95th St</string>
+		<key>endecaBranch</key>
+		<string>48</string>
+		<key>geoLat</key>
+		<string>41.720233</string>
+		<key>geoLong</key>
+		<string>-87.666349</string>
+		<key>longName</key>
+		<string>Beverly</string>
+		<key>shortName</key>
+		<string>Beverly</string>
+		<key>phone</key>
+		<string>1 (312) 747-9673</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60643</string>
+	</dict>
+	<key>Bezazian</key>
+	<dict>
+		<key>abbrev</key>
+		<string>BZAZIN</string>
+		<key>streetAddress</key>
+		<string>1226 W Ainslie St</string>
+		<key>endecaBranch</key>
+		<string>56</string>
+		<key>geoLat</key>
+		<string>41.971667</string>
+		<key>geoLong</key>
+		<string>-87.661146</string>
+		<key>longName</key>
+		<string>Bezazian</string>
+		<key>shortName</key>
+		<string>Bezazian</string>
+		<key>phone</key>
+		<string>1 (312) 744-0019</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60640</string>
+	</dict>
+	<key>Blackstone</key>
+	<dict>
+		<key>abbrev</key>
+		<string>BLKSTN</string>
+		<key>streetAddress</key>
+		<string>4904 S Lake Park Ave</string>
+		<key>endecaBranch</key>
+		<string>50</string>
+		<key>geoLat</key>
+		<string>41.805566</string>
+		<key>geoLong</key>
+		<string>-87.589617</string>
+		<key>longName</key>
+		<string>Blackstone</string>
+		<key>shortName</key>
+		<string>Blackstone</string>
+		<key>phone</key>
+		<string>1 (312) 747-0511</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60615</string>
+	</dict>
+	<key>Brainerd</key>
+	<dict>
+		<key>abbrev</key>
+		<string>BRAINE</string>
+		<key>streetAddress</key>
+		<string>1350 W 89th St</string>
+		<key>endecaBranch</key>
+		<string>53</string>
+		<key>geoLat</key>
+		<string>41.732404</string>
+		<key>geoLong</key>
+		<string>-87.657202</string>
+		<key>longName</key>
+		<string>Brainerd</string>
+		<key>shortName</key>
+		<string>Brainerd</string>
+		<key>phone</key>
+		<string>1 (312) 747-6291</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60620</string>
+	</dict>
+	<key>Brighton Park</key>
+	<dict>
+		<key>abbrev</key>
+		<string>BPARK</string>
+		<key>streetAddress</key>
+		<string>4314 S Archer Ave</string>
+		<key>endecaBranch</key>
+		<string>52</string>
+		<key>geoLat</key>
+		<string>41.815203</string>
+		<key>geoLong</key>
+		<string>-87.702688</string>
+		<key>longName</key>
+		<string>Brighton Park</string>
+		<key>shortName</key>
+		<string>Brighton Park</string>
+		<key>phone</key>
+		<string>1 (312) 747-0666</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60632</string>
+	</dict>
+	<key>Bucktown-Wicker Park</key>
+	<dict>
+		<key>abbrev</key>
+		<string>BTOWN</string>
+		<key>streetAddress</key>
+		<string>1701 N Milwaukee Ave</string>
+		<key>endecaBranch</key>
+		<string>54</string>
+		<key>geoLat</key>
+		<string>41.912232</string>
+		<key>geoLong</key>
+		<string>-87.680455</string>
+		<key>longName</key>
+		<string>Bucktown–Wicker Park</string>
+		<key>shortName</key>
+		<string>Bucktown–Wicker Park</string>
+		<key>phone</key>
+		<string>1 (312) 744-6022</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60647</string>
+	</dict>
+	<key>Budlong Woods</key>
+	<dict>
+		<key>abbrev</key>
+		<string>BUDLON</string>
+		<key>streetAddress</key>
+		<string>5630 N Lincoln Ave</string>
+		<key>endecaBranch</key>
+		<string>55</string>
+		<key>geoLat</key>
+		<string>41.983667</string>
+		<key>geoLong</key>
+		<string>-87.696275</string>
+		<key>longName</key>
+		<string>Budlong Woods</string>
+		<key>shortName</key>
+		<string>Budlong Woods</string>
+		<key>phone</key>
+		<string>1 (312) 742-9590</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60659</string>
+	</dict>
+	<key>Canaryville</key>
+	<dict>
+		<key>abbrev</key>
+		<string>CNARY</string>
+		<key>streetAddress</key>
+		<string>642 W 43rd St</string>
+		<key>endecaBranch</key>
+		<string>61</string>
+		<key>geoLat</key>
+		<string>41.816315</string>
+		<key>geoLong</key>
+		<string>-87.642363</string>
+		<key>longName</key>
+		<string>Canaryville</string>
+		<key>shortName</key>
+		<string>Canaryville</string>
+		<key>phone</key>
+		<string>1 (312) 747-0644</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60609</string>
+	</dict>
+	<key>Chicago Bee</key>
+	<dict>
+		<key>abbrev</key>
+		<string>CBEE</string>
+		<key>streetAddress</key>
+		<string>3647 S State St</string>
+		<key>endecaBranch</key>
+		<string>57</string>
+		<key>geoLat</key>
+		<string>41.828336</string>
+		<key>geoLong</key>
+		<string>-87.626619</string>
+		<key>longName</key>
+		<string>Chicago Bee</string>
+		<key>shortName</key>
+		<string>Chicago Bee</string>
+		<key>phone</key>
+		<string>1 (312) 747-6872</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60609</string>
+	</dict>
+	<key>Chicago Lawn</key>
+	<dict>
+		<key>abbrev</key>
+		<string>CGOLWN</string>
+		<key>streetAddress</key>
+		<string>6120 S Kedzie Ave</string>
+		<key>endecaBranch</key>
+		<string>58</string>
+		<key>geoLat</key>
+		<string>41.781919</string>
+		<key>geoLong</key>
+		<string>-87.703552</string>
+		<key>longName</key>
+		<string>Chicago Lawn</string>
+		<key>shortName</key>
+		<string>Chicago Lawn</string>
+		<key>phone</key>
+		<string>1 (312) 747-0639</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60629</string>
+	</dict>
+	<key>Chinatown</key>
+	<dict>
+		<key>abbrev</key>
+		<string>CHINAT</string>
+		<key>streetAddress</key>
+		<string>2353 S Wentworth Ave</string>
+		<key>endecaBranch</key>
+		<string>59</string>
+		<key>geoLat</key>
+		<string>41.849996</string>
+		<key>geoLong</key>
+		<string>-87.632051</string>
+		<key>longName</key>
+		<string>Chinatown</string>
+		<key>shortName</key>
+		<string>Chinatown</string>
+		<key>phone</key>
+		<string>1 (312) 747-8013</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60616</string>
+	</dict>
+	<key>Clearing</key>
+	<dict>
+		<key>abbrev</key>
+		<string>CLEARI</string>
+		<key>streetAddress</key>
+		<string>6423 W 63rd Pl</string>
+		<key>endecaBranch</key>
+		<string>60</string>
+		<key>geoLat</key>
+		<string>41.776910</string>
+		<key>geoLong</key>
+		<string>-87.781946</string>
+		<key>longName</key>
+		<string>Clearing</string>
+		<key>shortName</key>
+		<string>Clearing</string>
+		<key>phone</key>
+		<string>1 (312) 747-5657</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60638</string>
+	</dict>
+	<key>Coleman</key>
+	<dict>
+		<key>abbrev</key>
+		<string>COLEMA</string>
+		<key>streetAddress</key>
+		<string>731 E 63rd St</string>
+		<key>endecaBranch</key>
+		<string>62</string>
+		<key>geoLat</key>
+		<string>41.780134</string>
+		<key>geoLong</key>
+		<string>-87.607348</string>
+		<key>longName</key>
+		<string>Coleman</string>
+		<key>shortName</key>
+		<string>Coleman</string>
+		<key>phone</key>
+		<string>1 (312) 747-7760</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60637</string>
+	</dict>
+	<key>Richard J. Daley</key>
+	<dict>
+		<key>abbrev</key>
+		<string>DALEY</string>
+		<key>streetAddress</key>
+		<string>3400 S Halsted St</string>
+		<key>endecaBranch</key>
+		<string>63</string>
+		<key>geoLat</key>
+		<string>41.832733</string>
+		<key>geoLong</key>
+		<string>-87.646251</string>
+		<key>longName</key>
+		<string>Daley, R. J. (Bridgeport)</string>
+		<key>shortName</key>
+		<string>Daley (Bridgeport)</string>
+		<key>phone</key>
+		<string>1 (312) 747-8990</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60608</string>
+	</dict>
+	<key>Richard M. Daley</key>
+	<dict>
+		<key>abbrev</key>
+		<string>DALEYRM</string>
+		<key>streetAddress</key>
+		<string>733 N Kedzie Ave</string>
+		<key>endecaBranch</key>
+		<string>620</string>
+		<key>geoLat</key>
+		<string>41.894352</string>
+		<key>geoLong</key>
+		<string>-87.706520</string>
+		<key>longName</key>
+		<string>Richard M. Daley</string>
+		<key>shortName</key>
+		<string>Daley (W. Humboldt Pk.)</string>
+		<key>phone</key>
+		<string>1 (312) 743-0555</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60612</string>
+	</dict>
+	<key>Douglass</key>
+	<dict>
+		<key>abbrev</key>
+		<string>DOUGLA</string>
+		<key>streetAddress</key>
+		<string>3353 W 13th St</string>
+		<key>endecaBranch</key>
+		<string>65</string>
+		<key>geoLat</key>
+		<string>41.864432</string>
+		<key>geoLong</key>
+		<string>-87.709742</string>
+		<key>longName</key>
+		<string>Douglass</string>
+		<key>shortName</key>
+		<string>Douglass</string>
+		<key>phone</key>
+		<string>1 (312) 747-3725</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60623</string>
+	</dict>
+	<key>Dunning</key>
+	<dict>
+		<key>abbrev</key>
+		<string>DUNN</string>
+		<key>streetAddress</key>
+		<string>7455 W Cornelia Ave</string>
+		<key>endecaBranch</key>
+		<string>159</string>
+		<key>geoLat</key>
+		<string>41.943231</string>
+		<key>geoLong</key>
+		<string>-87.813435</string>
+		<key>longName</key>
+		<string>Dunning</string>
+		<key>shortName</key>
+		<string>Dunning</string>
+		<key>phone</key>
+		<string>1 (312) 743-0480</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60634</string>
+	</dict>
+	<key>Edgebrook</key>
+	<dict>
+		<key>abbrev</key>
+		<string>EDGEBR</string>
+		<key>streetAddress</key>
+		<string>5331 W Devon Ave</string>
+		<key>endecaBranch</key>
+		<string>68</string>
+		<key>geoLat</key>
+		<string>41.997231</string>
+		<key>geoLong</key>
+		<string>-87.761893</string>
+		<key>longName</key>
+		<string>Edgebrook</string>
+		<key>shortName</key>
+		<string>Edgebrook</string>
+		<key>phone</key>
+		<string>1 (312) 744-8313</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60646</string>
+	</dict>
+	<key>Gage Park</key>
+	<dict>
+		<key>abbrev</key>
+		<string>GAGEPK</string>
+		<key>streetAddress</key>
+		<string>2807 W 55th St</string>
+		<key>endecaBranch</key>
+		<string>70</string>
+		<key>geoLat</key>
+		<string>41.793634</string>
+		<key>geoLong</key>
+		<string>-87.694213</string>
+		<key>longName</key>
+		<string>Gage Park</string>
+		<key>shortName</key>
+		<string>Gage Park</string>
+		<key>phone</key>
+		<string>1 (312) 747-0032</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60632</string>
+	</dict>
+	<key>Galewood–Mont Clare</key>
+	<dict>
+		<key>abbrev</key>
+		<string>GMC</string>
+		<key>streetAddress</key>
+		<string>6871 W Belden Ave</string>
+		<key>endecaBranch</key>
+		<string>71</string>
+		<key>geoLat</key>
+		<string>41.921402</string>
+		<key>geoLong</key>
+		<string>-87.797509</string>
+		<key>longName</key>
+		<string>Galewood–Mont Clare</string>
+		<key>shortName</key>
+		<string>Galewood–Mont Clare</string>
+		<key>phone</key>
+		<string>1 (312) 746-0165</string>
+		<key>scheduleType</key>
+		<string>G</string>
+		<key>zipCode</key>
+		<string>60707</string>
+	</dict>
+	<key>Garfield Ridge</key>
+	<dict>
+		<key>abbrev</key>
+		<string>GRIDGE</string>
+		<key>streetAddress</key>
+		<string>6348 S Archer Ave</string>
+		<key>endecaBranch</key>
+		<string>72</string>
+		<key>geoLat</key>
+		<string>41.792920</string>
+		<key>geoLong</key>
+		<string>-87.779996</string>
+		<key>longName</key>
+		<string>Garfield Ridge</string>
+		<key>shortName</key>
+		<string>Garfield Ridge</string>
+		<key>phone</key>
+		<string>1 (312) 747-6094</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60638</string>
+	</dict>
+	<key>Greater Grand Crossing</key>
+	<dict>
+		<key>abbrev</key>
+		<string>GGRAND</string>
+		<key>streetAddress</key>
+		<string>1000 E 73rd St</string>
+		<key>endecaBranch</key>
+		<string>158</string>
+		<key>geoLat</key>
+		<string>41.762234</string>
+		<key>geoLong</key>
+		<string>-87.600748</string>
+		<key>longName</key>
+		<string>Greater Grand Crossing</string>
+		<key>shortName</key>
+		<string>Greater Grand Crossing</string>
+		<key>phone</key>
+		<string>1 (312) 745-1608</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60619</string>
+	</dict>
+	<key>Hall</key>
+	<dict>
+		<key>abbrev</key>
+		<string>HALL</string>
+		<key>streetAddress</key>
+		<string>4801 S Michigan Ave</string>
+		<key>endecaBranch</key>
+		<string>73</string>
+		<key>geoLat</key>
+		<string>41.807433</string>
+		<key>geoLong</key>
+		<string>-87.622850</string>
+		<key>longName</key>
+		<string>Hall</string>
+		<key>shortName</key>
+		<string>Hall</string>
+		<key>phone</key>
+		<string>1 (312) 747-2541</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60615</string>
+	</dict>
+	<key>Harold Washington Library Center</key>
+	<dict>
+		<key>abbrev</key>
+		<string>H1WLC</string>
+		<key>streetAddress</key>
+		<string>400 S State St</string>
+		<key>endecaBranch</key>
+		<string>76</string>
+		<key>geoLat</key>
+		<string>41.877025</string>
+		<key>geoLong</key>
+		<string>-87.627691</string>
+		<key>longName</key>
+		<string>Harold Washington Library Center</string>
+		<key>shortName</key>
+		<string>HWLC</string>
+		<key>phone</key>
+		<string>1 (312) 747-4300</string>
+		<key>scheduleType</key>
+		<string>R</string>
+		<key>zipCode</key>
+		<string>60605</string>
+	</dict>
+	<key>Hegewisch</key>
+	<dict>
+		<key>abbrev</key>
+		<string>HEGEWI</string>
+		<key>streetAddress</key>
+		<string>3048 E 130th St</string>
+		<key>endecaBranch</key>
+		<string>74</string>
+		<key>geoLat</key>
+		<string>41.659239</string>
+		<key>geoLong</key>
+		<string>-87.549129</string>
+		<key>longName</key>
+		<string>Hegewisch</string>
+		<key>shortName</key>
+		<string>Hegewisch</string>
+		<key>phone</key>
+		<string>1 (312) 747-0046</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60633</string>
+	</dict>
+	<key>Humboldt Park</key>
+	<dict>
+		<key>abbrev</key>
+		<string>HUMBOL</string>
+		<key>streetAddress</key>
+		<string>1605 N Troy St</string>
+		<key>endecaBranch</key>
+		<string>75</string>
+		<key>geoLat</key>
+		<string>41.910337</string>
+		<key>geoLong</key>
+		<string>-87.705769</string>
+		<key>longName</key>
+		<string>Humboldt Park</string>
+		<key>shortName</key>
+		<string>Humboldt Park</string>
+		<key>phone</key>
+		<string>1 (312) 744-2244</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60647</string>
+	</dict>
+	<key>Independence</key>
+	<dict>
+		<key>abbrev</key>
+		<string>INDEPE</string>
+		<key>streetAddress</key>
+		<string>3548 W Irving Park Rd</string>
+		<key>endecaBranch</key>
+		<string>77</string>
+		<key>geoLat</key>
+		<string>41.953831</string>
+		<key>geoLong</key>
+		<string>-87.716901</string>
+		<key>longName</key>
+		<string>Independence</string>
+		<key>shortName</key>
+		<string>Independence</string>
+		<key>phone</key>
+		<string>1 (312) 744-0900</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60618</string>
+	</dict>
+	<key>Jefferson Park</key>
+	<dict>
+		<key>abbrev</key>
+		<string>JEFFER</string>
+		<key>streetAddress</key>
+		<string>5363 W Lawrence Ave</string>
+		<key>endecaBranch</key>
+		<string>78</string>
+		<key>geoLat</key>
+		<string>41.967643</string>
+		<key>geoLong</key>
+		<string>-87.761447</string>
+		<key>longName</key>
+		<string>Jefferson Park</string>
+		<key>shortName</key>
+		<string>Jefferson Park</string>
+		<key>phone</key>
+		<string>1 (312) 744-1998</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60630</string>
+	</dict>
+	<key>Jeffery Manor</key>
+	<dict>
+		<key>abbrev</key>
+		<string>JMANOR</string>
+		<key>streetAddress</key>
+		<string>2401 E 100th St</string>
+		<key>endecaBranch</key>
+		<string>79</string>
+		<key>geoLat</key>
+		<string>41.713366</string>
+		<key>geoLong</key>
+		<string>-87.565724</string>
+		<key>longName</key>
+		<string>Jeffery Manor</string>
+		<key>shortName</key>
+		<string>Jeffery Manor</string>
+		<key>phone</key>
+		<string>1 (312) 747-6479</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60617</string>
+	</dict>
+	<key>Kelly</key>
+	<dict>
+		<key>abbrev</key>
+		<string>KELLY</string>
+		<key>streetAddress</key>
+		<string>6151 S Normal Ave</string>
+		<key>endecaBranch</key>
+		<string>80</string>
+		<key>geoLat</key>
+		<string>41.772433</string>
+		<key>geoLong</key>
+		<string>-87.637249</string>
+		<key>longName</key>
+		<string>Kelly</string>
+		<key>shortName</key>
+		<string>Kelly</string>
+		<key>phone</key>
+		<string>1 (312) 747-8418</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60621</string>
+	</dict>
+	<key>King</key>
+	<dict>
+		<key>abbrev</key>
+		<string>KING</string>
+		<key>streetAddress</key>
+		<string>3436 S King Dr</string>
+		<key>endecaBranch</key>
+		<string>81</string>
+		<key>geoLat</key>
+		<string>41.832100</string>
+		<key>geoLong</key>
+		<string>-87.616754</string>
+		<key>longName</key>
+		<string>King</string>
+		<key>shortName</key>
+		<string>King</string>
+		<key>phone</key>
+		<string>1 (312) 747-7543</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60616</string>
+	</dict>
+	<key>Legler</key>
+	<dict>
+		<key>abbrev</key>
+		<string>LEGLER</string>
+		<key>streetAddress</key>
+		<string>115 S Pulaski Rd</string>
+		<key>endecaBranch</key>
+		<string>83</string>
+		<key>geoLat</key>
+		<string>41.879259</string>
+		<key>geoLong</key>
+		<string>-87.725419</string>
+		<key>longName</key>
+		<string>Legler</string>
+		<key>shortName</key>
+		<string>Legler</string>
+		<key>phone</key>
+		<string>1 (312) 746-7730</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60624</string>
+	</dict>
+	<key>Lincoln Belmont</key>
+	<dict>
+		<key>abbrev</key>
+		<string>LBELMO</string>
+		<key>streetAddress</key>
+		<string>1659 W Melrose St</string>
+		<key>endecaBranch</key>
+		<string>82</string>
+		<key>geoLat</key>
+		<string>41.940673</string>
+		<key>geoLong</key>
+		<string>-87.670520</string>
+		<key>longName</key>
+		<string>Lincoln Belmont</string>
+		<key>shortName</key>
+		<string>Lincoln Belmont</string>
+		<key>phone</key>
+		<string>1 (312) 744-0166</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60657</string>
+	</dict>
+	<key>Lincoln Park</key>
+	<dict>
+		<key>abbrev</key>
+		<string>LINCOL</string>
+		<key>streetAddress</key>
+		<string>1150 W Fullerton Ave</string>
+		<key>endecaBranch</key>
+		<string>85</string>
+		<key>geoLat</key>
+		<string>41.925401</string>
+		<key>geoLong</key>
+		<string>-87.657863</string>
+		<key>longName</key>
+		<string>Lincoln Park</string>
+		<key>shortName</key>
+		<string>Lincoln Park</string>
+		<key>phone</key>
+		<string>1 (312) 744-1926</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60614</string>
+	</dict>
+	<key>Little Village</key>
+	<dict>
+		<key>abbrev</key>
+		<string>LVILL</string>
+		<key>streetAddress</key>
+		<string>2311 S Kedzie Ave</string>
+		<key>endecaBranch</key>
+		<string>56</string>
+		<key>geoLat</key>
+		<string>41.849848</string>
+		<key>geoLong</key>
+		<string>-87.705144</string>
+		<key>longName</key>
+		<string>Little Village</string>
+		<key>shortName</key>
+		<string>Little Village</string>
+		<key>phone</key>
+		<string>1 (312) 745-1862</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60623</string>
+	</dict>
+	<key>Logan Square</key>
+	<dict>
+		<key>abbrev</key>
+		<string>LGANSQ</string>
+		<key>streetAddress</key>
+		<string>3030 W Fullerton Ave</string>
+		<key>endecaBranch</key>
+		<string>84</string>
+		<key>geoLat</key>
+		<string>41.924794</string>
+		<key>geoLong</key>
+		<string>-87.703001</string>
+		<key>longName</key>
+		<string>Logan Square</string>
+		<key>shortName</key>
+		<string>Logan Square</string>
+		<key>phone</key>
+		<string>1 (312) 744-5295</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60647</string>
+	</dict>
+	<key>Lozano</key>
+	<dict>
+		<key>abbrev</key>
+		<string>LOZANO</string>
+		<key>streetAddress</key>
+		<string>1805 S Loomis St</string>
+		<key>endecaBranch</key>
+		<string>86</string>
+		<key>geoLat</key>
+		<string>41.857665</string>
+		<key>geoLong</key>
+		<string>-87.661252</string>
+		<key>longName</key>
+		<string>Lozano</string>
+		<key>shortName</key>
+		<string>Lozano</string>
+		<key>phone</key>
+		<string>1 (312) 746-4329</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60608</string>
+	</dict>
+	<key>Manning</key>
+	<dict>
+		<key>abbrev</key>
+		<string>MMANNI</string>
+		<key>streetAddress</key>
+		<string>6 S Hoyne Ave</string>
+		<key>endecaBranch</key>
+		<string>91</string>
+		<key>geoLat</key>
+		<string>41.881178</string>
+		<key>geoLong</key>
+		<string>-87.679150</string>
+		<key>longName</key>
+		<string>Manning</string>
+		<key>shortName</key>
+		<string>Manning</string>
+		<key>phone</key>
+		<string>1 (312) 746-6800</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60612</string>
+	</dict>
+	<key>Mayfair</key>
+	<dict>
+		<key>abbrev</key>
+		<string>MAYFAI</string>
+		<key>streetAddress</key>
+		<string>4400 W Lawrence Ave</string>
+		<key>endecaBranch</key>
+		<string>87</string>
+		<key>geoLat</key>
+		<string>41.968031</string>
+		<key>geoLong</key>
+		<string>-87.737858</string>
+		<key>longName</key>
+		<string>Mayfair</string>
+		<key>shortName</key>
+		<string>Mayfair</string>
+		<key>phone</key>
+		<string>1 (312) 744-1254</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60630</string>
+	</dict>
+	<key>McKinley Park</key>
+	<dict>
+		<key>abbrev</key>
+		<string>MCKINL</string>
+		<key>streetAddress</key>
+		<string>1915 W 35th St</string>
+		<key>endecaBranch</key>
+		<string>88</string>
+		<key>geoLat</key>
+		<string>41.830366</string>
+		<key>geoLong</key>
+		<string>-87.673504</string>
+		<key>longName</key>
+		<string>McKinley Park</string>
+		<key>shortName</key>
+		<string>McKinley Park</string>
+		<key>phone</key>
+		<string>1 (312) 747-6082</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60609</string>
+	</dict>
+	<key>Merlo</key>
+	<dict>
+		<key>abbrev</key>
+		<string>MERLO</string>
+		<key>streetAddress</key>
+		<string>644 W Belmont Ave</string>
+		<key>endecaBranch</key>
+		<string>89</string>
+		<key>geoLat</key>
+		<string>41.940187</string>
+		<key>geoLong</key>
+		<string>-87.645732</string>
+		<key>longName</key>
+		<string>Merlo</string>
+		<key>shortName</key>
+		<string>Merlo</string>
+		<key>phone</key>
+		<string>1 (312) 744-1139</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60657</string>
+	</dict>
+	<key>Mount Greenwood</key>
+	<dict>
+		<key>abbrev</key>
+		<string>MTGRWD</string>
+		<key>streetAddress</key>
+		<string>11010 S Kedzie Ave</string>
+		<key>endecaBranch</key>
+		<string>93</string>
+		<key>geoLat</key>
+		<string>41.693249</string>
+		<key>geoLong</key>
+		<string>-87.700850</string>
+		<key>longName</key>
+		<string>Mount Greenwood</string>
+		<key>shortName</key>
+		<string>Mount Greenwood</string>
+		<key>phone</key>
+		<string>1 (312) 747-2805</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60655</string>
+	</dict>
+	<key>Near North</key>
+	<dict>
+		<key>abbrev</key>
+		<string>NNORTH</string>
+		<key>streetAddress</key>
+		<string>310 W Division St</string>
+		<key>endecaBranch</key>
+		<string>95</string>
+		<key>geoLat</key>
+		<string>41.903840</string>
+		<key>geoLong</key>
+		<string>-87.636810</string>
+		<key>longName</key>
+		<string>Near North</string>
+		<key>shortName</key>
+		<string>Near North</string>
+		<key>phone</key>
+		<string>1 (312) 744-0991</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60610</string>
+	</dict>
+	<key>North Austin</key>
+	<dict>
+		<key>abbrev</key>
+		<string>NAUSTN</string>
+		<key>streetAddress</key>
+		<string>5724 W North Ave</string>
+		<key>endecaBranch</key>
+		<string>94</string>
+		<key>geoLat</key>
+		<string>41.909231</string>
+		<key>geoLong</key>
+		<string>-87.768719</string>
+		<key>longName</key>
+		<string>North Austin</string>
+		<key>shortName</key>
+		<string>North Austin</string>
+		<key>phone</key>
+		<string>1 (312) 746-4233</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60639</string>
+	</dict>
+	<key>North Pulaski</key>
+	<dict>
+		<key>abbrev</key>
+		<string>NPULAS</string>
+		<key>streetAddress</key>
+		<string>4300 W North Ave</string>
+		<key>endecaBranch</key>
+		<string>97</string>
+		<key>geoLat</key>
+		<string>41.909721</string>
+		<key>geoLong</key>
+		<string>-87.733673</string>
+		<key>longName</key>
+		<string>North Pulaski</string>
+		<key>shortName</key>
+		<string>North Pulaski</string>
+		<key>phone</key>
+		<string>1 (312) 744-9573</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60639</string>
+	</dict>
+	<key>Northtown</key>
+	<dict>
+		<key>abbrev</key>
+		<string>NOTOWN</string>
+		<key>streetAddress</key>
+		<string>6435 N California Ave</string>
+		<key>endecaBranch</key>
+		<string>96</string>
+		<key>geoLat</key>
+		<string>41.998142</string>
+		<key>geoLong</key>
+		<string>-87.699799</string>
+		<key>longName</key>
+		<string>Northtown</string>
+		<key>shortName</key>
+		<string>Northtown</string>
+		<key>phone</key>
+		<string>1 (312) 744-2292</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60645</string>
+	</dict>
+	<key>Oriole Park</key>
+	<dict>
+		<key>abbrev</key>
+		<string>ORIOLE</string>
+		<key>streetAddress</key>
+		<string>7454 W Balmoral Ave</string>
+		<key>endecaBranch</key>
+		<string>98</string>
+		<key>geoLat</key>
+		<string>41.977930</string>
+		<key>geoLong</key>
+		<string>-87.813261</string>
+		<key>longName</key>
+		<string>Oriole Park</string>
+		<key>shortName</key>
+		<string>Oriole Park</string>
+		<key>phone</key>
+		<string>1 (312) 744-1965</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60656</string>
+	</dict>
+	<key>Portage-Cragin</key>
+	<dict>
+		<key>abbrev</key>
+		<string>PORTAG</string>
+		<key>streetAddress</key>
+		<string>5108 W Belmont Ave</string>
+		<key>endecaBranch</key>
+		<string>99</string>
+		<key>geoLat</key>
+		<string>41.938531</string>
+		<key>geoLong</key>
+		<string>-87.754262</string>
+		<key>longName</key>
+		<string>Portage–Cragin</string>
+		<key>shortName</key>
+		<string>Portage–Cragin</string>
+		<key>phone</key>
+		<string>1 (312) 744-0152</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60641</string>
+	</dict>
+	<key>Pullman</key>
+	<dict>
+		<key>abbrev</key>
+		<string>PULLMA</string>
+		<key>streetAddress</key>
+		<string>11001 S Indiana Ave</string>
+		<key>endecaBranch</key>
+		<string>100</string>
+		<key>geoLat</key>
+		<string>41.694534</string>
+		<key>geoLong</key>
+		<string>-87.618347</string>
+		<key>longName</key>
+		<string>Pullman</string>
+		<key>shortName</key>
+		<string>Pullman</string>
+		<key>phone</key>
+		<string>1 (312) 747-2033</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60628</string>
+	</dict>
+	<key>Roden</key>
+	<dict>
+		<key>abbrev</key>
+		<string>RODEN</string>
+		<key>streetAddress</key>
+		<string>6083 N Northwest Hwy</string>
+		<key>endecaBranch</key>
+		<string>102</string>
+		<key>geoLat</key>
+		<string>41.992030</string>
+		<key>geoLong</key>
+		<string>-87.798194</string>
+		<key>longName</key>
+		<string>Roden</string>
+		<key>shortName</key>
+		<string>Roden</string>
+		<key>phone</key>
+		<string>1 (312) 744-1478</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60631</string>
+	</dict>
+	<key>Rogers Park</key>
+	<dict>
+		<key>abbrev</key>
+		<string>RGRSPK</string>
+		<key>streetAddress</key>
+		<string>6907 N Clark St</string>
+		<key>endecaBranch</key>
+		<string>101</string>
+		<key>geoLat</key>
+		<string>42.006820</string>
+		<key>geoLong</key>
+		<string>-87.673704</string>
+		<key>longName</key>
+		<string>Rogers Park</string>
+		<key>shortName</key>
+		<string>Rogers Park</string>
+		<key>phone</key>
+		<string>1 (312) 744-0156</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60626</string>
+	</dict>
+	<key>Roosevelt</key>
+	<dict>
+		<key>abbrev</key>
+		<string>RSVELT</string>
+		<key>streetAddress</key>
+		<string>1101 W Taylor St</string>
+		<key>endecaBranch</key>
+		<string>103</string>
+		<key>geoLat</key>
+		<string>41.869432</string>
+		<key>geoLong</key>
+		<string>-87.654252</string>
+		<key>longName</key>
+		<string>Roosevelt</string>
+		<key>shortName</key>
+		<string>Roosevelt</string>
+		<key>phone</key>
+		<string>1 (312) 746-5656</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60607</string>
+	</dict>
+	<key>Scottsdale</key>
+	<dict>
+		<key>abbrev</key>
+		<string>SCOTTS</string>
+		<key>streetAddress</key>
+		<string>4101 W 79th St</string>
+		<key>endecaBranch</key>
+		<string>105</string>
+		<key>geoLat</key>
+		<string>41.749533</string>
+		<key>geoLong</key>
+		<string>-87.724252</string>
+		<key>longName</key>
+		<string>Scottsdale</string>
+		<key>shortName</key>
+		<string>Scottsdale</string>
+		<key>phone</key>
+		<string>1 (312) 747-0193</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60652</string>
+	</dict>
+	<key>Sherman Park</key>
+	<dict>
+		<key>abbrev</key>
+		<string>SHERMA</string>
+		<key>streetAddress</key>
+		<string>5440 S Racine Ave</string>
+		<key>endecaBranch</key>
+		<string>106</string>
+		<key>geoLat</key>
+		<string>41.795221</string>
+		<key>geoLong</key>
+		<string>-87.655032</string>
+		<key>longName</key>
+		<string>Sherman Park</string>
+		<key>shortName</key>
+		<string>Sherman Park</string>
+		<key>phone</key>
+		<string>1 (312) 747-0477</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60609</string>
+	</dict>
+	<key>South Chicago</key>
+	<dict>
+		<key>abbrev</key>
+		<string>SOCHGO</string>
+		<key>streetAddress</key>
+		<string>9055 S Houston Ave</string>
+		<key>endecaBranch</key>
+		<string>107</string>
+		<key>geoLat</key>
+		<string>41.730913</string>
+		<key>geoLong</key>
+		<string>-87.549753</string>
+		<key>longName</key>
+		<string>South Chicago</string>
+		<key>shortName</key>
+		<string>South Chicago</string>
+		<key>phone</key>
+		<string>1 (312) 747-8065</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60617</string>
+	</dict>
+	<key>South Shore</key>
+	<dict>
+		<key>abbrev</key>
+		<string>SSHORE</string>
+		<key>streetAddress</key>
+		<string>2505 E 73rd St</string>
+		<key>endecaBranch</key>
+		<string>108</string>
+		<key>geoLat</key>
+		<string>41.762659</string>
+		<key>geoLong</key>
+		<string>-87.563896</string>
+		<key>longName</key>
+		<string>South Shore</string>
+		<key>shortName</key>
+		<string>South Shore</string>
+		<key>phone</key>
+		<string>1 (312) 747-5281</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60649</string>
+	</dict>
+	<key>Sulzer Regional</key>
+	<dict>
+		<key>abbrev</key>
+		<string>S1ULZE</string>
+		<key>streetAddress</key>
+		<string>4455 N Lincoln Ave</string>
+		<key>endecaBranch</key>
+		<string>109</string>
+		<key>geoLat</key>
+		<string>41.962478</string>
+		<key>geoLong</key>
+		<string>-87.684562</string>
+		<key>longName</key>
+		<string>Sulzer Regional</string>
+		<key>shortName</key>
+		<string>Sulzer Regional</string>
+		<key>phone</key>
+		<string>1 (312) 744-7616</string>
+		<key>scheduleType</key>
+		<string>R</string>
+		<key>zipCode</key>
+		<string>60625</string>
+	</dict>
+	<key>Thurgood Marshall</key>
+	<dict>
+		<key>abbrev</key>
+		<string>THRMAR</string>
+		<key>streetAddress</key>
+		<string>7506 S Racine Ave</string>
+		<key>endecaBranch</key>
+		<string>110</string>
+		<key>geoLat</key>
+		<string>41.757806</string>
+		<key>geoLong</key>
+		<string>-87.653855</string>
+		<key>longName</key>
+		<string>Thurgood Marshall</string>
+		<key>shortName</key>
+		<string>Thurgood Marshall</string>
+		<key>phone</key>
+		<string>1 (312) 747-5927</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60620</string>
+	</dict>
+	<key>Toman</key>
+	<dict>
+		<key>abbrev</key>
+		<string>TOMAN</string>
+		<key>streetAddress</key>
+		<string>2708 W Pulaski Rd</string>
+		<key>endecaBranch</key>
+		<string>111</string>
+		<key>geoLat</key>
+		<string>41.842377</string>
+		<key>geoLong</key>
+		<string>-87.724438</string>
+		<key>longName</key>
+		<string>Toman</string>
+		<key>shortName</key>
+		<string>Toman</string>
+		<key>phone</key>
+		<string>1 (312) 745-1660</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60623</string>
+	</dict>
+	<key>Uptown</key>
+	<dict>
+		<key>abbrev</key>
+		<string>UPTOWN</string>
+		<key>streetAddress</key>
+		<string>929 W Buena Ave</string>
+		<key>endecaBranch</key>
+		<string>113</string>
+		<key>geoLat</key>
+		<string>41.958632</string>
+		<key>geoLong</key>
+		<string>-87.653712</string>
+		<key>longName</key>
+		<string>Uptown</string>
+		<key>shortName</key>
+		<string>Uptown</string>
+		<key>phone</key>
+		<string>1 (312) 744-8400</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60613</string>
+	</dict>
+	<key>Vodak–East Side</key>
+	<dict>
+		<key>abbrev</key>
+		<string>VODAK</string>
+		<key>streetAddress</key>
+		<string>3710 E 106th St</string>
+		<key>endecaBranch</key>
+		<string>66</string>
+		<key>geoLat</key>
+		<string>41.702935</string>
+		<key>geoLong</key>
+		<string>-87.536244</string>
+		<key>longName</key>
+		<string>Vodak–East Side</string>
+		<key>shortName</key>
+		<string>Vodak–East Side</string>
+		<key>phone</key>
+		<string>1 (312) 747-5500</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60617</string>
+	</dict>
+	<key>Walker</key>
+	<dict>
+		<key>abbrev</key>
+		<string>WALKER</string>
+		<key>streetAddress</key>
+		<string>11071 S Hoyne Ave</string>
+		<key>endecaBranch</key>
+		<string>114</string>
+		<key>geoLat</key>
+		<string>41.692385</string>
+		<key>geoLong</key>
+		<string>-87.674019</string>
+		<key>longName</key>
+		<string>Walker</string>
+		<key>shortName</key>
+		<string>Walker</string>
+		<key>phone</key>
+		<string>1 (312) 747-1920</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60643</string>
+	</dict>
+	<key>Popular Library at Water Works</key>
+	<dict>
+		<key>abbrev</key>
+		<string>PWORKS</string>
+		<key>streetAddress</key>
+		<string>163 E Pearson St</string>
+		<key>endecaBranch</key>
+		<string>156</string>
+		<key>geoLat</key>
+		<string>41.897631</string>
+		<key>geoLong</key>
+		<string>-87.623373</string>
+		<key>longName</key>
+		<string>Popular Library at Water Works</string>
+		<key>shortName</key>
+		<string>Water Works</string>
+		<key>phone</key>
+		<string>1 (312) 742-8811</string>
+		<key>scheduleType</key>
+		<string>W</string>
+		<key>zipCode</key>
+		<string>60611</string>
+	</dict>
+	<key>West Belmont</key>
+	<dict>
+		<key>abbrev</key>
+		<string>WBELMO</string>
+		<key>streetAddress</key>
+		<string>3104 N Narragansett Ave</string>
+		<key>endecaBranch</key>
+		<string>115</string>
+		<key>geoLat</key>
+		<string>41.936406</string>
+		<key>geoLong</key>
+		<string>-87.785767</string>
+		<key>longName</key>
+		<string>West Belmont</string>
+		<key>shortName</key>
+		<string>West Belmont</string>
+		<key>phone</key>
+		<string>1 (312) 746-5142</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60634</string>
+	</dict>
+	<key>West Chicago</key>
+	<dict>
+		<key>abbrev</key>
+		<string>WCHGO</string>
+		<key>streetAddress</key>
+		<string>4856 W Chicago Ave</string>
+		<key>endecaBranch</key>
+		<string>116</string>
+		<key>geoLat</key>
+		<string>41.895017</string>
+		<key>geoLong</key>
+		<string>-87.747028</string>
+		<key>longName</key>
+		<string>West Chicago Avenue</string>
+		<key>shortName</key>
+		<string>West Chicago Ave.</string>
+		<key>phone</key>
+		<string>1 (312) 743-0260</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60651</string>
+	</dict>
+	<key>West Englewood</key>
+	<dict>
+		<key>abbrev</key>
+		<string>WWOOD</string>
+		<key>streetAddress</key>
+		<string>1745 W 63rd St</string>
+		<key>endecaBranch</key>
+		<string>123</string>
+		<key>geoLat</key>
+		<string>41.779233</string>
+		<key>geoLong</key>
+		<string>-87.668298</string>
+		<key>longName</key>
+		<string>West Englewood</string>
+		<key>shortName</key>
+		<string>West Englewood</string>
+		<key>phone</key>
+		<string>1 (312) 747-3481</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60636</string>
+	</dict>
+	<key>West Lawn</key>
+	<dict>
+		<key>abbrev</key>
+		<string>WESTLA</string>
+		<key>streetAddress</key>
+		<string>4020 W 63rd St</string>
+		<key>endecaBranch</key>
+		<string>117</string>
+		<key>geoLat</key>
+		<string>41.778765</string>
+		<key>geoLong</key>
+		<string>-87.723819</string>
+		<key>longName</key>
+		<string>West Lawn</string>
+		<key>shortName</key>
+		<string>West Lawn</string>
+		<key>phone</key>
+		<string>1 (312) 747-7381</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60629</string>
+	</dict>
+	<key>West Pullman</key>
+	<dict>
+		<key>abbrev</key>
+		<string>WPULLM</string>
+		<key>streetAddress</key>
+		<string>830 W 119th St</string>
+		<key>endecaBranch</key>
+		<string>119</string>
+		<key>geoLat</key>
+		<string>41.677913</string>
+		<key>geoLong</key>
+		<string>-87.643052</string>
+		<key>longName</key>
+		<string>West Pullman</string>
+		<key>shortName</key>
+		<string>West Pullman</string>
+		<key>phone</key>
+		<string>1 (312) 747-1425</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60643</string>
+	</dict>
+	<key>West Town</key>
+	<dict>
+		<key>abbrev</key>
+		<string>WTOWN</string>
+		<key>streetAddress</key>
+		<string>1625 W Chicago Ave</string>
+		<key>endecaBranch</key>
+		<string>157</string>
+		<key>geoLat</key>
+		<string>41.896207</string>
+		<key>geoLong</key>
+		<string>-87.668154</string>
+		<key>longName</key>
+		<string>West Town</string>
+		<key>shortName</key>
+		<string>West Town</string>
+		<key>phone</key>
+		<string>1 (312) 743-0450</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60622</string>
+	</dict>
+	<key>Whitney M. Young, Jr.</key>
+	<dict>
+		<key>abbrev</key>
+		<string>WYOUNG</string>
+		<key>streetAddress</key>
+		<string>7901 S King Dr</string>
+		<key>endecaBranch</key>
+		<string>124</string>
+		<key>geoLat</key>
+		<string>41.751034</string>
+		<key>geoLong</key>
+		<string>-87.614948</string>
+		<key>longName</key>
+		<string>Whitney M. Young, Jr.</string>
+		<key>shortName</key>
+		<string>Whitney Young</string>
+		<key>phone</key>
+		<string>1 (312) 747-0039</string>
+		<key>scheduleType</key>
+		<string>A</string>
+		<key>zipCode</key>
+		<string>60619</string>
+	</dict>
+	<key>Woodson Regional</key>
+	<dict>
+		<key>abbrev</key>
+		<string>W1OODS</string>
+		<key>streetAddress</key>
+		<string>9525 S Halsted St</string>
+		<key>endecaBranch</key>
+		<string>118</string>
+		<key>geoLat</key>
+		<string>41.720991</string>
+		<key>geoLong</key>
+		<string>-87.643172</string>
+		<key>longName</key>
+		<string>Carter G. Woodson Regional</string>
+		<key>shortName</key>
+		<string>Woodson Regional</string>
+		<key>phone</key>
+		<string>1 (312) 747-6900</string>
+		<key>scheduleType</key>
+		<string>R</string>
+		<key>zipCode</key>
+		<string>60628</string>
+	</dict>
+	<key>Wrightwood-Ashburn</key>
+	<dict>
+		<key>abbrev</key>
+		<string>WRIGHT</string>
+		<key>streetAddress</key>
+		<string>8530 S Kedzie Ave</string>
+		<key>endecaBranch</key>
+		<string>120</string>
+		<key>geoLat</key>
+		<string>41.738395</string>
+		<key>geoLong</key>
+		<string>-87.702067</string>
+		<key>longName</key>
+		<string>Wrightwood–Ashburn</string>
+		<key>shortName</key>
+		<string>Wrightwood–Ashburn</string>
+		<key>phone</key>
+		<string>1 (312) 747-2696</string>
+		<key>scheduleType</key>
+		<string>B</string>
+		<key>zipCode</key>
+		<string>60652</string>
+	</dict>
+</dict>
+</plist>
