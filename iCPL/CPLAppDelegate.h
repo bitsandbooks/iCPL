@@ -8,12 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class CPLFirstView;
-
 @interface CPLAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) CPLFirstView *viewController;
+@property (strong, nonatomic) UINavigationController *navigationController; 
 
 @end

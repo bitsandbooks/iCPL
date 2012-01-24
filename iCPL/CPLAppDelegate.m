@@ -7,27 +7,29 @@
  */
 
 #import "CPLAppDelegate.h"
-
 #import "CPLFirstView.h"
 
 @implementation CPLAppDelegate
 
 @synthesize window = _window;
-@synthesize viewController = _viewController;
+@synthesize navigationController = _navigationController;
 
 - (void)dealloc
 {
 	[_window release];
-	[_viewController release];
+	[_navigationController release];
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+	
     // Override point for customization after application launch.
-	self.viewController = [[[CPLFirstView alloc] initWithNibName:@"CPLViewController" bundle:nil] autorelease];
-	self.window.rootViewController = self.viewController;
+	CPLFirstView *firstView = [[[CPLFirstView alloc] initWithNibName:@"CPLFirstView" bundle:nil] autorelease];
+	self.navigationController = [[[[UINavigationController alloc] init] initWithRootViewController:firstView] autorelease];
+	self.window.rootViewController = self.navigationController;
+	
     [self.window makeKeyAndVisible];
     return YES;
 }

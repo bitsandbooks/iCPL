@@ -11,6 +11,7 @@
 		D400D14614CDFF58009473CB /* Holidays.plist in Resources */ = {isa = PBXBuildFile; fileRef = D400D14314CDFF58009473CB /* Holidays.plist */; };
 		D400D14714CDFF58009473CB /* ServiceHours.plist in Resources */ = {isa = PBXBuildFile; fileRef = D400D14414CDFF58009473CB /* ServiceHours.plist */; };
 		D400D14914CDFF5F009473CB /* branchImages in Resources */ = {isa = PBXBuildFile; fileRef = D400D14814CDFF5F009473CB /* branchImages */; };
+		D441D4F314CE39FF00FBF71A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D441D4F214CE39FF00FBF71A /* CoreLocation.framework */; };
 		D48F70B314CDF82000ABB169 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B214CDF82000ABB169 /* UIKit.framework */; };
 		D48F70B514CDF82000ABB169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B414CDF82000ABB169 /* Foundation.framework */; };
 		D48F70B714CDF82000ABB169 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B614CDF82000ABB169 /* CoreGraphics.framework */; };
@@ -26,6 +27,7 @@
 		D400D14314CDFF58009473CB /* Holidays.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Holidays.plist; sourceTree = "<group>"; };
 		D400D14414CDFF58009473CB /* ServiceHours.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ServiceHours.plist; sourceTree = "<group>"; };
 		D400D14814CDFF5F009473CB /* branchImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = branchImages; sourceTree = "<group>"; };
+		D441D4F214CE39FF00FBF71A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D48F70AE14CDF82000ABB169 /* iCPL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCPL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48F70B214CDF82000ABB169 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D48F70B414CDF82000ABB169 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,6 +51,7 @@
 				D48F70B314CDF82000ABB169 /* UIKit.framework in Frameworks */,
 				D48F70B514CDF82000ABB169 /* Foundation.framework in Frameworks */,
 				D48F70B714CDF82000ABB169 /* CoreGraphics.framework in Frameworks */,
+				D441D4F314CE39FF00FBF71A /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +92,7 @@
 				D48F70B214CDF82000ABB169 /* UIKit.framework */,
 				D48F70B414CDF82000ABB169 /* Foundation.framework */,
 				D48F70B614CDF82000ABB169 /* CoreGraphics.framework */,
+				D441D4F214CE39FF00FBF71A /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
