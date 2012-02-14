@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>Albany Park</key>
+<array>
 	<dict>
 		<key>abbrev</key>
 		<string>ALBANY</string>
@@ -25,7 +24,6 @@
 		<key>zipCode</key>
 		<string>60625</string>
 	</dict>
-	<key>Altgeld</key>
 	<dict>
 		<key>abbrev</key>
 		<string>ATGELD</string>
@@ -48,7 +46,6 @@
 		<key>zipCode</key>
 		<string>60827</string>
 	</dict>
-	<key>Archer Heights</key>
 	<dict>
 		<key>abbrev</key>
 		<string>ARCHER</string>
@@ -71,7 +68,6 @@
 		<key>zipCode</key>
 		<string>60632</string>
 	</dict>
-	<key>Austin</key>
 	<dict>
 		<key>abbrev</key>
 		<string>AUSTIN</string>
@@ -94,7 +90,6 @@
 		<key>zipCode</key>
 		<string>60644</string>
 	</dict>
-	<key>Austin-Irving</key>
 	<dict>
 		<key>abbrev</key>
 		<string>AIRVNG</string>
@@ -117,7 +112,6 @@
 		<key>zipCode</key>
 		<string>60634</string>
 	</dict>
-	<key>Avalon</key>
 	<dict>
 		<key>abbrev</key>
 		<string>AVALON</string>
@@ -140,7 +134,6 @@
 		<key>zipCode</key>
 		<string>60617</string>
 	</dict>
-	<key>Beverly</key>
 	<dict>
 		<key>abbrev</key>
 		<string>BEVERL</string>
@@ -163,7 +156,6 @@
 		<key>zipCode</key>
 		<string>60643</string>
 	</dict>
-	<key>Bezazian</key>
 	<dict>
 		<key>abbrev</key>
 		<string>BZAZIN</string>
@@ -186,7 +178,6 @@
 		<key>zipCode</key>
 		<string>60640</string>
 	</dict>
-	<key>Blackstone</key>
 	<dict>
 		<key>abbrev</key>
 		<string>BLKSTN</string>
@@ -209,7 +200,6 @@
 		<key>zipCode</key>
 		<string>60615</string>
 	</dict>
-	<key>Brainerd</key>
 	<dict>
 		<key>abbrev</key>
 		<string>BRAINE</string>
@@ -232,7 +222,6 @@
 		<key>zipCode</key>
 		<string>60620</string>
 	</dict>
-	<key>Brighton Park</key>
 	<dict>
 		<key>abbrev</key>
 		<string>BPARK</string>
@@ -255,7 +244,6 @@
 		<key>zipCode</key>
 		<string>60632</string>
 	</dict>
-	<key>Bucktown-Wicker Park</key>
 	<dict>
 		<key>abbrev</key>
 		<string>BTOWN</string>
@@ -278,7 +266,6 @@
 		<key>zipCode</key>
 		<string>60647</string>
 	</dict>
-	<key>Budlong Woods</key>
 	<dict>
 		<key>abbrev</key>
 		<string>BUDLON</string>
@@ -301,7 +288,6 @@
 		<key>zipCode</key>
 		<string>60659</string>
 	</dict>
-	<key>Canaryville</key>
 	<dict>
 		<key>abbrev</key>
 		<string>CNARY</string>
@@ -324,7 +310,6 @@
 		<key>zipCode</key>
 		<string>60609</string>
 	</dict>
-	<key>Chicago Bee</key>
 	<dict>
 		<key>abbrev</key>
 		<string>CBEE</string>
@@ -347,7 +332,6 @@
 		<key>zipCode</key>
 		<string>60609</string>
 	</dict>
-	<key>Chicago Lawn</key>
 	<dict>
 		<key>abbrev</key>
 		<string>CGOLWN</string>
@@ -370,7 +354,6 @@
 		<key>zipCode</key>
 		<string>60629</string>
 	</dict>
-	<key>Chinatown</key>
 	<dict>
 		<key>abbrev</key>
 		<string>CHINAT</string>
@@ -393,7 +376,6 @@
 		<key>zipCode</key>
 		<string>60616</string>
 	</dict>
-	<key>Clearing</key>
 	<dict>
 		<key>abbrev</key>
 		<string>CLEARI</string>
@@ -416,7 +398,6 @@
 		<key>zipCode</key>
 		<string>60638</string>
 	</dict>
-	<key>Coleman</key>
 	<dict>
 		<key>abbrev</key>
 		<string>COLEMA</string>
@@ -439,7 +420,6 @@
 		<key>zipCode</key>
 		<string>60637</string>
 	</dict>
-	<key>Richard J. Daley</key>
 	<dict>
 		<key>abbrev</key>
 		<string>DALEY</string>
@@ -462,7 +442,6 @@
 		<key>zipCode</key>
 		<string>60608</string>
 	</dict>
-	<key>Richard M. Daley</key>
 	<dict>
 		<key>abbrev</key>
 		<string>DALEYRM</string>
@@ -485,7 +464,6 @@
 		<key>zipCode</key>
 		<string>60612</string>
 	</dict>
-	<key>Douglass</key>
 	<dict>
 		<key>abbrev</key>
 		<string>DOUGLA</string>
@@ -508,7 +486,6 @@
 		<key>zipCode</key>
 		<string>60623</string>
 	</dict>
-	<key>Dunning</key>
 	<dict>
 		<key>abbrev</key>
 		<string>DUNN</string>
@@ -531,7 +508,6 @@
 		<key>zipCode</key>
 		<string>60634</string>
 	</dict>
-	<key>Edgebrook</key>
 	<dict>
 		<key>abbrev</key>
 		<string>EDGEBR</string>
@@ -554,7 +530,6 @@
 		<key>zipCode</key>
 		<string>60646</string>
 	</dict>
-	<key>Gage Park</key>
 	<dict>
 		<key>abbrev</key>
 		<string>GAGEPK</string>
@@ -577,7 +552,6 @@
 		<key>zipCode</key>
 		<string>60632</string>
 	</dict>
-	<key>Galewood–Mont Clare</key>
 	<dict>
 		<key>abbrev</key>
 		<string>GMC</string>
@@ -600,7 +574,6 @@
 		<key>zipCode</key>
 		<string>60707</string>
 	</dict>
-	<key>Garfield Ridge</key>
 	<dict>
 		<key>abbrev</key>
 		<string>GRIDGE</string>
@@ -623,7 +596,6 @@
 		<key>zipCode</key>
 		<string>60638</string>
 	</dict>
-	<key>Greater Grand Crossing</key>
 	<dict>
 		<key>abbrev</key>
 		<string>GGRAND</string>
@@ -646,7 +618,6 @@
 		<key>zipCode</key>
 		<string>60619</string>
 	</dict>
-	<key>Hall</key>
 	<dict>
 		<key>abbrev</key>
 		<string>HALL</string>
@@ -669,7 +640,6 @@
 		<key>zipCode</key>
 		<string>60615</string>
 	</dict>
-	<key>Harold Washington Library Center</key>
 	<dict>
 		<key>abbrev</key>
 		<string>H1WLC</string>
@@ -692,7 +662,6 @@
 		<key>zipCode</key>
 		<string>60605</string>
 	</dict>
-	<key>Hegewisch</key>
 	<dict>
 		<key>abbrev</key>
 		<string>HEGEWI</string>
@@ -715,7 +684,6 @@
 		<key>zipCode</key>
 		<string>60633</string>
 	</dict>
-	<key>Humboldt Park</key>
 	<dict>
 		<key>abbrev</key>
 		<string>HUMBOL</string>
@@ -738,7 +706,6 @@
 		<key>zipCode</key>
 		<string>60647</string>
 	</dict>
-	<key>Independence</key>
 	<dict>
 		<key>abbrev</key>
 		<string>INDEPE</string>
@@ -761,7 +728,6 @@
 		<key>zipCode</key>
 		<string>60618</string>
 	</dict>
-	<key>Jefferson Park</key>
 	<dict>
 		<key>abbrev</key>
 		<string>JEFFER</string>
@@ -784,7 +750,6 @@
 		<key>zipCode</key>
 		<string>60630</string>
 	</dict>
-	<key>Jeffery Manor</key>
 	<dict>
 		<key>abbrev</key>
 		<string>JMANOR</string>
@@ -807,7 +772,6 @@
 		<key>zipCode</key>
 		<string>60617</string>
 	</dict>
-	<key>Kelly</key>
 	<dict>
 		<key>abbrev</key>
 		<string>KELLY</string>
@@ -830,7 +794,6 @@
 		<key>zipCode</key>
 		<string>60621</string>
 	</dict>
-	<key>King</key>
 	<dict>
 		<key>abbrev</key>
 		<string>KING</string>
@@ -853,7 +816,6 @@
 		<key>zipCode</key>
 		<string>60616</string>
 	</dict>
-	<key>Legler</key>
 	<dict>
 		<key>abbrev</key>
 		<string>LEGLER</string>
@@ -876,7 +838,6 @@
 		<key>zipCode</key>
 		<string>60624</string>
 	</dict>
-	<key>Lincoln Belmont</key>
 	<dict>
 		<key>abbrev</key>
 		<string>LBELMO</string>
@@ -899,7 +860,6 @@
 		<key>zipCode</key>
 		<string>60657</string>
 	</dict>
-	<key>Lincoln Park</key>
 	<dict>
 		<key>abbrev</key>
 		<string>LINCOL</string>
@@ -922,7 +882,6 @@
 		<key>zipCode</key>
 		<string>60614</string>
 	</dict>
-	<key>Little Village</key>
 	<dict>
 		<key>abbrev</key>
 		<string>LVILL</string>
@@ -945,7 +904,6 @@
 		<key>zipCode</key>
 		<string>60623</string>
 	</dict>
-	<key>Logan Square</key>
 	<dict>
 		<key>abbrev</key>
 		<string>LGANSQ</string>
@@ -968,7 +926,6 @@
 		<key>zipCode</key>
 		<string>60647</string>
 	</dict>
-	<key>Lozano</key>
 	<dict>
 		<key>abbrev</key>
 		<string>LOZANO</string>
@@ -991,7 +948,6 @@
 		<key>zipCode</key>
 		<string>60608</string>
 	</dict>
-	<key>Manning</key>
 	<dict>
 		<key>abbrev</key>
 		<string>MMANNI</string>
@@ -1014,7 +970,6 @@
 		<key>zipCode</key>
 		<string>60612</string>
 	</dict>
-	<key>Mayfair</key>
 	<dict>
 		<key>abbrev</key>
 		<string>MAYFAI</string>
@@ -1037,7 +992,6 @@
 		<key>zipCode</key>
 		<string>60630</string>
 	</dict>
-	<key>McKinley Park</key>
 	<dict>
 		<key>abbrev</key>
 		<string>MCKINL</string>
@@ -1060,7 +1014,6 @@
 		<key>zipCode</key>
 		<string>60609</string>
 	</dict>
-	<key>Merlo</key>
 	<dict>
 		<key>abbrev</key>
 		<string>MERLO</string>
@@ -1083,7 +1036,6 @@
 		<key>zipCode</key>
 		<string>60657</string>
 	</dict>
-	<key>Mount Greenwood</key>
 	<dict>
 		<key>abbrev</key>
 		<string>MTGRWD</string>
@@ -1106,7 +1058,6 @@
 		<key>zipCode</key>
 		<string>60655</string>
 	</dict>
-	<key>Near North</key>
 	<dict>
 		<key>abbrev</key>
 		<string>NNORTH</string>
@@ -1129,7 +1080,6 @@
 		<key>zipCode</key>
 		<string>60610</string>
 	</dict>
-	<key>North Austin</key>
 	<dict>
 		<key>abbrev</key>
 		<string>NAUSTN</string>
@@ -1152,7 +1102,6 @@
 		<key>zipCode</key>
 		<string>60639</string>
 	</dict>
-	<key>North Pulaski</key>
 	<dict>
 		<key>abbrev</key>
 		<string>NPULAS</string>
@@ -1175,7 +1124,6 @@
 		<key>zipCode</key>
 		<string>60639</string>
 	</dict>
-	<key>Northtown</key>
 	<dict>
 		<key>abbrev</key>
 		<string>NOTOWN</string>
@@ -1198,7 +1146,6 @@
 		<key>zipCode</key>
 		<string>60645</string>
 	</dict>
-	<key>Oriole Park</key>
 	<dict>
 		<key>abbrev</key>
 		<string>ORIOLE</string>
@@ -1221,7 +1168,6 @@
 		<key>zipCode</key>
 		<string>60656</string>
 	</dict>
-	<key>Portage-Cragin</key>
 	<dict>
 		<key>abbrev</key>
 		<string>PORTAG</string>
@@ -1244,7 +1190,6 @@
 		<key>zipCode</key>
 		<string>60641</string>
 	</dict>
-	<key>Pullman</key>
 	<dict>
 		<key>abbrev</key>
 		<string>PULLMA</string>
@@ -1267,7 +1212,6 @@
 		<key>zipCode</key>
 		<string>60628</string>
 	</dict>
-	<key>Roden</key>
 	<dict>
 		<key>abbrev</key>
 		<string>RODEN</string>
@@ -1290,7 +1234,6 @@
 		<key>zipCode</key>
 		<string>60631</string>
 	</dict>
-	<key>Rogers Park</key>
 	<dict>
 		<key>abbrev</key>
 		<string>RGRSPK</string>
@@ -1313,7 +1256,6 @@
 		<key>zipCode</key>
 		<string>60626</string>
 	</dict>
-	<key>Roosevelt</key>
 	<dict>
 		<key>abbrev</key>
 		<string>RSVELT</string>
@@ -1336,7 +1278,6 @@
 		<key>zipCode</key>
 		<string>60607</string>
 	</dict>
-	<key>Scottsdale</key>
 	<dict>
 		<key>abbrev</key>
 		<string>SCOTTS</string>
@@ -1359,7 +1300,6 @@
 		<key>zipCode</key>
 		<string>60652</string>
 	</dict>
-	<key>Sherman Park</key>
 	<dict>
 		<key>abbrev</key>
 		<string>SHERMA</string>
@@ -1382,7 +1322,6 @@
 		<key>zipCode</key>
 		<string>60609</string>
 	</dict>
-	<key>South Chicago</key>
 	<dict>
 		<key>abbrev</key>
 		<string>SOCHGO</string>
@@ -1405,7 +1344,6 @@
 		<key>zipCode</key>
 		<string>60617</string>
 	</dict>
-	<key>South Shore</key>
 	<dict>
 		<key>abbrev</key>
 		<string>SSHORE</string>
@@ -1428,7 +1366,6 @@
 		<key>zipCode</key>
 		<string>60649</string>
 	</dict>
-	<key>Sulzer Regional</key>
 	<dict>
 		<key>abbrev</key>
 		<string>S1ULZE</string>
@@ -1451,7 +1388,6 @@
 		<key>zipCode</key>
 		<string>60625</string>
 	</dict>
-	<key>Thurgood Marshall</key>
 	<dict>
 		<key>abbrev</key>
 		<string>THRMAR</string>
@@ -1474,7 +1410,6 @@
 		<key>zipCode</key>
 		<string>60620</string>
 	</dict>
-	<key>Toman</key>
 	<dict>
 		<key>abbrev</key>
 		<string>TOMAN</string>
@@ -1497,7 +1432,6 @@
 		<key>zipCode</key>
 		<string>60623</string>
 	</dict>
-	<key>Uptown</key>
 	<dict>
 		<key>abbrev</key>
 		<string>UPTOWN</string>
@@ -1520,7 +1454,6 @@
 		<key>zipCode</key>
 		<string>60613</string>
 	</dict>
-	<key>Vodak–East Side</key>
 	<dict>
 		<key>abbrev</key>
 		<string>VODAK</string>
@@ -1543,7 +1476,6 @@
 		<key>zipCode</key>
 		<string>60617</string>
 	</dict>
-	<key>Walker</key>
 	<dict>
 		<key>abbrev</key>
 		<string>WALKER</string>
@@ -1566,7 +1498,6 @@
 		<key>zipCode</key>
 		<string>60643</string>
 	</dict>
-	<key>Popular Library at Water Works</key>
 	<dict>
 		<key>abbrev</key>
 		<string>PWORKS</string>
@@ -1589,7 +1520,6 @@
 		<key>zipCode</key>
 		<string>60611</string>
 	</dict>
-	<key>West Belmont</key>
 	<dict>
 		<key>abbrev</key>
 		<string>WBELMO</string>
@@ -1612,7 +1542,6 @@
 		<key>zipCode</key>
 		<string>60634</string>
 	</dict>
-	<key>West Chicago</key>
 	<dict>
 		<key>abbrev</key>
 		<string>WCHGO</string>
@@ -1635,7 +1564,6 @@
 		<key>zipCode</key>
 		<string>60651</string>
 	</dict>
-	<key>West Englewood</key>
 	<dict>
 		<key>abbrev</key>
 		<string>WWOOD</string>
@@ -1658,7 +1586,6 @@
 		<key>zipCode</key>
 		<string>60636</string>
 	</dict>
-	<key>West Lawn</key>
 	<dict>
 		<key>abbrev</key>
 		<string>WESTLA</string>
@@ -1681,7 +1608,6 @@
 		<key>zipCode</key>
 		<string>60629</string>
 	</dict>
-	<key>West Pullman</key>
 	<dict>
 		<key>abbrev</key>
 		<string>WPULLM</string>
@@ -1704,7 +1630,6 @@
 		<key>zipCode</key>
 		<string>60643</string>
 	</dict>
-	<key>West Town</key>
 	<dict>
 		<key>abbrev</key>
 		<string>WTOWN</string>
@@ -1727,7 +1652,6 @@
 		<key>zipCode</key>
 		<string>60622</string>
 	</dict>
-	<key>Whitney M. Young, Jr.</key>
 	<dict>
 		<key>abbrev</key>
 		<string>WYOUNG</string>
@@ -1750,7 +1674,6 @@
 		<key>zipCode</key>
 		<string>60619</string>
 	</dict>
-	<key>Woodson Regional</key>
 	<dict>
 		<key>abbrev</key>
 		<string>W1OODS</string>
@@ -1773,7 +1696,6 @@
 		<key>zipCode</key>
 		<string>60628</string>
 	</dict>
-	<key>Wrightwood-Ashburn</key>
 	<dict>
 		<key>abbrev</key>
 		<string>WRIGHT</string>
@@ -1796,5 +1718,5 @@
 		<key>zipCode</key>
 		<string>60652</string>
 	</dict>
-</dict>
+</array>
 </plist>

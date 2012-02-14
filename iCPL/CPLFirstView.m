@@ -7,10 +7,10 @@
  */
 
 #import "CPLFirstView.h"
+#import "CPLBranchListingView.h"
 
 @implementation CPLFirstView
 
-@synthesize showOneBranchButton;
 @synthesize showBranchListingButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -38,14 +38,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+	
+	self.navigationItem.title = @"Main Menu";
 }
 
 - (void)viewDidUnload
 {
-    [showOneBranchButton release], showOneBranchButton = nil;
-    [showBranchListingButton release], showBranchListingButton = nil;
-    [super viewDidUnload];
+    [showBranchListingButton release],	showBranchListingButton	= nil;
+	
+	[super viewDidUnload];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+	[self.navigationController setNavigationBarHidden:YES animated:animated];
+	[super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+	[self.navigationController setNavigationBarHidden:NO animated:animated];
+	[super viewWillDisappear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -54,13 +67,18 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)showOneBranchButtonTapped:(id)sender {
+- (IBAction)showBranchListingButtonTapped:(id)sender 
+{
+	NSLog(@"Branch Listing button tapped.");
+	
+	// Load new view and push it onto the stack.
+	CPLBranchListingView *branchListingView = [[CPLBranchListingView alloc] initWithNibName:@"CPLBranchListingView" bundle:nil];
+	[self.navigationController pushViewController:branchListingView animated:YES];
+	[branchListingView release];
 }
 
-- (IBAction)showBranchListingButtonTapped:(id)sender {
-}
-- (void)dealloc {
-    [showOneBranchButton release];
+- (void)dealloc 
+{
     [showBranchListingButton release];
     [super dealloc];
 }
