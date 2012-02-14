@@ -39,7 +39,7 @@
 {
     [super viewDidLoad];
 	
-	self.navigationItem.title = @"Main Menu";
+	self.navigationItem.title = @"Home";
 }
 
 - (void)viewDidUnload

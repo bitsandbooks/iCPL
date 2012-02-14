@@ -132,7 +132,7 @@
 - (UIImage  *)loadBranchImage
 {
 	NSString *theImagePath = [NSString stringWithFormat:
-							  @"branchimages/%@.png", [branchDetails objectForKey:ABBREV_KEY] ];
+							  @"branchImages/%@.png", [branchDetails objectForKey:ABBREV_KEY] ];
 	UIImage  *image = [UIImage imageNamed: theImagePath];
 	
 	if (image == nil) {
