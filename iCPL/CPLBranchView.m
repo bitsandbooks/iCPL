@@ -26,7 +26,8 @@
 	fullNameLabel, 
 	streetAddressTextView,  
 	phoneStringLabel, 
-	imageView;
+	imageView, 
+	actionButton;
 
 #pragma mark - Initialization
 
@@ -45,18 +46,65 @@
 {
     [super viewDidLoad];
     
-	// Do any additional setup after loading the view from its nib.
+	// Give the view a title for the navigation bar.
 	self.navigationItem.title	= [branchDetails objectForKey:SHORTNAME_KEY];
+	
+	// Put the actionButton on the right side of the navigation bar.
+	self.navigationItem.rightBarButtonItem = self.actionButton;
 	
 	// Set text labels.
 	fullNameLabel.text			= [branchDetails objectForKey:FULLNAME_KEY];
 	streetAddressTextView.text	= [self formatStreetAddress:[branchDetails objectForKey:STREETADDRESS_KEY] 
 												    zipCode:[branchDetails objectForKey:ZIPCODE_KEY]];
 	phoneStringLabel.text		= [branchDetails objectForKey:PHONE_KEY];
-	// phoneUrlLabel.text			= [self formatPhoneStringAsUrl:[branchDetails objectForKey:PHONE_KEY]];
 	
 	[imageView setImage:[self loadBranchImage]];
 	[imageView setUserInteractionEnabled:NO];
+}
+
+- (void)viewDidUnload
+{
+	branchDetails			= nil;
+	fullNameLabel			= nil;
+	streetAddressTextView	= nil;
+	phoneStringLabel		= nil;
+	imageView				= nil;
+	actionButton			= nil;
+	
+    [super viewDidUnload];    
+}
+
+#pragma mark - UIActionSheet setup
+
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+	if (buttonIndex == actionSheet.cancelButtonIndex) {
+		NSLog(@"User tapped 'Cancel' Button");
+		return;
+	} // end if
+	
+	switch (buttonIndex) {
+		case 0: // Calling the branch.
+			NSLog(@"User tapped 'Call this branch' button");
+			NSString *thePhoneUrl = [self formatPhoneStringAsUrl:[branchDetails objectForKey:PHONE_KEY]];
+			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:thePhoneUrl]];
+			break;
+	} // end switch
+}
+
+#pragma mark - IBActions
+
+- (IBAction)actionButtonTapped:(id)sender
+{
+	NSLog(@"INSTANCE REPORT: actionButton tapped.");
+	UIActionSheet *branchActionSheet = [[UIActionSheet alloc]
+										initWithTitle:@"What would you like to do?" 
+										delegate:self 
+										cancelButtonTitle:@"Cancel" 
+										destructiveButtonTitle:nil 
+										otherButtonTitles:@"Call this branch", nil];
+	[branchActionSheet showInView:self.view];
+	[branchActionSheet release];
 }
 
 #pragma mark - Custom methods
@@ -109,17 +157,6 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-- (void)viewDidUnload
-{
-	branchDetails			= nil;
-	fullNameLabel			= nil;
-	streetAddressTextView	= nil;
-	phoneStringLabel		= nil;
-	imageView				= nil;
-	
-    [super viewDidUnload];    
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
@@ -132,7 +169,8 @@
 	[streetAddressTextView	release];
 	[phoneStringLabel		release];
 	[imageView				release];
-
+	[actionButton			release];
 	[super dealloc];
 }
+
 @end
