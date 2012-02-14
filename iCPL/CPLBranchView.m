@@ -9,6 +9,14 @@
 #import "CPLBranchView.h"
 #import "CPLConstants.h"
 
+
+@interface CPLBranchView ()
+- (NSString *)formatStreetAddress:(NSString *)streetString zipCode:(NSString *)zipString;
+- (NSString *)formatPhoneStringAsUrl:(NSString *)phoneString;
+- (UIImage  *)loadBranchImage;
+@end
+
+
 @implementation CPLBranchView
 
 #pragma mark - Synthesizers
@@ -16,14 +24,8 @@
 @synthesize 
 	branchDetails, 
 	fullNameLabel, 
-	shortNameLabel, 
-	abbrevLabel, 
-	streetAddressLabel, 
-	zipCodeLabel, 
+	streetAddressTextView,  
 	phoneStringLabel, 
-	phoneUrlLabel, 
-	scheduleTypeLabel, 
-	endecaIdLabel, 
 	imageView;
 
 #pragma mark - Initialization
@@ -48,33 +50,53 @@
 	
 	// Set text labels.
 	fullNameLabel.text			= [branchDetails objectForKey:FULLNAME_KEY];
-	shortNameLabel.text			= [branchDetails objectForKey:SHORTNAME_KEY];
-	abbrevLabel.text			= [branchDetails objectForKey:ABBREV_KEY];
-	streetAddressLabel.text		= [branchDetails objectForKey:STREETADDRESS_KEY];
-	zipCodeLabel.text			= [branchDetails objectForKey:ZIPCODE_KEY];
+	streetAddressTextView.text	= [self formatStreetAddress:[branchDetails objectForKey:STREETADDRESS_KEY] 
+												    zipCode:[branchDetails objectForKey:ZIPCODE_KEY]];
 	phoneStringLabel.text		= [branchDetails objectForKey:PHONE_KEY];
-	phoneUrlLabel.text			= [branchDetails objectForKey:PHONE_KEY];
-	scheduleTypeLabel.text		= [branchDetails objectForKey:SCHEDULE_KEY];
-	endecaIdLabel.text			= [branchDetails objectForKey:ENDECA_KEY];
+	// phoneUrlLabel.text			= [self formatPhoneStringAsUrl:[branchDetails objectForKey:PHONE_KEY]];
 	
-	// Load the branch's image into the UIImageView.
-	NSString *theImagePath	= [NSString 
-							   stringWithFormat:@"branchimages/%@.png", 
-							   [branchDetails objectForKey:ABBREV_KEY] ];
-	UIImage  *theImage		= [UIImage imageNamed:theImagePath];	
+	[imageView setImage:[self loadBranchImage]];
+	[imageView setUserInteractionEnabled:NO];
+}
+
+#pragma mark - Custom methods
+
+- (NSString *)formatPhoneStringAsUrl:(NSString *)phoneString 
+{
+	NSString *phoneUrl;
 	
-	// Test to make sure the image loaded. If it didn't, use NONE.png instead.
-	if (theImage == nil) { // theImage failed to load (default state)
-		NSLog(@"UIImage *theImage failed to load.");
-		theImage = [UIImage imageWithContentsOfFile:
-					[[NSBundle mainBundle] pathForResource:@"NONE" 
-													ofType:@"png"]];
+	phoneUrl = [NSString stringWithFormat:@"tel://+%@", phoneString];
+	phoneUrl = [phoneUrl stringByReplacingOccurrencesOfString:@" " withString:@""];
+	phoneUrl = [phoneUrl stringByReplacingOccurrencesOfString:@"(" withString:@""];
+	phoneUrl = [phoneUrl stringByReplacingOccurrencesOfString:@")" withString:@""];
+	phoneUrl = [phoneUrl stringByReplacingOccurrencesOfString:@"-" withString:@""];
+	
+	NSLog(@"INSTANCE REPORT: String returned from formatPhoneStringAsUrl: %@", phoneUrl);
+	
+	return phoneUrl;
+}
+
+- (NSString *)formatStreetAddress:(NSString *)streetString zipCode:(NSString *)zipString
+{
+	return [NSString stringWithFormat:@"%@\nChicago, IL %@", streetString, zipString];
+}
+
+- (UIImage  *)loadBranchImage
+{
+	NSString *theImagePath = [NSString stringWithFormat:
+							  @"branchimages/%@.png", [branchDetails objectForKey:ABBREV_KEY] ];
+	UIImage  *image = [UIImage imageNamed: theImagePath];
+	
+	if (image == nil) {
+		NSLog(@"INSTANCE REPORT: branch image failed to load; using default image instead.");
+		image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] 
+												  pathForResource:@"NONE" 
+														ofType:@"png"]];
 	} else {
-		NSLog(@"UIImage *theImage loaded successfully");
+		NSLog(@"INSTANCE REPORT: branch image loaded successfully.");
 	}
 	
-	[imageView setImage:theImage];
-	[imageView setUserInteractionEnabled:NO];
+	return image;
 }
 
 #pragma mark - Cleanup
@@ -89,17 +111,11 @@
 
 - (void)viewDidUnload
 {
-	branchDetails		= nil;
-	fullNameLabel		= nil;
-	shortNameLabel		= nil;
-	abbrevLabel			= nil;
-	streetAddressLabel	= nil;
-	zipCodeLabel		= nil;
-	phoneStringLabel	= nil;
-	phoneUrlLabel		= nil;
-	scheduleTypeLabel	= nil;
-	endecaIdLabel		= nil;
-	imageView			= nil;
+	branchDetails			= nil;
+	fullNameLabel			= nil;
+	streetAddressTextView	= nil;
+	phoneStringLabel		= nil;
+	imageView				= nil;
 	
     [super viewDidUnload];    
 }
@@ -111,17 +127,11 @@
 }
 
 - (void)dealloc {
-	[branchDetails		release];
-	[fullNameLabel		release];
-	[shortNameLabel		release];
-	[abbrevLabel		release];
-	[streetAddressLabel	release];
-	[zipCodeLabel		release];
-	[phoneStringLabel	release];
-	[phoneUrlLabel		release];
-	[scheduleTypeLabel	release];
-	[endecaIdLabel		release];
-	[imageView			release];
+	[branchDetails			release];
+	[fullNameLabel			release];
+	[streetAddressTextView	release];
+	[phoneStringLabel		release];
+	[imageView				release];
 
 	[super dealloc];
 }
