@@ -14,6 +14,7 @@
 - (NSString *)formatStreetAddress:(NSString *)streetString zipCode:(NSString *)zipString;
 - (NSString *)formatPhoneStringAsUrl:(NSString *)phoneString;
 - (UIImage  *)loadBranchImage;
+- (NSString *)fillScheduleTextArea;
 @end
 
 
@@ -21,13 +22,14 @@
 
 #pragma mark - Synthesizers
 
-@synthesize 
-	branchDetails, 
-	fullNameLabel, 
-	streetAddressTextView,  
-	phoneStringLabel, 
-	imageView, 
-	actionButton;
+@synthesize branchDetails;
+@synthesize scrollView;
+@synthesize fullNameLabel;
+@synthesize streetAddressTextView;
+@synthesize phoneStringLabel;
+@synthesize imageView;
+@synthesize scheduleTextView;
+@synthesize actionButton;
 
 #pragma mark - Initialization
 
@@ -52,6 +54,10 @@
 	// Put the actionButton on the right side of the navigation bar.
 	self.navigationItem.rightBarButtonItem = self.actionButton;
 	
+	// Set up the UIScrollView.
+	[scrollView setScrollEnabled:YES];
+	[scrollView setContentSize:CGSizeMake(320, 575)];
+	
 	// Set text labels.
 	fullNameLabel.text			= [branchDetails objectForKey:FULLNAME_KEY];
 	streetAddressTextView.text	= [self formatStreetAddress:[branchDetails objectForKey:STREETADDRESS_KEY] 
@@ -60,17 +66,20 @@
 	
 	[imageView setImage:[self loadBranchImage]];
 	[imageView setUserInteractionEnabled:NO];
+	
+	scheduleTextView.text		= [self fillScheduleTextArea];
 }
 
 - (void)viewDidUnload
 {
-	branchDetails			= nil;
-	fullNameLabel			= nil;
-	streetAddressTextView	= nil;
-	phoneStringLabel		= nil;
-	imageView				= nil;
-	actionButton			= nil;
-	
+	branchDetails         = nil;
+	fullNameLabel         = nil;
+	streetAddressTextView = nil;
+	phoneStringLabel      = nil;
+	imageView             = nil;
+	actionButton          = nil;
+	scheduleTextView      = nil;
+	scrollView            = nil;
     [super viewDidUnload];    
 }
 
@@ -147,6 +156,37 @@
 	return image;
 }
 
+- (NSString *)fillScheduleTextArea
+{
+	NSString *scheduleOutput;
+	int scheduleInt = [[branchDetails objectForKey:SCHEDULE_KEY] intValue];
+	
+	switch (scheduleInt) {
+		case 1:
+			scheduleOutput = @"2:00 p.m.—6:00 p.m.\n12:00 p.m.—8:00 p.m.\n10:00 a.m.—6:00 p.m.\n12:00 p.m.—8:00 p.m.\n9:00 a.m.—5:00 p.m.\n9:00 a.m.—5:00 p.m.\nClosed";
+			break;
+		case 2:
+			scheduleOutput = @"2:00 p.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n12:00 p.m.—8:00 p.m.\n10:00 a.m.—6:00 p.m.\n9:00 a.m.—5:00 p.m.\n9:00 a.m.—5:00 p.m.\nClosed";
+			break;
+		case 3:
+			scheduleOutput = @"2:00 p.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n9:00 a.m.—5:00 p.m.\nClosed\nClosed";
+			break;
+		case 4:
+			scheduleOutput = @"9:00 a.m.—9:00 p.m.\n9:00 a.m.—9:00 p.m.\n9:00 a.m.—9:00 p.m.\n9:00 a.m.—9:00 p.m.\n9:00 a.m.—5:00 p.m.\n9:00 a.m.—5:00 p.m.\n1:00 p.m.—5:00 p.m.";
+			break;
+		case 5:
+			scheduleOutput = @"9:00 a.m.—7:00 p.m.\n9:00 a.m.—7:00 p.m.\n9:00 a.m.—7:00 p.m.\n9:00 a.m.—7:00 p.m.\n9:00 a.m.—5:00 p.m.\n9:00 a.m.—5:00 p.m.\n1:00 p.m.—5:00 p.m.";
+			break;
+		case 0:
+		default:
+			scheduleOutput = @"Not Currently Open\nNot Currently Open\nNot Currently Open\nNot Currently Open\nNot Currently Open\nNot Currently Open\nNot Currently Open";
+			break;
+	}
+	
+	NSLog(@"INSTANCE REPORT: scheduleOutput is: %@", scheduleOutput);
+	return scheduleOutput;
+}
+
 #pragma mark - Cleanup
 
 - (void)didReceiveMemoryWarning
@@ -164,12 +204,14 @@
 }
 
 - (void)dealloc {
-	[branchDetails			release];
-	[fullNameLabel			release];
-	[streetAddressTextView	release];
-	[phoneStringLabel		release];
-	[imageView				release];
-	[actionButton			release];
+	[branchDetails          release];
+	[scrollView             release];
+	[fullNameLabel          release];
+	[streetAddressTextView  release];
+	[phoneStringLabel       release];
+	[imageView              release];
+	[actionButton           release];
+	[scheduleTextView       release];
 	[super dealloc];
 }
 
