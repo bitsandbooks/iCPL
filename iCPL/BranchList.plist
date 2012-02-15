@@ -20,7 +20,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-1933</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60625</string>
 	</dict>
@@ -42,7 +42,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-3270</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60827</string>
 	</dict>
@@ -64,7 +64,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-9241</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60632</string>
 	</dict>
@@ -86,7 +86,7 @@
 		<key>phone</key>
 		<string>1 (312) 746-5038</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60644</string>
 	</dict>
@@ -108,7 +108,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-6222</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60634</string>
 	</dict>
@@ -130,7 +130,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-5234</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60617</string>
 	</dict>
@@ -152,7 +152,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-9673</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60643</string>
 	</dict>
@@ -174,7 +174,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-0019</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60640</string>
 	</dict>
@@ -196,7 +196,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-0511</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60615</string>
 	</dict>
@@ -218,7 +218,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-6291</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60620</string>
 	</dict>
@@ -240,7 +240,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-0666</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60632</string>
 	</dict>
@@ -262,7 +262,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-6022</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60647</string>
 	</dict>
@@ -284,7 +284,7 @@
 		<key>phone</key>
 		<string>1 (312) 742-9590</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60659</string>
 	</dict>
@@ -306,7 +306,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-0644</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60609</string>
 	</dict>
@@ -328,7 +328,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-6872</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60609</string>
 	</dict>
@@ -350,7 +350,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-0639</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60629</string>
 	</dict>
@@ -372,7 +372,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-8013</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60616</string>
 	</dict>
@@ -394,7 +394,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-5657</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60638</string>
 	</dict>
@@ -416,7 +416,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-7760</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60637</string>
 	</dict>
@@ -438,7 +438,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-8990</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60608</string>
 	</dict>
@@ -460,7 +460,7 @@
 		<key>phone</key>
 		<string>1 (312) 743-0555</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60612</string>
 	</dict>
@@ -482,7 +482,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-3725</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60623</string>
 	</dict>
@@ -504,7 +504,7 @@
 		<key>phone</key>
 		<string>1 (312) 743-0480</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60634</string>
 	</dict>
@@ -526,7 +526,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-8313</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60646</string>
 	</dict>
@@ -548,7 +548,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-0032</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60632</string>
 	</dict>
@@ -570,7 +570,7 @@
 		<key>phone</key>
 		<string>1 (312) 746-0165</string>
 		<key>scheduleType</key>
-		<string>G</string>
+		<string>3</string>
 		<key>zipCode</key>
 		<string>60707</string>
 	</dict>
@@ -592,7 +592,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-6094</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60638</string>
 	</dict>
@@ -614,7 +614,7 @@
 		<key>phone</key>
 		<string>1 (312) 745-1608</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60619</string>
 	</dict>
@@ -636,7 +636,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-2541</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60615</string>
 	</dict>
@@ -658,7 +658,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-4300</string>
 		<key>scheduleType</key>
-		<string>R</string>
+		<string>4</string>
 		<key>zipCode</key>
 		<string>60605</string>
 	</dict>
@@ -680,7 +680,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-0046</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60633</string>
 	</dict>
@@ -702,7 +702,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-2244</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60647</string>
 	</dict>
@@ -724,7 +724,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-0900</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60618</string>
 	</dict>
@@ -746,7 +746,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-1998</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60630</string>
 	</dict>
@@ -768,7 +768,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-6479</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60617</string>
 	</dict>
@@ -790,7 +790,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-8418</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60621</string>
 	</dict>
@@ -812,7 +812,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-7543</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60616</string>
 	</dict>
@@ -834,7 +834,7 @@
 		<key>phone</key>
 		<string>1 (312) 746-7730</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60624</string>
 	</dict>
@@ -856,7 +856,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-0166</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60657</string>
 	</dict>
@@ -878,7 +878,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-1926</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60614</string>
 	</dict>
@@ -900,7 +900,7 @@
 		<key>phone</key>
 		<string>1 (312) 745-1862</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60623</string>
 	</dict>
@@ -922,7 +922,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-5295</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60647</string>
 	</dict>
@@ -944,7 +944,7 @@
 		<key>phone</key>
 		<string>1 (312) 746-4329</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60608</string>
 	</dict>
@@ -966,7 +966,7 @@
 		<key>phone</key>
 		<string>1 (312) 746-6800</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60612</string>
 	</dict>
@@ -988,7 +988,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-1254</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60630</string>
 	</dict>
@@ -1010,7 +1010,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-6082</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60609</string>
 	</dict>
@@ -1032,7 +1032,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-1139</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60657</string>
 	</dict>
@@ -1054,7 +1054,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-2805</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60655</string>
 	</dict>
@@ -1076,7 +1076,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-0991</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60610</string>
 	</dict>
@@ -1098,7 +1098,7 @@
 		<key>phone</key>
 		<string>1 (312) 746-4233</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60639</string>
 	</dict>
@@ -1120,7 +1120,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-9573</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60639</string>
 	</dict>
@@ -1142,7 +1142,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-2292</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60645</string>
 	</dict>
@@ -1164,7 +1164,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-1965</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60656</string>
 	</dict>
@@ -1186,7 +1186,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-0152</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60641</string>
 	</dict>
@@ -1208,7 +1208,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-2033</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60628</string>
 	</dict>
@@ -1230,7 +1230,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-1478</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60631</string>
 	</dict>
@@ -1252,7 +1252,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-0156</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60626</string>
 	</dict>
@@ -1274,7 +1274,7 @@
 		<key>phone</key>
 		<string>1 (312) 746-5656</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60607</string>
 	</dict>
@@ -1296,7 +1296,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-0193</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60652</string>
 	</dict>
@@ -1318,7 +1318,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-0477</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60609</string>
 	</dict>
@@ -1340,7 +1340,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-8065</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60617</string>
 	</dict>
@@ -1362,7 +1362,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-5281</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60649</string>
 	</dict>
@@ -1384,7 +1384,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-7616</string>
 		<key>scheduleType</key>
-		<string>R</string>
+		<string>4</string>
 		<key>zipCode</key>
 		<string>60625</string>
 	</dict>
@@ -1406,7 +1406,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-5927</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60620</string>
 	</dict>
@@ -1428,7 +1428,7 @@
 		<key>phone</key>
 		<string>1 (312) 745-1660</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60623</string>
 	</dict>
@@ -1450,7 +1450,7 @@
 		<key>phone</key>
 		<string>1 (312) 744-8400</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60613</string>
 	</dict>
@@ -1472,7 +1472,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-5500</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60617</string>
 	</dict>
@@ -1494,7 +1494,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-1920</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60643</string>
 	</dict>
@@ -1516,7 +1516,7 @@
 		<key>phone</key>
 		<string>1 (312) 742-8811</string>
 		<key>scheduleType</key>
-		<string>W</string>
+		<string>5</string>
 		<key>zipCode</key>
 		<string>60611</string>
 	</dict>
@@ -1538,7 +1538,7 @@
 		<key>phone</key>
 		<string>1 (312) 746-5142</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60634</string>
 	</dict>
@@ -1560,7 +1560,7 @@
 		<key>phone</key>
 		<string>1 (312) 743-0260</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60651</string>
 	</dict>
@@ -1582,7 +1582,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-3481</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60636</string>
 	</dict>
@@ -1604,7 +1604,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-7381</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60629</string>
 	</dict>
@@ -1626,7 +1626,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-1425</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60643</string>
 	</dict>
@@ -1648,7 +1648,7 @@
 		<key>phone</key>
 		<string>1 (312) 743-0450</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60622</string>
 	</dict>
@@ -1670,7 +1670,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-0039</string>
 		<key>scheduleType</key>
-		<string>A</string>
+		<string>1</string>
 		<key>zipCode</key>
 		<string>60619</string>
 	</dict>
@@ -1692,7 +1692,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-6900</string>
 		<key>scheduleType</key>
-		<string>R</string>
+		<string>4</string>
 		<key>zipCode</key>
 		<string>60628</string>
 	</dict>
@@ -1714,7 +1714,7 @@
 		<key>phone</key>
 		<string>1 (312) 747-2696</string>
 		<key>scheduleType</key>
-		<string>B</string>
+		<string>2</string>
 		<key>zipCode</key>
 		<string>60652</string>
 	</dict>
