@@ -37,17 +37,12 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
 	
 	self.navigationItem.title = @"Home";
 }
 
-- (void)viewDidUnload
-{
-    [showBranchListingButton release],	showBranchListingButton	= nil;
-	
-	[super viewDidUnload];
-}
+- (void)viewDidUnload { [super viewDidUnload]; }
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -79,7 +74,7 @@
 
 - (void)dealloc 
 {
-    [showBranchListingButton release];
+    [showBranchListingButton release], showBranchListingButton	= nil;
     [super dealloc];
 }
 @end

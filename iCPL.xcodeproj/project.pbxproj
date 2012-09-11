@@ -43,7 +43,7 @@
 		D437415414E47062004F03B8 /* CPLBranchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLBranchView.m; sourceTree = "<group>"; };
 		D437415514E47062004F03B8 /* CPLBranchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPLBranchView.xib; sourceTree = "<group>"; };
 		D441D4F214CE39FF00FBF71A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		D441D50514CE3A7300FBF71A /* CPLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; path = CPLConstants.h; sourceTree = "<group>"; };
+		D441D50514CE3A7300FBF71A /* CPLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLConstants.h; sourceTree = "<group>"; };
 		D48F70AE14CDF82000ABB169 /* iCPL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCPL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48F70B214CDF82000ABB169 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D48F70B414CDF82000ABB169 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,7 +52,7 @@
 		D48F70BC14CDF82000ABB169 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D48F70BE14CDF82000ABB169 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D48F70C014CDF82000ABB169 /* iCPL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iCPL-Prefix.pch"; sourceTree = "<group>"; };
-		D48F70C114CDF82000ABB169 /* CPLAppDelegate.h */ = {isa = PBXFileReference; path = CPLAppDelegate.h; sourceTree = "<group>"; };
+		D48F70C114CDF82000ABB169 /* CPLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPLAppDelegate.h; sourceTree = "<group>"; };
 		D48F70C214CDF82000ABB169 /* CPLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPLAppDelegate.m; sourceTree = "<group>"; };
 		D49D21EC14E9F3F900F59067 /* BranchList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BranchList.plist; sourceTree = "<group>"; };
 		D49EE39A14E9BC4000198FF6 /* CPLBranchListingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLBranchListingView.h; sourceTree = "<group>"; };
@@ -354,10 +354,13 @@
 		D48F70CD14CDF82000ABB169 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCPL/iCPL-Prefix.pch";
 				INFOPLIST_FILE = "iCPL/iCPL-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -365,10 +368,13 @@
 		D48F70CE14CDF82000ABB169 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCPL/iCPL-Prefix.pch";
 				INFOPLIST_FILE = "iCPL/iCPL-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

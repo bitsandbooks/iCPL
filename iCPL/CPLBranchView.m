@@ -11,8 +11,9 @@
 
 
 @interface CPLBranchView ()
-- (NSString *)formatStreetAddress:(NSString *)streetString zipCode:(NSString *)zipString;
-- (NSString *)formatPhoneStringAsUrl:(NSString *)phoneString;
+- (NSString *)formatStreetAddress;
+- (NSString *)formatPhoneStringAsUrl;
+- (NSString *)formatPhoneStringForPhoneButton;
 - (UIImage  *)loadBranchImage;
 - (NSString *)fillScheduleTextArea;
 @end
@@ -26,10 +27,13 @@
 @synthesize scrollView;
 @synthesize fullNameLabel;
 @synthesize streetAddressTextView;
-@synthesize phoneStringLabel;
 @synthesize imageView;
 @synthesize scheduleTextView;
 @synthesize actionButton;
+@synthesize phoneButton;
+@synthesize mapButton;
+@synthesize addToContactsButton;
+@synthesize addToFavoriteBranchesButton;
 
 #pragma mark - Initialization
 
@@ -46,7 +50,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
     
 	// Give the view a title for the navigation bar.
 	self.navigationItem.title	= [branchDetails objectForKey:SHORTNAME_KEY];
@@ -54,33 +58,21 @@
 	// Put the actionButton on the right side of the navigation bar.
 	self.navigationItem.rightBarButtonItem = self.actionButton;
 	
-	// Set up the UIScrollView.
-	[scrollView setScrollEnabled:YES];
-	[scrollView setContentSize:CGSizeMake(320, 575)];
+	// Set up the scrollView.
+  self.scrollView.contentSize = self.view.frame.size;
+  self.scrollView.scrollEnabled = YES;
 	
 	// Set text labels.
-	fullNameLabel.text			= [branchDetails objectForKey:FULLNAME_KEY];
-	streetAddressTextView.text	= [self formatStreetAddress:[branchDetails objectForKey:STREETADDRESS_KEY] 
-												    zipCode:[branchDetails objectForKey:ZIPCODE_KEY]];
-	phoneStringLabel.text		= [branchDetails objectForKey:PHONE_KEY];
-	
+	fullNameLabel.text = [branchDetails objectForKey:FULLNAME_KEY];
+	streetAddressTextView.text = [self formatStreetAddress];
+  
 	[imageView setImage:[self loadBranchImage]];
 	[imageView setUserInteractionEnabled:NO];
 	
 	scheduleTextView.text		= [self fillScheduleTextArea];
-}
-
-- (void)viewDidUnload
-{
-	branchDetails         = nil;
-	fullNameLabel         = nil;
-	streetAddressTextView = nil;
-	phoneStringLabel      = nil;
-	imageView             = nil;
-	actionButton          = nil;
-	scheduleTextView      = nil;
-	scrollView            = nil;
-    [super viewDidUnload];    
+  
+  [phoneButton setTitle:[self formatPhoneStringForPhoneButton]
+               forState:UIControlStateNormal];
 }
 
 #pragma mark - UIActionSheet setup
@@ -95,7 +87,7 @@
 	switch (buttonIndex) {
 		case 0: // Calling the branch.
 			NSLog(@"User tapped 'Call this branch' button");
-			NSString *thePhoneUrl = [self formatPhoneStringAsUrl:[branchDetails objectForKey:PHONE_KEY]];
+			NSString *thePhoneUrl = [self formatPhoneStringAsUrl];
 			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:thePhoneUrl]];
 			break;
 	} // end switch
@@ -106,23 +98,46 @@
 - (IBAction)actionButtonTapped:(id)sender
 {
 	NSLog(@"INSTANCE REPORT: actionButton tapped.");
+  
+  NSString *callThisBranchButtonTitle = [NSString stringWithFormat:@"%@%@", @"Call: ", [branchDetails objectForKey:PHONE_KEY]];
+  
 	UIActionSheet *branchActionSheet = [[UIActionSheet alloc]
 										initWithTitle:@"What would you like to do?" 
 										delegate:self 
 										cancelButtonTitle:@"Cancel" 
 										destructiveButtonTitle:nil 
-										otherButtonTitles:@"Call this branch", nil];
+										otherButtonTitles:callThisBranchButtonTitle, nil];
 	[branchActionSheet showInView:self.view];
 	[branchActionSheet release];
 }
 
+- (IBAction)phoneButtonTapped:(id)sender
+{
+    NSLog(@"INSTANCE REPORT: phoneButton tapped.");
+    NSString *thePhoneUrl = [self formatPhoneStringAsUrl];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:thePhoneUrl]];
+}
+
+- (IBAction)mapButtonTapped:(id)sender
+{
+  // Do something!
+}
+- (IBAction)addToContactsButtonTapped:(id)sender
+{
+  // Do something!
+}
+- (IBAction)addToFavoriteBranchesButtonTapped:(id)sender
+{
+  // Do something!
+}
+
 #pragma mark - Custom methods
 
-- (NSString *)formatPhoneStringAsUrl:(NSString *)phoneString 
+- (NSString *)formatPhoneStringAsUrl 
 {
 	NSString *phoneUrl;
 	
-	phoneUrl = [NSString stringWithFormat:@"tel://+%@", phoneString];
+	phoneUrl = [NSString stringWithFormat:@"tel://+1%@", [branchDetails objectForKey:PHONE_KEY]];
 	phoneUrl = [phoneUrl stringByReplacingOccurrencesOfString:@" " withString:@""];
 	phoneUrl = [phoneUrl stringByReplacingOccurrencesOfString:@"(" withString:@""];
 	phoneUrl = [phoneUrl stringByReplacingOccurrencesOfString:@")" withString:@""];
@@ -133,9 +148,21 @@
 	return phoneUrl;
 }
 
-- (NSString *)formatStreetAddress:(NSString *)streetString zipCode:(NSString *)zipString
+- (NSString *)formatPhoneStringForPhoneButton
 {
-	return [NSString stringWithFormat:@"%@\nChicago, IL %@", streetString, zipString];
+  NSString *phoneButtonText = [NSString stringWithFormat:@"Call: %@",
+                               [branchDetails objectForKey:PHONE_KEY]];
+    
+  NSLog(@"INSTANCE REPORT: String returned from formatPhoneStringForPhoneButton: %@", phoneButtonText);
+  
+  return phoneButtonText;
+}
+
+- (NSString *)formatStreetAddress
+{
+	return [NSString stringWithFormat:@"%@\nChicago, IL %@",
+          [branchDetails objectForKey:STREETADDRESS_KEY],
+          [branchDetails objectForKey:ZIPCODE_KEY]];
 }
 
 - (UIImage  *)loadBranchImage
@@ -162,23 +189,23 @@
 	int scheduleInt = [[branchDetails objectForKey:SCHEDULE_KEY] intValue];
 	
 	switch (scheduleInt) {
-		case 1:
-			scheduleOutput = @"2:00 p.m.—6:00 p.m.\n12:00 p.m.—8:00 p.m.\n10:00 a.m.—6:00 p.m.\n12:00 p.m.—8:00 p.m.\n9:00 a.m.—5:00 p.m.\n9:00 a.m.—5:00 p.m.\nClosed";
+		case 1: // "A" branches
+			scheduleOutput = @"10:00 a.m.—6:00 p.m.\n12:00 p.m.—8:00 p.m.\n10:00 a.m.—6:00 p.m.\n12:00 p.m.—8:00 p.m.\n9:00 a.m.—5:00 p.m.\n9:00 a.m.—5:00 p.m.\nClosed";
 			break;
-		case 2:
-			scheduleOutput = @"2:00 p.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n12:00 p.m.—8:00 p.m.\n10:00 a.m.—6:00 p.m.\n9:00 a.m.—5:00 p.m.\n9:00 a.m.—5:00 p.m.\nClosed";
+		case 2: // "B" branches
+			scheduleOutput = @"12:00 p.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n12:00 p.m.—8:00 p.m.\n10:00 a.m.—6:00 p.m.\n9:00 a.m.—5:00 p.m.\n9:00 a.m.—5:00 p.m.\nClosed";
 			break;
-		case 3:
-			scheduleOutput = @"2:00 p.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n9:00 a.m.—5:00 p.m.\nClosed\nClosed";
+		case 3: // "G" branches
+			scheduleOutput = @"10:00 a.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n9:00 a.m.—5:00 p.m.\nClosed\nClosed";
 			break;
-		case 4:
+		case 4: // "R" branches
 			scheduleOutput = @"9:00 a.m.—9:00 p.m.\n9:00 a.m.—9:00 p.m.\n9:00 a.m.—9:00 p.m.\n9:00 a.m.—9:00 p.m.\n9:00 a.m.—5:00 p.m.\n9:00 a.m.—5:00 p.m.\n1:00 p.m.—5:00 p.m.";
 			break;
-		case 5:
+		case 5: // "W" branches
 			scheduleOutput = @"9:00 a.m.—7:00 p.m.\n9:00 a.m.—7:00 p.m.\n9:00 a.m.—7:00 p.m.\n9:00 a.m.—7:00 p.m.\n9:00 a.m.—5:00 p.m.\n9:00 a.m.—5:00 p.m.\n1:00 p.m.—5:00 p.m.";
 			break;
 		case 0:
-		default:
+		default: // "N" branches
 			scheduleOutput = @"Not Currently Open\nNot Currently Open\nNot Currently Open\nNot Currently Open\nNot Currently Open\nNot Currently Open\nNot Currently Open";
 			break;
 	}
@@ -204,15 +231,22 @@
 }
 
 - (void)dealloc {
-	[branchDetails          release];
-	[scrollView             release];
-	[fullNameLabel          release];
-	[streetAddressTextView  release];
-	[phoneStringLabel       release];
-	[imageView              release];
-	[actionButton           release];
-	[scheduleTextView       release];
+	[branchDetails                release], branchDetails               = nil;
+	[fullNameLabel                release], fullNameLabel               = nil;
+	[streetAddressTextView        release], streetAddressTextView       = nil;
+	[imageView                    release], imageView                   = nil;
+	[actionButton                 release], actionButton                = nil;
+	[scheduleTextView             release], scheduleTextView            = nil;
+  [phoneButton                  release], phoneButton                 = nil;
+  [mapButton                    release], mapButton                   = nil;
+  [scrollView                   release], scrollView                  = nil;
+  [addToContactsButton          release], addToContactsButton         = nil;
+  [addToFavoriteBranchesButton  release], addToFavoriteBranchesButton = nil;
+  
 	[super dealloc];
 }
 
+- (void)viewDidUnload {
+  [super viewDidUnload];
+}
 @end
