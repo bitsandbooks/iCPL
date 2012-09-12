@@ -4,8 +4,10 @@
 <dict>
 	<key>A</key>
 	<dict>
-		<key>Monday</key>
+		<key>Sunday</key>
 		<string>Closed</string>
+		<key>Monday</key>
+		<string>10:00 a.m.—6:00 p.m.</string>
 		<key>Tuesday</key>
 		<string>12:00 p.m.—8:00 p.m.</string>
 		<key>Wednesday</key>
@@ -16,13 +18,13 @@
 		<string>9:00 a.m.—5:00 p.m.</string>
 		<key>Saturday</key>
 		<string>9:00 a.m.—5:00 p.m.</string>
-		<key>Sunday</key>
-		<string>Closed</string>
 	</dict>
 	<key>B</key>
 	<dict>
-		<key>Monday</key>
+		<key>Sunday</key>
 		<string>Closed</string>
+		<key>Monday</key>
+		<string>12:00 p.m.—8:00 p.m.</string>
 		<key>Tuesday</key>
 		<string>10:00 a.m.—6:00 p.m.</string>
 		<key>Wednesday</key>
@@ -33,13 +35,13 @@
 		<string>9:00 a.m.—5:00 p.m.</string>
 		<key>Saturday</key>
 		<string>9:00 a.m.—5:00 p.m.</string>
-		<key>Sunday</key>
-		<string>Closed</string>
 	</dict>
 	<key>G</key>
 	<dict>
-		<key>Monday</key>
+		<key>Sunday</key>
 		<string>Closed</string>
+		<key>Monday</key>
+		<string>10:00 a.m.—6:00 p.m.</string>
 		<key>Tuesday</key>
 		<string>10:00 a.m.—6:00 p.m.</string>
 		<key>Wednesday</key>
@@ -49,14 +51,29 @@
 		<key>Friday</key>
 		<string>9:00 a.m.—5:00 p.m.</string>
 		<key>Saturday</key>
-		<string>Closed</string>
-		<key>Sunday</key>
 		<string>Closed</string>
 	</dict>
 	<key>N</key>
-	<string>Not Currently Open</string>
+	<dict>
+		<key>Sunday</key>
+		<string>Closed</string>
+		<key>Monday</key>
+		<string>Closed</string>
+		<key>Tuesday</key>
+		<string>Closed</string>
+		<key>Wednesday</key>
+		<string>Closed</string>
+		<key>Thursday</key>
+		<string>Closed</string>
+		<key>Friday</key>
+		<string>Closed</string>
+		<key>Saturday</key>
+		<string>Closed</string>
+	</dict>
 	<key>R</key>
 	<dict>
+		<key>Sunday</key>
+		<string>1:00 p.m.—5:00 p.m.</string>
 		<key>Monday</key>
 		<string>9:00 a.m.—9:00 p.m.</string>
 		<key>Tuesday</key>
@@ -69,11 +86,11 @@
 		<string>9:00 a.m.—5:00 p.m.</string>
 		<key>Saturday</key>
 		<string>9:00 a.m.—5:00 p.m.</string>
-		<key>Sunday</key>
-		<string>1:00 p.m.—5:00 p.m.</string>
 	</dict>
 	<key>W</key>
 	<dict>
+		<key>Sunday</key>
+		<string>1:00 p.m.—5:00 p.m.</string>
 		<key>Monday</key>
 		<string>9:00 a.m.—7:00 p.m.</string>
 		<key>Tuesday</key>
@@ -86,8 +103,6 @@
 		<string>9:00 a.m.—5:00 p.m.</string>
 		<key>Saturday</key>
 		<string>9:00 a.m.—5:00 p.m.</string>
-		<key>Sunday</key>
-		<string>1:00 p.m.—5:00 p.m.</string>
 	</dict>
 </dict>
 </plist>

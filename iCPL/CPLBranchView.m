@@ -185,33 +185,26 @@
 
 - (NSString *)fillScheduleTextArea
 {
-	NSString *scheduleOutput;
-	int scheduleInt = [[branchDetails objectForKey:SCHEDULE_KEY] intValue];
-	
-	switch (scheduleInt) {
-		case 1: // "A" branches
-			scheduleOutput = @"10:00 a.m.—6:00 p.m.\n12:00 p.m.—8:00 p.m.\n10:00 a.m.—6:00 p.m.\n12:00 p.m.—8:00 p.m.\n9:00 a.m.—5:00 p.m.\n9:00 a.m.—5:00 p.m.\nClosed";
-			break;
-		case 2: // "B" branches
-			scheduleOutput = @"12:00 p.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n12:00 p.m.—8:00 p.m.\n10:00 a.m.—6:00 p.m.\n9:00 a.m.—5:00 p.m.\n9:00 a.m.—5:00 p.m.\nClosed";
-			break;
-		case 3: // "G" branches
-			scheduleOutput = @"10:00 a.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n10:00 a.m.—6:00 p.m.\n9:00 a.m.—5:00 p.m.\nClosed\nClosed";
-			break;
-		case 4: // "R" branches
-			scheduleOutput = @"9:00 a.m.—9:00 p.m.\n9:00 a.m.—9:00 p.m.\n9:00 a.m.—9:00 p.m.\n9:00 a.m.—9:00 p.m.\n9:00 a.m.—5:00 p.m.\n9:00 a.m.—5:00 p.m.\n1:00 p.m.—5:00 p.m.";
-			break;
-		case 5: // "W" branches
-			scheduleOutput = @"9:00 a.m.—7:00 p.m.\n9:00 a.m.—7:00 p.m.\n9:00 a.m.—7:00 p.m.\n9:00 a.m.—7:00 p.m.\n9:00 a.m.—5:00 p.m.\n9:00 a.m.—5:00 p.m.\n1:00 p.m.—5:00 p.m.";
-			break;
-		case 0:
-		default: // "N" branches
-			scheduleOutput = @"Not Currently Open\nNot Currently Open\nNot Currently Open\nNot Currently Open\nNot Currently Open\nNot Currently Open\nNot Currently Open";
-			break;
-	}
-	
-	NSLog(@"INSTANCE REPORT: scheduleOutput is: %@", scheduleOutput);
-	return scheduleOutput;
+	NSArray *openTimes = [NSArray arrayWithObjects:
+                        @"1:00 p.m. — 5:00 p.m.", // 0: Sunday
+                        @"9:00 a.m. — 9:00 p.m.", // 1: Monday
+                        @"9:00 a.m. — 9:00 p.m.", // 2: Tuesday
+                        @"9:00 a.m. — 9:00 p.m.", // 3: Wednesday
+                        @"9:00 a.m. — 9:00 p.m.", // 4: Thursday
+                        @"9:00 a.m. — 5:00 p.m.", // 5: Friday
+                        @"9:00 a.m. — 5:00 p.m.", // 6: Saturday
+                        nil];
+  
+  NSUInteger dayOfWeek = ([[NSCalendar currentCalendar]
+                           ordinalityOfUnit:NSDayCalendarUnit
+                                     inUnit:NSWeekCalendarUnit
+                                    forDate:[NSDate date]] - 1);
+  
+  NSString *scheduleToday = [openTimes objectAtIndex:(dayOfWeek)];
+  
+  NSLog(@"INSTANCE REPORT: dayOfWeek = %u, scheduleToday = %@", (dayOfWeek), scheduleToday);
+  
+  return scheduleToday;
 }
 
 #pragma mark - Cleanup

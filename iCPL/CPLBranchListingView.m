@@ -146,10 +146,10 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
 	
-	NSDictionary *branch = [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
+	NSDictionary *branchDictionary = [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
     
     // Configure the cell...
-	cell.textLabel.text = [branch objectForKey:SHORTNAME_KEY];
+	cell.textLabel.text = [branchDictionary objectForKey:SHORTNAME_KEY];
 	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
