@@ -532,6 +532,28 @@
 	</dict>
 	<dict>
 		<key>abbrev</key>
+		<string>EGWATR</string>
+		<key>streetAddress</key>
+		<string>5917 N. Broadway Street</string>
+		<key>endecaBranch</key>
+		<string>94</string>
+		<key>geoLat</key>
+		<string>41.989532</string>
+		<key>geoLong</key>
+		<string>-87.660252</string>
+		<key>longName</key>
+		<string>Edgewater</string>
+		<key>shortName</key>
+		<string>Edgewater</string>
+		<key>phone</key>
+		<string>(312) 744-XXXX</string>
+		<key>scheduleType</key>
+		<string>0</string>
+		<key>zipCode</key>
+		<string>60660</string>
+	</dict>
+	<dict>
+		<key>abbrev</key>
 		<string>GAGEPK</string>
 		<key>streetAddress</key>
 		<string>2807 W 55th St</string>

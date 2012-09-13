@@ -35,7 +35,7 @@
     self.navigationItem.title = @"Branches";
 	
 	// Initialize array of branches from plist.
-	NSString *path = [[NSBundle mainBundle] pathForResource:BRANCHLIST_KEY ofType:@"plist"];
+	NSString *path = [[NSBundle mainBundle] pathForResource:BRANCHLIST_FILE ofType:@"plist"];
 	NSLog(@"%@", path);
 	NSArray *tempArray = [[NSArray alloc] initWithContentsOfFile:path];
 	self.branchListing = tempArray;
@@ -159,7 +159,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CPLBranchView *branchView = [[CPLBranchView alloc] initWithNibName:@"CPLBranchView" bundle:nil];
+  CPLBranchView *branchView = [[CPLBranchView alloc] initWithNibName:@"CPLBranchView" bundle:nil];
 	branchView.branchDetails = [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
 	NSLog(@"Branch passed to *branchView: %@", [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row]);
 	

@@ -8,6 +8,7 @@
 
 #import "CPLBranchView.h"
 #import "CPLConstants.h"
+#import "CPLBranchFullScheduleView.h"
 
 
 @interface CPLBranchView ()
@@ -15,7 +16,7 @@
 - (NSString *)formatPhoneStringAsUrl;
 - (NSString *)formatPhoneStringForPhoneButton;
 - (UIImage  *)loadBranchImage;
-- (NSString *)fillScheduleTextArea;
+- (NSString *)fillScheduleLabel;
 @end
 
 
@@ -28,12 +29,13 @@
 @synthesize fullNameLabel;
 @synthesize streetAddressTextView;
 @synthesize imageView;
-@synthesize scheduleTextView;
-@synthesize actionButton;
+@synthesize scheduleLabel;
+@synthesize fullScheduleButton;
 @synthesize phoneButton;
 @synthesize mapButton;
 @synthesize addToContactsButton;
 @synthesize addToFavoriteBranchesButton;
+@synthesize actionButton;
 
 #pragma mark - Initialization
 
@@ -69,7 +71,7 @@
 	[imageView setImage:[self loadBranchImage]];
 	[imageView setUserInteractionEnabled:NO];
 	
-	scheduleTextView.text		= [self fillScheduleTextArea];
+	scheduleLabel.text = [self fillScheduleLabel];
   
   [phoneButton setTitle:[self formatPhoneStringForPhoneButton]
                forState:UIControlStateNormal];
@@ -95,20 +97,29 @@
 
 #pragma mark - IBActions
 
-- (IBAction)actionButtonTapped:(id)sender
+- (IBAction)fullScheduleButtonTapped:(id)sender
 {
-	NSLog(@"INSTANCE REPORT: actionButton tapped.");
+  NSDictionary *tempDict =
+  [[NSDictionary alloc] initWithContentsOfFile:
+   [[NSBundle mainBundle] pathForResource:SERVICEHOURS_FILE
+                                   ofType:@"plist"]];
   
-  NSString *callThisBranchButtonTitle = [NSString stringWithFormat:@"%@%@", @"Call: ", [branchDetails objectForKey:PHONE_KEY]];
+  NSArray *tempSchedule = [tempDict objectForKey:[branchDetails objectForKey:SCHEDULE_KEY]];
   
-	UIActionSheet *branchActionSheet = [[UIActionSheet alloc]
-										initWithTitle:@"What would you like to do?" 
-										delegate:self 
-										cancelButtonTitle:@"Cancel" 
-										destructiveButtonTitle:nil 
-										otherButtonTitles:callThisBranchButtonTitle, nil];
-	[branchActionSheet showInView:self.view];
-	[branchActionSheet release];
+  NSMutableString *tempFullSchedule = [NSMutableString stringWithFormat:@""];
+  
+  for (int i = 0; i < [tempSchedule count]; i++) {
+    [tempFullSchedule appendFormat:@"%@\n", [tempSchedule objectAtIndex:i]];
+  }
+
+  CPLBranchFullScheduleView *fullScheduleView = [[CPLBranchFullScheduleView alloc] initWithNibName:@"CPLBranchFullScheduleView" bundle:nil];
+  
+  
+  fullScheduleView.fullScheduleText = tempFullSchedule;
+  [tempFullSchedule release];
+
+  [self.navigationController pushViewController:fullScheduleView animated:YES];
+  [fullScheduleView release];
 }
 
 - (IBAction)phoneButtonTapped:(id)sender
@@ -122,13 +133,31 @@
 {
   // Do something!
 }
+
 - (IBAction)addToContactsButtonTapped:(id)sender
 {
   // Do something!
 }
+
 - (IBAction)addToFavoriteBranchesButtonTapped:(id)sender
 {
   // Do something!
+}
+
+- (IBAction)actionButtonTapped:(id)sender
+{
+	NSLog(@"INSTANCE REPORT: actionButton tapped.");
+  
+  NSString *callThisBranchButtonTitle = [NSString stringWithFormat:@"%@%@", @"Call: ", [branchDetails objectForKey:PHONE_KEY]];
+  
+	UIActionSheet *branchActionSheet = [[UIActionSheet alloc]
+                                      initWithTitle:@"What would you like to do?"
+                                      delegate:self
+                                      cancelButtonTitle:@"Cancel"
+                                      destructiveButtonTitle:nil
+                                      otherButtonTitles:callThisBranchButtonTitle, nil];
+	[branchActionSheet showInView:self.view];
+	[branchActionSheet release];
 }
 
 #pragma mark - Custom methods
@@ -183,24 +212,23 @@
 	return image;
 }
 
-- (NSString *)fillScheduleTextArea
-{
-	NSArray *openTimes = [NSArray arrayWithObjects:
-                        @"1:00 p.m. — 5:00 p.m.", // 0: Sunday
-                        @"9:00 a.m. — 9:00 p.m.", // 1: Monday
-                        @"9:00 a.m. — 9:00 p.m.", // 2: Tuesday
-                        @"9:00 a.m. — 9:00 p.m.", // 3: Wednesday
-                        @"9:00 a.m. — 9:00 p.m.", // 4: Thursday
-                        @"9:00 a.m. — 5:00 p.m.", // 5: Friday
-                        @"9:00 a.m. — 5:00 p.m.", // 6: Saturday
-                        nil];
+- (NSString *)fillScheduleLabel
+{  
+	NSDictionary *allSchedules =
+  [[NSDictionary alloc] initWithContentsOfFile:
+   [[NSBundle mainBundle] pathForResource:SERVICEHOURS_FILE
+                                   ofType:@"plist"]];
+  
+  NSArray *branchSchedule =
+  [allSchedules objectForKey:[branchDetails objectForKey:SCHEDULE_KEY]];
   
   NSUInteger dayOfWeek = ([[NSCalendar currentCalendar]
                            ordinalityOfUnit:NSDayCalendarUnit
                                      inUnit:NSWeekCalendarUnit
                                     forDate:[NSDate date]] - 1);
   
-  NSString *scheduleToday = [openTimes objectAtIndex:(dayOfWeek)];
+  NSString *scheduleToday = [NSString stringWithFormat:@"%@ today",
+                             [branchSchedule objectAtIndex:(dayOfWeek)]];
   
   NSLog(@"INSTANCE REPORT: dayOfWeek = %u, scheduleToday = %@", (dayOfWeek), scheduleToday);
   
@@ -223,23 +251,23 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)dealloc {
+- (void)viewDidUnload {
 	[branchDetails                release], branchDetails               = nil;
+  [scrollView                   release], scrollView                  = nil;
+	[imageView                    release], imageView                   = nil;
 	[fullNameLabel                release], fullNameLabel               = nil;
 	[streetAddressTextView        release], streetAddressTextView       = nil;
-	[imageView                    release], imageView                   = nil;
-	[actionButton                 release], actionButton                = nil;
-	[scheduleTextView             release], scheduleTextView            = nil;
+  [scheduleLabel                release], scheduleLabel               = nil;
+  [fullNameLabel                release], fullNameLabel               = nil;
   [phoneButton                  release], phoneButton                 = nil;
   [mapButton                    release], mapButton                   = nil;
-  [scrollView                   release], scrollView                  = nil;
   [addToContactsButton          release], addToContactsButton         = nil;
   [addToFavoriteBranchesButton  release], addToFavoriteBranchesButton = nil;
+	[actionButton                 release], actionButton                = nil;
   
-	[super dealloc];
-}
-
-- (void)viewDidUnload {
   [super viewDidUnload];
 }
+
+- (void)dealloc { [super dealloc]; }
+
 @end

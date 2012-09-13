@@ -16,6 +16,8 @@
 		D4124AEA14EA1B9C00A244C2 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = D4124AE914EA1B9C00A244C2 /* 114.png */; };
 		D437415614E47062004F03B8 /* CPLBranchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D437415414E47062004F03B8 /* CPLBranchView.m */; };
 		D437415714E47062004F03B8 /* CPLBranchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D437415514E47062004F03B8 /* CPLBranchView.xib */; };
+		D438B36F16012C7A00C11B77 /* CPLBranchFullScheduleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D438B36D16012C7A00C11B77 /* CPLBranchFullScheduleView.m */; };
+		D438B37016012C7A00C11B77 /* CPLBranchFullScheduleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D438B36E16012C7A00C11B77 /* CPLBranchFullScheduleView.xib */; };
 		D441D4F314CE39FF00FBF71A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D441D4F214CE39FF00FBF71A /* CoreLocation.framework */; };
 		D48F70B314CDF82000ABB169 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B214CDF82000ABB169 /* UIKit.framework */; };
 		D48F70B514CDF82000ABB169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B414CDF82000ABB169 /* Foundation.framework */; };
@@ -42,6 +44,9 @@
 		D437415314E47062004F03B8 /* CPLBranchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLBranchView.h; sourceTree = "<group>"; };
 		D437415414E47062004F03B8 /* CPLBranchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLBranchView.m; sourceTree = "<group>"; };
 		D437415514E47062004F03B8 /* CPLBranchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPLBranchView.xib; sourceTree = "<group>"; };
+		D438B36C16012C7A00C11B77 /* CPLBranchFullScheduleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLBranchFullScheduleView.h; sourceTree = "<group>"; };
+		D438B36D16012C7A00C11B77 /* CPLBranchFullScheduleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLBranchFullScheduleView.m; sourceTree = "<group>"; };
+		D438B36E16012C7A00C11B77 /* CPLBranchFullScheduleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPLBranchFullScheduleView.xib; sourceTree = "<group>"; };
 		D441D4F214CE39FF00FBF71A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D441D50514CE3A7300FBF71A /* CPLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLConstants.h; sourceTree = "<group>"; };
 		D48F70AE14CDF82000ABB169 /* iCPL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCPL.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,12 +134,23 @@
 			name = "Launch Images";
 			sourceTree = "<group>";
 		};
+		D438B37216012C7F00C11B77 /* CPLBranchFullScheduleView */ = {
+			isa = PBXGroup;
+			children = (
+				D438B36C16012C7A00C11B77 /* CPLBranchFullScheduleView.h */,
+				D438B36D16012C7A00C11B77 /* CPLBranchFullScheduleView.m */,
+				D438B36E16012C7A00C11B77 /* CPLBranchFullScheduleView.xib */,
+			);
+			name = CPLBranchFullScheduleView;
+			sourceTree = "<group>";
+		};
 		D441D50A14CE3A8900FBF71A /* Branch View */ = {
 			isa = PBXGroup;
 			children = (
 				D437415314E47062004F03B8 /* CPLBranchView.h */,
 				D437415414E47062004F03B8 /* CPLBranchView.m */,
 				D437415514E47062004F03B8 /* CPLBranchView.xib */,
+				D438B37216012C7F00C11B77 /* CPLBranchFullScheduleView */,
 			);
 			name = "Branch View";
 			sourceTree = "<group>";
@@ -276,6 +292,7 @@
 				D4124AE614EA1B9200A244C2 /* Default@2x.png in Resources */,
 				D4124AE814EA1B9800A244C2 /* 57.png in Resources */,
 				D4124AEA14EA1B9C00A244C2 /* 114.png in Resources */,
+				D438B37016012C7A00C11B77 /* CPLBranchFullScheduleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +308,7 @@
 				D4FB071A14CDFB6500FE4B0D /* CPLFirstView.m in Sources */,
 				D437415614E47062004F03B8 /* CPLBranchView.m in Sources */,
 				D49EE39D14E9BC4000198FF6 /* CPLBranchListingView.m in Sources */,
+				D438B36F16012C7A00C11B77 /* CPLBranchFullScheduleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

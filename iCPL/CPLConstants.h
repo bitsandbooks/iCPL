@@ -13,7 +13,8 @@
 #define METERS_PER_MILE		1609.344
 
 // File constants
-#define BRANCHLIST_KEY		@"BranchList"
+#define BRANCHLIST_FILE		@"BranchList"
+#define SERVICEHOURS_FILE @"ServiceHours"
 
 // CPLBranch field constants. Correspond to keys in BranchList.plist.
 #define FULLNAME_KEY		@"longName"
