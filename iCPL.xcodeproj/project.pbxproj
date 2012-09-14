@@ -19,6 +19,7 @@
 		D438B36F16012C7A00C11B77 /* CPLBranchFullScheduleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D438B36D16012C7A00C11B77 /* CPLBranchFullScheduleView.m */; };
 		D438B37016012C7A00C11B77 /* CPLBranchFullScheduleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D438B36E16012C7A00C11B77 /* CPLBranchFullScheduleView.xib */; };
 		D441D4F314CE39FF00FBF71A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D441D4F214CE39FF00FBF71A /* CoreLocation.framework */; };
+		D482C2871601650D005A2FD0 /* CPLBranch.m in Sources */ = {isa = PBXBuildFile; fileRef = D482C2861601650D005A2FD0 /* CPLBranch.m */; };
 		D48F70B314CDF82000ABB169 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B214CDF82000ABB169 /* UIKit.framework */; };
 		D48F70B514CDF82000ABB169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B414CDF82000ABB169 /* Foundation.framework */; };
 		D48F70B714CDF82000ABB169 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B614CDF82000ABB169 /* CoreGraphics.framework */; };
@@ -49,6 +50,8 @@
 		D438B36E16012C7A00C11B77 /* CPLBranchFullScheduleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPLBranchFullScheduleView.xib; sourceTree = "<group>"; };
 		D441D4F214CE39FF00FBF71A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D441D50514CE3A7300FBF71A /* CPLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLConstants.h; sourceTree = "<group>"; };
+		D482C2851601650D005A2FD0 /* CPLBranch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLBranch.h; sourceTree = "<group>"; };
+		D482C2861601650D005A2FD0 /* CPLBranch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLBranch.m; sourceTree = "<group>"; };
 		D48F70AE14CDF82000ABB169 /* iCPL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCPL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48F70B214CDF82000ABB169 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D48F70B414CDF82000ABB169 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,6 +101,7 @@
 		D4124ADF14EA1B0700A244C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D482C283160164E0005A2FD0 /* CPLBranch */,
 				D4FB071614CDFA8400FE4B0D /* First View */,
 				D49EE39814E9BC1200198FF6 /* Branch Listing */,
 				D441D50A14CE3A8900FBF71A /* Branch View */,
@@ -153,6 +157,15 @@
 				D438B37216012C7F00C11B77 /* CPLBranchFullScheduleView */,
 			);
 			name = "Branch View";
+			sourceTree = "<group>";
+		};
+		D482C283160164E0005A2FD0 /* CPLBranch */ = {
+			isa = PBXGroup;
+			children = (
+				D482C2851601650D005A2FD0 /* CPLBranch.h */,
+				D482C2861601650D005A2FD0 /* CPLBranch.m */,
+			);
+			name = CPLBranch;
 			sourceTree = "<group>";
 		};
 		D48F70A314CDF82000ABB169 = {
@@ -309,6 +322,7 @@
 				D437415614E47062004F03B8 /* CPLBranchView.m in Sources */,
 				D49EE39D14E9BC4000198FF6 /* CPLBranchListingView.m in Sources */,
 				D438B36F16012C7A00C11B77 /* CPLBranchFullScheduleView.m in Sources */,
+				D482C2871601650D005A2FD0 /* CPLBranch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

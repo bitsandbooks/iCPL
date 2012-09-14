@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class CPLBranch;
+
 @interface CPLBranchView : UIViewController <UIActionSheetDelegate> {
-	NSDictionary *branchDetails;
+  CPLBranch *branch;
   IBOutlet UIScrollView *scrollView;
   IBOutlet UIImageView *imageView;
 	IBOutlet UILabel *fullNameLabel;
@@ -30,17 +32,17 @@
 - (IBAction)addToContactsButtonTapped:(id)sender;
 - (IBAction)addToFavoriteBranchesButtonTapped:(id)sender;
 
-@property (retain, nonatomic) NSDictionary *branchDetails;
-@property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (retain, nonatomic) IBOutlet UIImageView *imageView;
-@property (retain, nonatomic) IBOutlet UILabel *fullNameLabel;
-@property (retain, nonatomic) IBOutlet UITextView *streetAddressTextView;
-@property (retain, nonatomic) IBOutlet UILabel *scheduleLabel;
-@property (retain, nonatomic) IBOutlet UIButton *fullScheduleButton;
-@property (retain, nonatomic) IBOutlet UIButton *phoneButton;
-@property (retain, nonatomic) IBOutlet UIButton *mapButton;
-@property (retain, nonatomic) IBOutlet UIButton *addToContactsButton;
-@property (retain, nonatomic) IBOutlet UIButton *addToFavoriteBranchesButton;
-@property (retain, nonatomic) IBOutlet UIBarButtonItem *actionButton;
+@property (nonatomic, retain) CPLBranch *branch;
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, retain) IBOutlet UIImageView *imageView;
+@property (nonatomic, retain) IBOutlet UILabel *fullNameLabel;
+@property (nonatomic, retain) IBOutlet UITextView *streetAddressTextView;
+@property (nonatomic, retain) IBOutlet UILabel *scheduleLabel;
+@property (nonatomic, retain) IBOutlet UIButton *fullScheduleButton;
+@property (nonatomic, retain) IBOutlet UIButton *phoneButton;
+@property (nonatomic, retain) IBOutlet UIButton *mapButton;
+@property (nonatomic, retain) IBOutlet UIButton *addToContactsButton;
+@property (nonatomic, retain) IBOutlet UIButton *addToFavoriteBranchesButton;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *actionButton;
 
 @end

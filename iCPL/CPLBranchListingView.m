@@ -9,6 +9,7 @@
 #import "CPLBranchListingView.h"
 #import "CPLBranchView.h"
 #import "CPLConstants.h"
+#import "CPLBranch.h"
 
 @implementation CPLBranchListingView
 
@@ -36,39 +37,54 @@
 	
 	// Initialize array of branches from plist.
 	NSString *path = [[NSBundle mainBundle] pathForResource:BRANCHLIST_FILE ofType:@"plist"];
-	NSLog(@"%@", path);
-	NSArray *tempArray = [[NSArray alloc] initWithContentsOfFile:path];
-	self.branchListing = tempArray;
-	[tempArray release];
+	
+  // Read the file into a temporary array.
+  NSArray *tempArray = [[NSArray alloc] initWithContentsOfFile:path];
+  
+  // Now create a new array of CPLBranch objects.
+  NSMutableArray *secondArray = [[NSMutableArray alloc] initWithCapacity:[tempArray count]];
+  
+  for (int i = 0; i < [tempArray count]; i++) {
+    NSDictionary *tempDict = [[NSDictionary alloc] initWithDictionary:
+                              [tempArray objectAtIndex:i]];
+    CPLBranch *newBranch = [[CPLBranch alloc] initFromDictionary:tempDict];
+    [secondArray addObject:newBranch]; // Add the new CPLBranch object to the array.
+    [tempDict release];
+    [newBranch release]; // Do we even need to do this?
+  } // end for loop
+  
+	self.branchListing = secondArray;
+	[secondArray release];
+  [tempArray   release];
 	
 	// Create sections.
 	self.sections = [[NSMutableDictionary alloc] init];
 	BOOL found; 
 	
 	// Loop through the branches and create the keys.
-    for (NSDictionary *branch in self.branchListing) {
-        NSString *c = [[branch objectForKey:SHORTNAME_KEY] substringToIndex:1];
-        found = NO;
-        
-        for (NSString *str in [self.sections allKeys]) {
-            if ([str isEqualToString:c]) {
-                found = YES;
-            }
-        }
+  for (CPLBranch *b in self.branchListing) {
+    NSString *c = [b.shortName substringToIndex:1];
+    found = NO;
+    
+    for (NSString *str in [self.sections allKeys]) {
+      if ([str isEqualToString:c]) {
+        found = YES;
+      }
+    }
 		
 		if (!found) {
-			[self.sections setValue:[[NSMutableArray alloc] init] forKey:c];
+      [self.sections setValue:[[NSMutableArray alloc] init] forKey:c];
 		}
-    }
+  } // end for loop
 	
 	// Loop through again and sort the branches into their respective keys.
-	for (NSDictionary *branch in self.branchListing) {
-		[[self.sections objectForKey:[[branch objectForKey:SHORTNAME_KEY] substringToIndex:1]] addObject:branch];
+	for (CPLBranch *b in self.branchListing) {
+		[[self.sections objectForKey:[b.shortName substringToIndex:1]] addObject:b];
 	}
 	
 	// Sort each section array.
 	for (NSString *key in [self.sections allKeys]) {
-		[[self.sections objectForKey:key] sortUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:SHORTNAME_KEY ascending:YES]]];
+		[[self.sections objectForKey:key] sortUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:SHORTNAME_KEY ascending:YES]]]; // Huh?
 	}
 	
 	[super viewDidLoad];
@@ -128,8 +144,7 @@
 	return v;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	return [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section]] count];
 }
 
@@ -137,22 +152,23 @@
 	return [[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  static NSString *CellIdentifier = @"Cell";
+  
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+  if (cell == nil) {
+    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                   reuseIdentifier:CellIdentifier] autorelease];
+  }
 	
-	NSDictionary *branchDictionary = [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
+  
+  CPLBranch *b = [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
     
     // Configure the cell...
-	cell.textLabel.text = [branchDictionary objectForKey:SHORTNAME_KEY];
+	cell.textLabel.text = b.shortName;
 	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
-    return cell;
+  return cell;
 }
 
 #pragma mark - Table view delegate
@@ -160,8 +176,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
   CPLBranchView *branchView = [[CPLBranchView alloc] initWithNibName:@"CPLBranchView" bundle:nil];
-	branchView.branchDetails = [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
-	NSLog(@"Branch passed to *branchView: %@", [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row]);
+  
+	branchView.branch = [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
 	
 	// Push the selected object onto the stack.
 	[self.navigationController pushViewController:branchView animated:YES];

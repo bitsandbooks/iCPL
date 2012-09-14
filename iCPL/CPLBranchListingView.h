@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class CPLBranch;
+
 @interface CPLBranchListingView : UITableViewController {
 	NSArray *branchListing;
 	NSMutableDictionary *sections;

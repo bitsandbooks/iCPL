@@ -13,8 +13,7 @@
 
 @synthesize showBranchListingButton;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
 		
@@ -25,8 +24,7 @@
     return self;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     
@@ -35,8 +33,7 @@
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
   [super viewDidLoad];
 	
 	self.navigationItem.title = @"Home";
@@ -44,36 +41,29 @@
 
 - (void)viewDidUnload { [super viewDidUnload]; }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
 	[self.navigationController setNavigationBarHidden:YES animated:animated];
 	[super viewWillAppear:animated];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
 	[self.navigationController setNavigationBarHidden:NO animated:animated];
 	[super viewWillDisappear:animated];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)showBranchListingButtonTapped:(id)sender 
-{
-	NSLog(@"Branch Listing button tapped.");
-	
+- (IBAction)showBranchListingButtonTapped:(id)sender  {
 	// Load new view and push it onto the stack.
 	CPLBranchListingView *branchListingView = [[CPLBranchListingView alloc] initWithNibName:@"CPLBranchListingView" bundle:nil];
 	[self.navigationController pushViewController:branchListingView animated:YES];
 	[branchListingView release];
 }
 
-- (void)dealloc 
-{
+- (void)dealloc {
     [showBranchListingButton release], showBranchListingButton	= nil;
     [super dealloc];
 }
