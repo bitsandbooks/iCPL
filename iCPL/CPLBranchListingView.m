@@ -84,7 +84,7 @@
 	
 	// Sort each section array.
 	for (NSString *key in [self.sections allKeys]) {
-		[[self.sections objectForKey:key] sortUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:SHORTNAME_KEY ascending:YES]]]; // Huh?
+		[[self.sections objectForKey:key] sortUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:SHORTNAME_KEY ascending:YES]]]; // Huh?
 	}
 	
 	[super viewDidLoad];
