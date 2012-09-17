@@ -23,8 +23,7 @@
 
 #pragma mark - Initialization
 
-- (id)initFromDictionary:(NSDictionary *)dictionary
-{
+- (id)initFromDictionary:(NSDictionary *)dictionary {
   self.longName       =  [dictionary objectForKey:FULLNAME_KEY];
   self.shortName      =  [dictionary objectForKey:SHORTNAME_KEY];
   self.abbrev         =  [dictionary objectForKey:ABBREV_KEY];
@@ -102,26 +101,8 @@
     [fullString appendFormat:@"%@\n", [tempSchedule objectAtIndex:i]];
   }  
   
-  [tempDict release];
   
   return fullString;
-}
-
-
-#pragma mark - Clean-up
-
-- (void)dealloc {
-  [longName       release], longName      = nil;
-  [shortName      release], shortName     = nil;
-  [abbrev         release], abbrev        = nil;
-  [streetAddress  release], streetAddress = nil;
-  [zipCode        release], zipCode       = nil;
-  [phone          release], phone         = nil;
-  [endecaBranch   release], endecaBranch  = nil;
-  [scheduleType   release], scheduleType  = nil;
-  // coords is not an object and so does not get released.
-  
-  [super dealloc];
 }
 
 @end

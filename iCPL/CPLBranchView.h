@@ -32,17 +32,17 @@
 - (IBAction)addToContactsButtonTapped:(id)sender;
 - (IBAction)addToFavoriteBranchesButtonTapped:(id)sender;
 
-@property (nonatomic, retain) CPLBranch *branch;
-@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
-@property (nonatomic, retain) IBOutlet UIImageView *imageView;
-@property (nonatomic, retain) IBOutlet UILabel *fullNameLabel;
-@property (nonatomic, retain) IBOutlet UITextView *streetAddressTextView;
-@property (nonatomic, retain) IBOutlet UILabel *scheduleLabel;
-@property (nonatomic, retain) IBOutlet UIButton *fullScheduleButton;
-@property (nonatomic, retain) IBOutlet UIButton *phoneButton;
-@property (nonatomic, retain) IBOutlet UIButton *mapButton;
-@property (nonatomic, retain) IBOutlet UIButton *addToContactsButton;
-@property (nonatomic, retain) IBOutlet UIButton *addToFavoriteBranchesButton;
-@property (nonatomic, retain) IBOutlet UIBarButtonItem *actionButton;
+@property (strong, nonatomic) CPLBranch *branch;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UILabel *fullNameLabel;
+@property (strong, nonatomic) IBOutlet UITextView *streetAddressTextView;
+@property (strong, nonatomic) IBOutlet UILabel *scheduleLabel;
+@property (strong, nonatomic) IBOutlet UIButton *fullScheduleButton;
+@property (strong, nonatomic) IBOutlet UIButton *phoneButton;
+@property (strong, nonatomic) IBOutlet UIButton *mapButton;
+@property (strong, nonatomic) IBOutlet UIButton *addToContactsButton;
+@property (strong, nonatomic) IBOutlet UIButton *addToFavoriteBranchesButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *actionButton;
 
 @end

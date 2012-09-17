@@ -49,13 +49,9 @@
                               [tempArray objectAtIndex:i]];
     CPLBranch *newBranch = [[CPLBranch alloc] initFromDictionary:tempDict];
     [secondArray addObject:newBranch]; // Add the new CPLBranch object to the array.
-    [tempDict release];
-    [newBranch release]; // Do we even need to do this?
   } // end for loop
   
 	self.branchListing = secondArray;
-	[secondArray release];
-  [tempArray   release];
 	
 	// Create sections.
 	self.sections = [[NSMutableDictionary alloc] init];
@@ -130,10 +126,10 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-	UIView *v = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)] autorelease];
+	UIView *v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
 	[v setBackgroundColor:[UIColor colorWithRed:0.0 green:0.3 blue:0.0 alpha:0.7]];
 	
-	UILabel *l = [[[UILabel alloc] initWithFrame:CGRectMake(10, 3, tableView.bounds.size.width - 10, 18)] autorelease];
+	UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(10, 3, tableView.bounds.size.width - 10, 18)];
 	l.text = [tableView.dataSource tableView:tableView titleForHeaderInSection:section];
 	l.textColor = [UIColor whiteColor];
 	l.font = [UIFont boldSystemFontOfSize:20];
@@ -157,8 +153,8 @@
   
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
   if (cell == nil) {
-    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                   reuseIdentifier:CellIdentifier] autorelease];
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                   reuseIdentifier:CellIdentifier];
   }
 	
   
@@ -181,7 +177,6 @@
 	
 	// Push the selected object onto the stack.
 	[self.navigationController pushViewController:branchView animated:YES];
-	[branchView release];
 }
 
 #pragma mark - Cleanup
@@ -202,14 +197,6 @@
 	
 	branchListing = nil;
 	sections = nil;
-}
-
-
-- (void)dealloc
-{
-	[branchListing release];
-	[sections release];
-	[super dealloc];
 }
 
 @end

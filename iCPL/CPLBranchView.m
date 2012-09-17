@@ -94,7 +94,6 @@
                                       destructiveButtonTitle:nil
                                       otherButtonTitles:callBranchButtonTitle, nil];
 	[branchActionSheet showInView:self.view];
-	[branchActionSheet release];
 }
 
 - (IBAction)fullScheduleButtonTapped:(id)sender {
@@ -105,7 +104,6 @@
   fullScheduleView.fullScheduleText = branch.scheduleFull;
 
   [self.navigationController pushViewController:fullScheduleView animated:YES];
-  [fullScheduleView release];
 }
 
 - (IBAction)phoneButtonTapped:(id)sender {
@@ -139,22 +137,20 @@
 }
 
 - (void)viewDidUnload {
-  [branch                       release], branch                      = nil;
-  [scrollView                   release], scrollView                  = nil;
-	[imageView                    release], imageView                   = nil;
-	[fullNameLabel                release], fullNameLabel               = nil;
-	[streetAddressTextView        release], streetAddressTextView       = nil;
-  [scheduleLabel                release], scheduleLabel               = nil;
-  [fullNameLabel                release], fullNameLabel               = nil;
-  [phoneButton                  release], phoneButton                 = nil;
-  [mapButton                    release], mapButton                   = nil;
-  [addToContactsButton          release], addToContactsButton         = nil;
-  [addToFavoriteBranchesButton  release], addToFavoriteBranchesButton = nil;
-	[actionButton                 release], actionButton                = nil;
+  branch                      = nil;
+  scrollView                  = nil;
+  imageView                   = nil;
+  fullNameLabel               = nil;
+  streetAddressTextView       = nil;
+  scheduleLabel               = nil;
+  fullNameLabel               = nil;
+  phoneButton                 = nil;
+  mapButton                   = nil;
+  addToContactsButton         = nil;
+  addToFavoriteBranchesButton = nil;
+  actionButton                = nil;
   
   [super viewDidUnload];
 }
-
-- (void)dealloc { [super dealloc]; }
 
 @end

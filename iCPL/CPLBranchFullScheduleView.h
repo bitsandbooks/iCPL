@@ -13,7 +13,7 @@
   IBOutlet UITextView *fullScheduleTextView;
 }
 
-@property (retain, nonatomic) NSString *fullScheduleText;
-@property (retain, nonatomic) IBOutlet UITextView *fullScheduleTextView;
+@property (strong, nonatomic) NSString *fullScheduleText;
+@property (strong, nonatomic) IBOutlet UITextView *fullScheduleTextView;
 
 @end

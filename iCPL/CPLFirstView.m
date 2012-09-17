@@ -60,11 +60,6 @@
 	// Load new view and push it onto the stack.
 	CPLBranchListingView *branchListingView = [[CPLBranchListingView alloc] initWithNibName:@"CPLBranchListingView" bundle:nil];
 	[self.navigationController pushViewController:branchListingView animated:YES];
-	[branchListingView release];
 }
 
-- (void)dealloc {
-    [showBranchListingButton release], showBranchListingButton	= nil;
-    [super dealloc];
-}
 @end

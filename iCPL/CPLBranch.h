@@ -27,14 +27,14 @@
 - (NSString *)scheduleToday;
 - (NSString *)scheduleFull;
 
-@property (nonatomic, strong) NSString *longName;
-@property (nonatomic, strong) NSString *shortName;
-@property (nonatomic, strong) NSString *abbrev;
-@property (nonatomic, strong) NSString *streetAddress;
-@property (nonatomic, strong) NSString *zipCode;
-@property (nonatomic, strong) NSString *phone;
-@property (nonatomic, strong) NSString *endecaBranch;
-@property (nonatomic, strong) NSString *scheduleType;
-@property (nonatomic, assign) CLLocationCoordinate2D coords;
+@property (strong, nonatomic) NSString *longName;
+@property (strong, nonatomic) NSString *shortName;
+@property (strong, nonatomic) NSString *abbrev;
+@property (strong, nonatomic) NSString *streetAddress;
+@property (strong, nonatomic) NSString *zipCode;
+@property (strong, nonatomic) NSString *phone;
+@property (strong, nonatomic) NSString *endecaBranch;
+@property (strong, nonatomic) NSString *scheduleType;
+@property (assign, nonatomic) CLLocationCoordinate2D coords;
 
 @end

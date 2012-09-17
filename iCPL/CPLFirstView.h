@@ -12,7 +12,7 @@
 	IBOutlet UIButton *showBranchListingButton;
 }
 
-@property (retain, nonatomic) IBOutlet UIButton *showBranchListingButton;
+@property (strong, nonatomic) IBOutlet UIButton *showBranchListingButton;
 
 - (IBAction)showBranchListingButtonTapped:(id)sender;
 

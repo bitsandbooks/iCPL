@@ -37,12 +37,10 @@
 
 - (void)viewDidUnload
 {
-  [fullScheduleText     release], fullScheduleText     = nil;
-  [fullScheduleTextView release], fullScheduleTextView = nil;
+  fullScheduleText     = nil;
+  fullScheduleTextView = nil;
   
   [super viewDidUnload];
 }
-
-- (void)dealloc { [super dealloc]; }
 
 @end
