@@ -56,7 +56,7 @@
   self.scrollView.scrollEnabled = YES;
 	
 	// Set text labels.
-	fullNameLabel.text = branch.longName;
+	fullNameLabel.text = branch.fullName;
 	streetAddressTextView.text = [NSString stringWithFormat:@"%@\nChicago, IL %@",
                                 branch.streetAddress, branch.zipCode];
   scheduleLabel.text = branch.scheduleToday;

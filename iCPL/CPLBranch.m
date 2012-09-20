@@ -11,7 +11,7 @@
 
 @implementation CPLBranch
 
-@synthesize longName;
+@synthesize fullName;
 @synthesize shortName;
 @synthesize abbrev;
 @synthesize streetAddress;
@@ -24,7 +24,7 @@
 #pragma mark - Initialization
 
 - (id)initFromDictionary:(NSDictionary *)dictionary {
-  self.longName       =  [dictionary objectForKey:FULLNAME_KEY];
+  self.fullName       =  [dictionary objectForKey:FULLNAME_KEY];
   self.shortName      =  [dictionary objectForKey:SHORTNAME_KEY];
   self.abbrev         =  [dictionary objectForKey:ABBREV_KEY];
   self.streetAddress  =  [dictionary objectForKey:STREETADDRESS_KEY];

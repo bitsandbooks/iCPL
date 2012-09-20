@@ -10,7 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 
 @interface CPLBranch : NSObject {
-  NSString  *longName,
+  NSString  *fullName,
             *shortName,
             *abbrev,
             *streetAddress,
@@ -27,7 +27,7 @@
 - (NSString *)scheduleToday;
 - (NSString *)scheduleFull;
 
-@property (strong, nonatomic) NSString *longName;
+@property (strong, nonatomic) NSString *fullName;
 @property (strong, nonatomic) NSString *shortName;
 @property (strong, nonatomic) NSString *abbrev;
 @property (strong, nonatomic) NSString *streetAddress;

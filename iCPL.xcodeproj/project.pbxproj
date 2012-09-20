@@ -101,10 +101,8 @@
 		D4124ADF14EA1B0700A244C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D482C283160164E0005A2FD0 /* CPLBranch */,
 				D4FB071614CDFA8400FE4B0D /* First View */,
 				D49EE39814E9BC1200198FF6 /* Branch Listing */,
-				D441D50A14CE3A8900FBF71A /* Branch View */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -227,6 +225,8 @@
 				D49EE39A14E9BC4000198FF6 /* CPLBranchListingView.h */,
 				D49EE39B14E9BC4000198FF6 /* CPLBranchListingView.m */,
 				D49EE39C14E9BC4000198FF6 /* CPLBranchListingView.xib */,
+				D482C283160164E0005A2FD0 /* CPLBranch */,
+				D441D50A14CE3A8900FBF71A /* Branch View */,
 			);
 			name = "Branch Listing";
 			sourceTree = "<group>";
