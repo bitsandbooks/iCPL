@@ -1,5 +1,7 @@
 # To Do #
 
-1. Display branch's hours today.
-2. Get directions to branch.
-3. Refactor CPLBranchView. Create general-use class called CPLBranch.
+1. Implement Core Location.
+  a. Drop pin on user's current location.
+  b. Drop pins on all locations.
+  c. Get directions to branch.
+  d. Find nearest location.
