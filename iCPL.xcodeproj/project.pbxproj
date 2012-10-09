@@ -101,6 +101,7 @@
 		D4124ADF14EA1B0700A244C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D482C283160164E0005A2FD0 /* CPLBranch */,
 				D4FB071614CDFA8400FE4B0D /* First View */,
 				D49EE39814E9BC1200198FF6 /* Branch Listing */,
 			);
@@ -225,7 +226,6 @@
 				D49EE39A14E9BC4000198FF6 /* CPLBranchListingView.h */,
 				D49EE39B14E9BC4000198FF6 /* CPLBranchListingView.m */,
 				D49EE39C14E9BC4000198FF6 /* CPLBranchListingView.xib */,
-				D482C283160164E0005A2FD0 /* CPLBranch */,
 				D441D50A14CE3A8900FBF71A /* Branch View */,
 			);
 			name = "Branch Listing";
@@ -388,12 +388,14 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robert Dumas (9FU86X98Z8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCPL/iCPL-Prefix.pch";
 				INFOPLIST_FILE = "iCPL/iCPL-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DBBE3535-CBD4-4019-90B6-E487B835B46F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -407,6 +409,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCPL/iCPL-Prefix.pch";
 				INFOPLIST_FILE = "iCPL/iCPL-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

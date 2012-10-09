@@ -26,6 +26,7 @@
 @synthesize mapButton;
 @synthesize addToContactsButton;
 @synthesize addToFavoriteBranchesButton;
+@synthesize branchWebViewButton;
 @synthesize actionButton;
 
 #pragma mark - Initialization
@@ -122,6 +123,10 @@
   // Do something!
 }
 
+- (IBAction)branchWebViewButtonTapped:(id)sender {
+  // Do something!
+}
+
 #pragma mark - Cleanup
 
 - (void)didReceiveMemoryWarning {
@@ -148,6 +153,7 @@
   mapButton                   = nil;
   addToContactsButton         = nil;
   addToFavoriteBranchesButton = nil;
+  branchWebViewButton         = nil;
   actionButton                = nil;
   
   [super viewDidUnload];

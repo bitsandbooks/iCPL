@@ -25,6 +25,7 @@
 #define ABBREV_KEY        @"abbrev"
 #define SCHEDULE_KEY      @"scheduleType"
 #define ENDECA_KEY        @"endecaBranch"
+#define URL_KEY           @"url"
 #define LATITUDE_KEY      @"geoLat"
 #define LONGITUDE_KEY     @"geoLong"
 

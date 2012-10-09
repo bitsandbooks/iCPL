@@ -17,7 +17,8 @@
             *zipCode,
             *phone,
             *endecaBranch,
-            *scheduleType;
+            *scheduleType,
+            *url;
   CLLocationCoordinate2D coords;
 }
 
@@ -35,6 +36,7 @@
 @property (strong, nonatomic) NSString *phone;
 @property (strong, nonatomic) NSString *endecaBranch;
 @property (strong, nonatomic) NSString *scheduleType;
+@property (strong, nonatomic) NSString *url;
 @property (assign, nonatomic) CLLocationCoordinate2D coords;
 
 @end

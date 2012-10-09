@@ -20,10 +20,13 @@
 @synthesize endecaBranch;
 @synthesize coords;
 @synthesize scheduleType;
+@synthesize url;
 
 #pragma mark - Initialization
 
 - (id)initFromDictionary:(NSDictionary *)dictionary {
+  coords.latitude     = [[dictionary objectForKey:LATITUDE_KEY]  doubleValue];
+  coords.longitude    = [[dictionary objectForKey:LONGITUDE_KEY] doubleValue];
   self.fullName       =  [dictionary objectForKey:FULLNAME_KEY];
   self.shortName      =  [dictionary objectForKey:SHORTNAME_KEY];
   self.abbrev         =  [dictionary objectForKey:ABBREV_KEY];
@@ -32,8 +35,9 @@
   self.phone          =  [dictionary objectForKey:PHONE_KEY];
   self.endecaBranch   =  [dictionary objectForKey:ENDECA_KEY];
   self.scheduleType   =  [dictionary objectForKey:SCHEDULE_KEY];
-  coords.latitude     = [[dictionary objectForKey:LATITUDE_KEY]  doubleValue];
-  coords.longitude    = [[dictionary objectForKey:LONGITUDE_KEY] doubleValue];
+  self.url            =  [NSString stringWithFormat:
+                          @"http://www.chipublib.org/branch/details/library/%@/",
+                          [dictionary objectForKey:URL_KEY]];
   
   return self;
 }

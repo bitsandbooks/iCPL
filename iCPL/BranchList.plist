@@ -23,6 +23,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60625</string>
+		<key>webId</key>
+		<string>albany-park</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -45,6 +47,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60827</string>
+		<key>webId</key>
+		<string>altgeld</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -67,6 +71,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60632</string>
+		<key>webId</key>
+		<string>archer-heights</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -89,6 +95,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60644</string>
+		<key>webId</key>
+		<string>austin</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -111,6 +119,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60634</string>
+		<key>webId</key>
+		<string>austin-irving</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -133,6 +143,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60617</string>
+		<key>webId</key>
+		<string>avalon</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -155,6 +167,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60643</string>
+		<key>webId</key>
+		<string>beverly</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -177,6 +191,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60640</string>
+		<key>webId</key>
+		<string>bezazian</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -199,6 +215,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60615</string>
+		<key>webId</key>
+		<string>blackstone</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -221,6 +239,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60620</string>
+		<key>webId</key>
+		<string>brainerd</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -243,6 +263,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60632</string>
+		<key>webId</key>
+		<string>brighton-park</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -265,6 +287,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60647</string>
+		<key>webId</key>
+		<string>bucktown-wicker-park</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -287,6 +311,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60659</string>
+		<key>webId</key>
+		<string>budlong-woods</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -309,6 +335,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60609</string>
+		<key>webId</key>
+		<string>canaryville</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -331,6 +359,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60609</string>
+		<key>webId</key>
+		<string>chicago-bee</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -353,6 +383,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60629</string>
+		<key>webId</key>
+		<string>chicago-lawn</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -375,6 +407,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60616</string>
+		<key>webId</key>
+		<string>chinatown</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -397,6 +431,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60638</string>
+		<key>webId</key>
+		<string>clearing</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -410,7 +446,7 @@
 		<key>geoLong</key>
 		<string>-87.607348</string>
 		<key>longName</key>
-		<string>Coleman</string>
+		<string>Bessie Coleman</string>
 		<key>shortName</key>
 		<string>Coleman</string>
 		<key>phone</key>
@@ -419,6 +455,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60637</string>
+		<key>webId</key>
+		<string>bessie-coleman</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -432,7 +470,7 @@
 		<key>geoLong</key>
 		<string>-87.646251</string>
 		<key>longName</key>
-		<string>Daley, R. J. (Bridgeport)</string>
+		<string>Richard J. Daley</string>
 		<key>shortName</key>
 		<string>Daley (Bridgeport)</string>
 		<key>phone</key>
@@ -441,6 +479,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60608</string>
+		<key>webId</key>
+		<string>daley</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -463,6 +503,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60612</string>
+		<key>webId</key>
+		<string>daley-w-humboldt</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -485,6 +527,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60623</string>
+		<key>webId</key>
+		<string>douglass</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -507,6 +551,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60634</string>
+		<key>webId</key>
+		<string>dunning</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -529,6 +575,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60646</string>
+		<key>webId</key>
+		<string>edgebrook</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -551,6 +599,8 @@
 		<string>0</string>
 		<key>zipCode</key>
 		<string>60660</string>
+		<key>webId</key>
+		<string>edgewater</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -573,6 +623,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60632</string>
+		<key>webId</key>
+		<string>gage-park</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -595,6 +647,8 @@
 		<string>3</string>
 		<key>zipCode</key>
 		<string>60707</string>
+		<key>webId</key>
+		<string>galewood-mont-clare</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -617,6 +671,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60638</string>
+		<key>webId</key>
+		<string>garfield-ridge</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -639,6 +695,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60619</string>
+		<key>webId</key>
+		<string>greater-grand-crossing</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -652,7 +710,7 @@
 		<key>geoLong</key>
 		<string>-87.622850</string>
 		<key>longName</key>
-		<string>Hall</string>
+		<string>George Cleveland Hall</string>
 		<key>shortName</key>
 		<string>Hall</string>
 		<key>phone</key>
@@ -661,6 +719,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60615</string>
+		<key>webId</key>
+		<string>hall</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -683,6 +743,8 @@
 		<string>4</string>
 		<key>zipCode</key>
 		<string>60605</string>
+		<key>webId</key>
+		<string>harold-washington</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -705,6 +767,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60633</string>
+		<key>webId</key>
+		<string>hegewisch</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -727,6 +791,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60647</string>
+		<key>webId</key>
+		<string>humboldt</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -749,6 +815,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60618</string>
+		<key>webId</key>
+		<string>independence</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -771,6 +839,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60630</string>
+		<key>webId</key>
+		<string>jefferson-park</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -793,6 +863,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60617</string>
+		<key>webId</key>
+		<string>jeffery-manor</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -806,7 +878,7 @@
 		<key>geoLong</key>
 		<string>-87.637249</string>
 		<key>longName</key>
-		<string>Kelly</string>
+		<string>Hiram Kelly</string>
 		<key>shortName</key>
 		<string>Kelly</string>
 		<key>phone</key>
@@ -815,6 +887,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60621</string>
+		<key>webId</key>
+		<string>kelly</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -828,7 +902,7 @@
 		<key>geoLong</key>
 		<string>-87.616754</string>
 		<key>longName</key>
-		<string>King</string>
+		<string>Martin Luther King, Jr.</string>
 		<key>shortName</key>
 		<string>King</string>
 		<key>phone</key>
@@ -837,6 +911,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60616</string>
+		<key>webId</key>
+		<string>king</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -850,7 +926,7 @@
 		<key>geoLong</key>
 		<string>-87.725419</string>
 		<key>longName</key>
-		<string>Legler</string>
+		<string>Henry Legler</string>
 		<key>shortName</key>
 		<string>Legler</string>
 		<key>phone</key>
@@ -859,6 +935,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60624</string>
+		<key>webId</key>
+		<string>legler</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -881,6 +959,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60657</string>
+		<key>webId</key>
+		<string>lincoln-belmont</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -903,6 +983,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60614</string>
+		<key>webId</key>
+		<string>lincoln-park</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -925,6 +1007,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60623</string>
+		<key>webId</key>
+		<string>little-village</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -947,6 +1031,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60647</string>
+		<key>webId</key>
+		<string>logan-square</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -960,7 +1046,7 @@
 		<key>geoLong</key>
 		<string>-87.661252</string>
 		<key>longName</key>
-		<string>Lozano</string>
+		<string>Rudy Lozano</string>
 		<key>shortName</key>
 		<string>Lozano</string>
 		<key>phone</key>
@@ -969,6 +1055,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60608</string>
+		<key>webId</key>
+		<string>lozano</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -982,7 +1070,7 @@
 		<key>geoLong</key>
 		<string>-87.679150</string>
 		<key>longName</key>
-		<string>Manning</string>
+		<string>Mabel Manning</string>
 		<key>shortName</key>
 		<string>Manning</string>
 		<key>phone</key>
@@ -991,6 +1079,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60612</string>
+		<key>webId</key>
+		<string>mabel-manning</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1013,6 +1103,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60630</string>
+		<key>webId</key>
+		<string>mayfair</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1035,6 +1127,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60609</string>
+		<key>webId</key>
+		<string>mckinley-park</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1048,7 +1142,7 @@
 		<key>geoLong</key>
 		<string>-87.645732</string>
 		<key>longName</key>
-		<string>Merlo</string>
+		<string>John M. Merlo</string>
 		<key>shortName</key>
 		<string>Merlo</string>
 		<key>phone</key>
@@ -1057,6 +1151,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60657</string>
+		<key>webId</key>
+		<string>j-merlo-branch</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1079,6 +1175,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60655</string>
+		<key>webId</key>
+		<string>mt-greenwood</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1101,6 +1199,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60610</string>
+		<key>webId</key>
+		<string>near-north</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1123,6 +1223,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60639</string>
+		<key>webId</key>
+		<string>north-austin</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1145,6 +1247,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60639</string>
+		<key>webId</key>
+		<string>north-pulaski</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1167,6 +1271,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60645</string>
+		<key>webId</key>
+		<string>northtown</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1189,6 +1295,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60656</string>
+		<key>webId</key>
+		<string>oriole-park</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1211,6 +1319,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60641</string>
+		<key>webId</key>
+		<string>portage-cragin</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1233,6 +1343,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60628</string>
+		<key>webId</key>
+		<string>pullman</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1246,7 +1358,7 @@
 		<key>geoLong</key>
 		<string>-87.798194</string>
 		<key>longName</key>
-		<string>Roden</string>
+		<string>Carl B. Roden</string>
 		<key>shortName</key>
 		<string>Roden</string>
 		<key>phone</key>
@@ -1255,6 +1367,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60631</string>
+		<key>webId</key>
+		<string>roden</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1277,6 +1391,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60626</string>
+		<key>webId</key>
+		<string>rogers-park</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1290,7 +1406,7 @@
 		<key>geoLong</key>
 		<string>-87.654252</string>
 		<key>longName</key>
-		<string>Roosevelt</string>
+		<string>Theodore Roosevelt</string>
 		<key>shortName</key>
 		<string>Roosevelt</string>
 		<key>phone</key>
@@ -1299,6 +1415,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60607</string>
+		<key>webId</key>
+		<string>roosevelt</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1321,6 +1439,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60652</string>
+		<key>webId</key>
+		<string>scottsdale</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1343,6 +1463,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60609</string>
+		<key>webId</key>
+		<string>sherman-park</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1365,6 +1487,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60617</string>
+		<key>webId</key>
+		<string>south-chicago</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1387,6 +1511,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60649</string>
+		<key>webId</key>
+		<string>south-shore</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1400,7 +1526,7 @@
 		<key>geoLong</key>
 		<string>-87.684562</string>
 		<key>longName</key>
-		<string>Sulzer Regional</string>
+		<string>Conrad Sulzer Regional</string>
 		<key>shortName</key>
 		<string>Sulzer Regional</string>
 		<key>phone</key>
@@ -1409,6 +1535,8 @@
 		<string>4</string>
 		<key>zipCode</key>
 		<string>60625</string>
+		<key>webId</key>
+		<string>sulzer-regional</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1431,6 +1559,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60620</string>
+		<key>webId</key>
+		<string>thurgood-marshall</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1444,7 +1574,7 @@
 		<key>geoLong</key>
 		<string>-87.724438</string>
 		<key>longName</key>
-		<string>Toman</string>
+		<string>John Toman</string>
 		<key>shortName</key>
 		<string>Toman</string>
 		<key>phone</key>
@@ -1453,6 +1583,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60623</string>
+		<key>webId</key>
+		<string>toman</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1475,6 +1607,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60613</string>
+		<key>webId</key>
+		<string>uptown</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1497,6 +1631,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60617</string>
+		<key>webId</key>
+		<string>vodak-east-side</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1510,7 +1646,7 @@
 		<key>geoLong</key>
 		<string>-87.674019</string>
 		<key>longName</key>
-		<string>Walker</string>
+		<string>George Clarke Walker</string>
 		<key>shortName</key>
 		<string>Walker</string>
 		<key>phone</key>
@@ -1519,6 +1655,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60643</string>
+		<key>webId</key>
+		<string>walker</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1541,6 +1679,8 @@
 		<string>5</string>
 		<key>zipCode</key>
 		<string>60611</string>
+		<key>webId</key>
+		<string>water-works</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1563,6 +1703,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60634</string>
+		<key>webId</key>
+		<string>west-belmont</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1585,6 +1727,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60651</string>
+		<key>webId</key>
+		<string>west-chicago-avenue</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1607,6 +1751,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60636</string>
+		<key>webId</key>
+		<string>west-englewood</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1629,6 +1775,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60629</string>
+		<key>webId</key>
+		<string>west-lawn</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1651,6 +1799,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60643</string>
+		<key>webId</key>
+		<string>west-pullman</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1673,6 +1823,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60622</string>
+		<key>webId</key>
+		<string>west-town</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1695,6 +1847,8 @@
 		<string>1</string>
 		<key>zipCode</key>
 		<string>60619</string>
+		<key>webId</key>
+		<string>whitney-young</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1717,6 +1871,8 @@
 		<string>4</string>
 		<key>zipCode</key>
 		<string>60628</string>
+		<key>webId</key>
+		<string>woodson-regional</string>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1739,6 +1895,8 @@
 		<string>2</string>
 		<key>zipCode</key>
 		<string>60652</string>
+		<key>webId</key>
+		<string>wrightwood</string>
 	</dict>
 </array>
 </plist>
