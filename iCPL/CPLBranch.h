@@ -17,8 +17,8 @@
             *zipCode,
             *phone,
             *endecaBranch,
-            *scheduleType,
-            *url;
+            *scheduleType;
+  NSURL     *url;
   BOOL      hasCyberNavigator;
   CLLocationCoordinate2D coords;
 }
@@ -37,7 +37,7 @@
 @property (strong, nonatomic) NSString *phone;
 @property (strong, nonatomic) NSString *endecaBranch;
 @property (strong, nonatomic) NSString *scheduleType;
-@property (strong, nonatomic) NSString *url;
+@property (strong, nonatomic) NSURL *url;
 @property (assign, nonatomic) BOOL hasCyberNavigator;
 @property (assign, nonatomic) CLLocationCoordinate2D coords;
 

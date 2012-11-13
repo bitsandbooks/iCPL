@@ -37,9 +37,9 @@
   self.phone          =  [dictionary objectForKey:PHONE_KEY];
   self.endecaBranch   =  [dictionary objectForKey:ENDECA_KEY];
   self.scheduleType   =  [dictionary objectForKey:SCHEDULE_KEY];
-  self.url            =  [NSString stringWithFormat:
-                          @"http://www.chipublib.org/branch/details/library/%@/",
-                          [dictionary objectForKey:URL_KEY]];
+  self.url            =  [NSURL URLWithString:[NSString stringWithFormat:
+                                               @"http://www.chipublib.org/branch/details/library/%@/",
+                                               [dictionary objectForKey:URL_KEY]]];
   
   return self;
 }

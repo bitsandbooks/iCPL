@@ -33,11 +33,12 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+  if (self) {
+      // Custom initialization
+  }
+  
+  return self;
 }
 
 #pragma mark - View lifecycle
@@ -45,6 +46,12 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  
+  // NSLog() branch details.
+  NSLog(
+        @"INSTANCE REPORT\n(from CPLBranchView.m : -viewDidLoad:)\n\nBranch Info:\n========================================\nLong Name:      %@\nShort Name:     %@\nAbbreviation:   %@\nStreet Address: %@\nZIP Code:       %@\nLat/Long:       (%f, %f)\nPhone:          %@\nEndeca ID:      %@\nURL:            %@\nSchedule Type:  %@\nSchedule Today: %@\nFull Schedule:\n%@\n",
+        branch.fullName, branch.shortName, branch.abbrev, branch.streetAddress, branch.zipCode, branch.coords.latitude, branch.coords.longitude, branch.phone, branch.endecaBranch, branch.url, branch.scheduleType, branch.scheduleToday, branch.scheduleFull
+        );
     
 	// Give the view a title for the navigation bar.
 	self.navigationItem.title	= branch.shortName;
@@ -124,7 +131,15 @@
 }
 
 - (IBAction)branchWebViewButtonTapped:(id)sender {
-  // Do something!
+  NSString *branchURL = [NSString stringWithFormat:@"Branch URL: %@", [branch.url absoluteString]];
+  
+  UIAlertView *alertWebView =
+    [[UIAlertView alloc] initWithTitle:@"Web View Button Tapped"
+                               message:branchURL
+                              delegate:self
+                     cancelButtonTitle:@"Dismiss"
+                     otherButtonTitles: nil];
+  [alertWebView show];
 }
 
 #pragma mark - Cleanup
