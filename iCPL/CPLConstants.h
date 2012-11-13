@@ -28,6 +28,7 @@
 #define URL_KEY           @"url"
 #define LATITUDE_KEY      @"geoLat"
 #define LONGITUDE_KEY     @"geoLong"
+#define HASCYBERNAV_KEY   @"hasCyberNavigator"
 
 
 #endif

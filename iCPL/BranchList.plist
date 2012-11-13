@@ -20,11 +20,13 @@
 		<key>phone</key>
 		<string>(312) 744-1933</string>
 		<key>scheduleType</key>
-		<string>1</string>
+		<string>0</string>
 		<key>zipCode</key>
 		<string>60625</string>
 		<key>webId</key>
 		<string>albany-park</string>
+		<key>hasCyberNavigator</key>
+		<true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -49,6 +51,8 @@
 		<string>60827</string>
 		<key>webId</key>
 		<string>altgeld</string>
+    <key>hasCyberNavigator</key>
+		<true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -73,6 +77,8 @@
 		<string>60632</string>
 		<key>webId</key>
 		<string>archer-heights</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -97,6 +103,8 @@
 		<string>60644</string>
 		<key>webId</key>
 		<string>austin</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -121,6 +129,8 @@
 		<string>60634</string>
 		<key>webId</key>
 		<string>austin-irving</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -145,6 +155,8 @@
 		<string>60617</string>
 		<key>webId</key>
 		<string>avalon</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -169,6 +181,8 @@
 		<string>60643</string>
 		<key>webId</key>
 		<string>beverly</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -193,6 +207,8 @@
 		<string>60640</string>
 		<key>webId</key>
 		<string>bezazian</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -217,6 +233,8 @@
 		<string>60615</string>
 		<key>webId</key>
 		<string>blackstone</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -241,6 +259,8 @@
 		<string>60620</string>
 		<key>webId</key>
 		<string>brainerd</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -265,6 +285,8 @@
 		<string>60632</string>
 		<key>webId</key>
 		<string>brighton-park</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -289,6 +311,8 @@
 		<string>60647</string>
 		<key>webId</key>
 		<string>bucktown-wicker-park</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -313,6 +337,8 @@
 		<string>60659</string>
 		<key>webId</key>
 		<string>budlong-woods</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -337,6 +363,8 @@
 		<string>60609</string>
 		<key>webId</key>
 		<string>canaryville</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -361,6 +389,8 @@
 		<string>60609</string>
 		<key>webId</key>
 		<string>chicago-bee</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -385,6 +415,8 @@
 		<string>60629</string>
 		<key>webId</key>
 		<string>chicago-lawn</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -409,6 +441,8 @@
 		<string>60616</string>
 		<key>webId</key>
 		<string>chinatown</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -433,6 +467,8 @@
 		<string>60638</string>
 		<key>webId</key>
 		<string>clearing</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -457,6 +493,8 @@
 		<string>60637</string>
 		<key>webId</key>
 		<string>bessie-coleman</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -481,6 +519,8 @@
 		<string>60608</string>
 		<key>webId</key>
 		<string>daley</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -505,6 +545,8 @@
 		<string>60612</string>
 		<key>webId</key>
 		<string>daley-w-humboldt</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -529,6 +571,8 @@
 		<string>60623</string>
 		<key>webId</key>
 		<string>douglass</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -553,6 +597,8 @@
 		<string>60634</string>
 		<key>webId</key>
 		<string>dunning</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -577,6 +623,8 @@
 		<string>60646</string>
 		<key>webId</key>
 		<string>edgebrook</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -601,6 +649,8 @@
 		<string>60660</string>
 		<key>webId</key>
 		<string>edgewater</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -625,6 +675,8 @@
 		<string>60632</string>
 		<key>webId</key>
 		<string>gage-park</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -649,6 +701,8 @@
 		<string>60707</string>
 		<key>webId</key>
 		<string>galewood-mont-clare</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -673,6 +727,8 @@
 		<string>60638</string>
 		<key>webId</key>
 		<string>garfield-ridge</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -697,6 +753,8 @@
 		<string>60619</string>
 		<key>webId</key>
 		<string>greater-grand-crossing</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -721,6 +779,8 @@
 		<string>60615</string>
 		<key>webId</key>
 		<string>hall</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -745,6 +805,8 @@
 		<string>60605</string>
 		<key>webId</key>
 		<string>harold-washington</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -769,6 +831,8 @@
 		<string>60633</string>
 		<key>webId</key>
 		<string>hegewisch</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -793,6 +857,8 @@
 		<string>60647</string>
 		<key>webId</key>
 		<string>humboldt</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -817,6 +883,8 @@
 		<string>60618</string>
 		<key>webId</key>
 		<string>independence</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -841,6 +909,8 @@
 		<string>60630</string>
 		<key>webId</key>
 		<string>jefferson-park</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -865,6 +935,8 @@
 		<string>60617</string>
 		<key>webId</key>
 		<string>jeffery-manor</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -889,6 +961,8 @@
 		<string>60621</string>
 		<key>webId</key>
 		<string>kelly</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -913,6 +987,8 @@
 		<string>60616</string>
 		<key>webId</key>
 		<string>king</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -937,6 +1013,8 @@
 		<string>60624</string>
 		<key>webId</key>
 		<string>legler</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -961,6 +1039,8 @@
 		<string>60657</string>
 		<key>webId</key>
 		<string>lincoln-belmont</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -985,6 +1065,8 @@
 		<string>60614</string>
 		<key>webId</key>
 		<string>lincoln-park</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1009,6 +1091,8 @@
 		<string>60623</string>
 		<key>webId</key>
 		<string>little-village</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1033,6 +1117,8 @@
 		<string>60647</string>
 		<key>webId</key>
 		<string>logan-square</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1057,6 +1143,8 @@
 		<string>60608</string>
 		<key>webId</key>
 		<string>lozano</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1081,6 +1169,8 @@
 		<string>60612</string>
 		<key>webId</key>
 		<string>mabel-manning</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1105,6 +1195,8 @@
 		<string>60630</string>
 		<key>webId</key>
 		<string>mayfair</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1129,6 +1221,8 @@
 		<string>60609</string>
 		<key>webId</key>
 		<string>mckinley-park</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1153,6 +1247,8 @@
 		<string>60657</string>
 		<key>webId</key>
 		<string>j-merlo-branch</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1177,6 +1273,8 @@
 		<string>60655</string>
 		<key>webId</key>
 		<string>mt-greenwood</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1201,6 +1299,8 @@
 		<string>60610</string>
 		<key>webId</key>
 		<string>near-north</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1225,6 +1325,8 @@
 		<string>60639</string>
 		<key>webId</key>
 		<string>north-austin</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1249,6 +1351,8 @@
 		<string>60639</string>
 		<key>webId</key>
 		<string>north-pulaski</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1273,6 +1377,8 @@
 		<string>60645</string>
 		<key>webId</key>
 		<string>northtown</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1297,6 +1403,8 @@
 		<string>60656</string>
 		<key>webId</key>
 		<string>oriole-park</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1321,6 +1429,8 @@
 		<string>60641</string>
 		<key>webId</key>
 		<string>portage-cragin</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1345,6 +1455,8 @@
 		<string>60628</string>
 		<key>webId</key>
 		<string>pullman</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1369,6 +1481,8 @@
 		<string>60631</string>
 		<key>webId</key>
 		<string>roden</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1393,6 +1507,8 @@
 		<string>60626</string>
 		<key>webId</key>
 		<string>rogers-park</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1417,6 +1533,8 @@
 		<string>60607</string>
 		<key>webId</key>
 		<string>roosevelt</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1441,6 +1559,8 @@
 		<string>60652</string>
 		<key>webId</key>
 		<string>scottsdale</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1465,6 +1585,8 @@
 		<string>60609</string>
 		<key>webId</key>
 		<string>sherman-park</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1489,6 +1611,8 @@
 		<string>60617</string>
 		<key>webId</key>
 		<string>south-chicago</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1513,6 +1637,8 @@
 		<string>60649</string>
 		<key>webId</key>
 		<string>south-shore</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1537,6 +1663,8 @@
 		<string>60625</string>
 		<key>webId</key>
 		<string>sulzer-regional</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1561,6 +1689,8 @@
 		<string>60620</string>
 		<key>webId</key>
 		<string>thurgood-marshall</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1585,6 +1715,8 @@
 		<string>60623</string>
 		<key>webId</key>
 		<string>toman</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1609,6 +1741,8 @@
 		<string>60613</string>
 		<key>webId</key>
 		<string>uptown</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1633,6 +1767,8 @@
 		<string>60617</string>
 		<key>webId</key>
 		<string>vodak-east-side</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1657,6 +1793,8 @@
 		<string>60643</string>
 		<key>webId</key>
 		<string>walker</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1681,6 +1819,8 @@
 		<string>60611</string>
 		<key>webId</key>
 		<string>water-works</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1705,6 +1845,8 @@
 		<string>60634</string>
 		<key>webId</key>
 		<string>west-belmont</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1729,6 +1871,8 @@
 		<string>60651</string>
 		<key>webId</key>
 		<string>west-chicago-avenue</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1753,6 +1897,8 @@
 		<string>60636</string>
 		<key>webId</key>
 		<string>west-englewood</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1777,6 +1923,8 @@
 		<string>60629</string>
 		<key>webId</key>
 		<string>west-lawn</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1801,6 +1949,8 @@
 		<string>60643</string>
 		<key>webId</key>
 		<string>west-pullman</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1825,6 +1975,8 @@
 		<string>60622</string>
 		<key>webId</key>
 		<string>west-town</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1849,6 +2001,8 @@
 		<string>60619</string>
 		<key>webId</key>
 		<string>whitney-young</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1873,6 +2027,8 @@
 		<string>60628</string>
 		<key>webId</key>
 		<string>woodson-regional</string>
+    <key>hasCyberNavigator</key>
+    <true/>
 	</dict>
 	<dict>
 		<key>abbrev</key>
@@ -1897,6 +2053,8 @@
 		<string>60652</string>
 		<key>webId</key>
 		<string>wrightwood</string>
+    <key>hasCyberNavigator</key>
+    <false/>
 	</dict>
 </array>
 </plist>

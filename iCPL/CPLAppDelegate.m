@@ -28,9 +28,9 @@
                                                                        blue:0.0
                                                                       alpha:0.0];
 	self.window.rootViewController = self.navigationController;
-	
-    [self.window makeKeyAndVisible];
-    return YES;
+  
+  [self.window makeKeyAndVisible];
+  return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

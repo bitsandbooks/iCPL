@@ -21,12 +21,14 @@
 @synthesize coords;
 @synthesize scheduleType;
 @synthesize url;
+@synthesize hasCyberNavigator;
 
 #pragma mark - Initialization
 
 - (id)initFromDictionary:(NSDictionary *)dictionary {
   coords.latitude     = [[dictionary objectForKey:LATITUDE_KEY]  doubleValue];
   coords.longitude    = [[dictionary objectForKey:LONGITUDE_KEY] doubleValue];
+  hasCyberNavigator   = [[dictionary objectForKey:HASCYBERNAV_KEY] boolValue];
   self.fullName       =  [dictionary objectForKey:FULLNAME_KEY];
   self.shortName      =  [dictionary objectForKey:SHORTNAME_KEY];
   self.abbrev         =  [dictionary objectForKey:ABBREV_KEY];
