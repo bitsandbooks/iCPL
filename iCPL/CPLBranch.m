@@ -25,7 +25,7 @@
 
 #pragma mark - Initialization
 
-- (id)initFromDictionary:(NSDictionary *)dictionary {
+- (id)initWithDictionary:(NSDictionary *)dictionary {
   coords.latitude     = [[dictionary objectForKey:LATITUDE_KEY]  doubleValue];
   coords.longitude    = [[dictionary objectForKey:LONGITUDE_KEY] doubleValue];
   hasCyberNavigator   = [[dictionary objectForKey:HASCYBERNAV_KEY] boolValue];
@@ -76,6 +76,9 @@
 - (NSString *)scheduleToday { // Returns the branch's schedule today (as NSString).
   NSString *todayString;
   
+  // Check if today is on the list of Holidays.
+  // If YES, return "Closed for $holiday."
+  
   NSDictionary *allSchedules =
   [[NSDictionary alloc] initWithContentsOfFile:
    [[NSBundle mainBundle] pathForResource:SERVICEHOURS_FILE
@@ -87,7 +90,7 @@
   ([[NSCalendar currentCalendar] ordinalityOfUnit:NSDayCalendarUnit
                                            inUnit:NSWeekCalendarUnit
                                           forDate:[NSDate date]]
-   - 1); // don't forget to subtract the 1!
+   - 1); // don't forget to subtract the 1 or you'll be a day ahead!
   
   todayString = [NSString stringWithFormat:@"%@ today",
                              [branchSchedule objectAtIndex:(dayOfWeek)]];

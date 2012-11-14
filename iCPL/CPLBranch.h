@@ -23,7 +23,7 @@
   CLLocationCoordinate2D coords;
 }
 
-- (id)initFromDictionary:(NSDictionary *)dictionary;
+- (id)initWithDictionary:(NSDictionary *)dictionary;
 - (UIImage *)image;
 - (NSString *)phoneUrl;
 - (NSString *)scheduleToday;

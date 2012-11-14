@@ -47,7 +47,7 @@
   for (int i = 0; i < [tempArray count]; i++) {
     NSDictionary *tempDict = [[NSDictionary alloc] initWithDictionary:
                               [tempArray objectAtIndex:i]];
-    CPLBranch *newBranch = [[CPLBranch alloc] initFromDictionary:tempDict];
+    CPLBranch *newBranch = [[CPLBranch alloc] initWithDictionary:tempDict];
     [secondArray addObject:newBranch]; // Add the new CPLBranch object to the array.
   } // end for loop
   
