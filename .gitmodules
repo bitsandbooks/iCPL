@@ -1,0 +1,3 @@
+[submodule "icplassets"]
+	path = icplassets
+	url = git@github.com:bitsandbooks/icplassets.git
