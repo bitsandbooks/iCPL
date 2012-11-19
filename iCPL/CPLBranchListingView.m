@@ -33,7 +33,7 @@
 
 - (void)viewDidLoad
 {
-    self.navigationItem.title = @"Branches";
+  self.navigationItem.title = @"Branches";
 	
 	// Initialize array of branches from plist.
 	NSString *path = [[NSBundle mainBundle] pathForResource:BRANCHLIST_FILE ofType:@"plist"];
