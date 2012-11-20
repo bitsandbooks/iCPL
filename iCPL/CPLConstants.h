@@ -13,9 +13,10 @@
 #define METERS_PER_MILE		1609.344
 
 // File constants
-#define BRANCHLIST_FILE   @"icplassets/BranchList"
-#define SERVICEHOURS_FILE @"icplassets/ServiceHours"
-#define HOLIDAYS_FILE     @"icplassets/Holidays"
+#define ASSETS_FOLDER     @"icplassets"
+#define BRANCHLIST_FILE   @"BranchList"
+#define SERVICEHOURS_FILE @"ServiceHours"
+#define HOLIDAYS_FILE     @"Holidays"
 
 // CPLBranch field constants. Correspond to keys in BranchList.plist.
 #define FULLNAME_KEY      @"longName"

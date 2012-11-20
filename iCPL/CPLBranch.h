@@ -9,19 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface CPLBranch : NSObject {
-  NSString  *fullName,
-            *shortName,
-            *abbrev,
-            *streetAddress,
-            *zipCode,
-            *phone,
-            *endecaBranch,
-            *scheduleType;
-  NSURL     *url;
-  BOOL      hasCyberNavigator;
-  CLLocationCoordinate2D coords;
-}
+@interface CPLBranch : NSObject
+
++ (CPLBranch *)branchWithDictionary:(NSDictionary *)dictionary;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 - (UIImage *)image;

@@ -7,6 +7,7 @@
  */
 
 #import "CPLBranchListingView.h"
+#import "CPLAppDelegate.h"
 #import "CPLBranchView.h"
 #import "CPLConstants.h"
 #import "CPLBranch.h"
@@ -15,7 +16,6 @@
 
 #pragma mark - Synthesizers
 
-@synthesize branchListing;
 @synthesize sections;
 
 #pragma mark - Initializer(s)
@@ -34,31 +34,16 @@
 - (void)viewDidLoad
 {
   self.navigationItem.title = @"Branches";
-	
-	// Initialize array of branches from plist.
-	NSString *path = [[NSBundle mainBundle] pathForResource:BRANCHLIST_FILE ofType:@"plist"];
-	
-  // Read the file into a temporary array.
-  NSArray *tempArray = [[NSArray alloc] initWithContentsOfFile:path];
   
-  // Now create a new array of CPLBranch objects.
-  NSMutableArray *secondArray = [[NSMutableArray alloc] initWithCapacity:[tempArray count]];
-  
-  for (int i = 0; i < [tempArray count]; i++) {
-    NSDictionary *tempDict = [[NSDictionary alloc] initWithDictionary:
-                              [tempArray objectAtIndex:i]];
-    CPLBranch *newBranch = [[CPLBranch alloc] initWithDictionary:tempDict];
-    [secondArray addObject:newBranch]; // Add the new CPLBranch object to the array.
-  } // end for loop
-  
-	self.branchListing = secondArray;
+  // Load and call the application delegate (to gain access to [branches]).
+  CPLAppDelegate *appDelegate = (CPLAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
 	// Create sections.
 	self.sections = [[NSMutableDictionary alloc] init];
 	BOOL found; 
 	
 	// Loop through the branches and create the keys.
-  for (CPLBranch *b in self.branchListing) {
+  for (CPLBranch *b in appDelegate.branches) {
     NSString *c = [b.shortName substringToIndex:1];
     found = NO;
     
@@ -74,7 +59,7 @@
   } // end for loop
 	
 	// Loop through again and sort the branches into their respective keys.
-	for (CPLBranch *b in self.branchListing) {
+	for (CPLBranch *b in appDelegate.branches) {
 		[[self.sections objectForKey:[b.shortName substringToIndex:1]] addObject:b];
 	}
 	
@@ -191,11 +176,10 @@
 
 - (void)viewDidUnload
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-	
-	branchListing = nil;
+  [super viewDidUnload];
+  
+  // Release any retained subviews of the main view.
+  // e.g. self.myOutlet = nil;
 	sections = nil;
 }
 

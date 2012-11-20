@@ -10,12 +10,8 @@
 
 @class CPLBranch;
 
-@interface CPLBranchListingView : UITableViewController {
-	NSArray *branchListing;
-	NSMutableDictionary *sections;
-}
+@interface CPLBranchListingView : UITableViewController
 
-@property (strong, nonatomic) NSArray *branchListing;
 @property (strong, nonatomic) NSMutableDictionary *sections;
 
 @end

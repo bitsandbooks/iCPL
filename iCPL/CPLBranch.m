@@ -23,6 +23,13 @@
 @synthesize url;
 @synthesize hasCyberNavigator;
 
+#pragma mark - Class Methods
+
++ (CPLBranch *)branchWithDictionary:(NSDictionary *)dictionary
+{
+  return [[self alloc] initWithDictionary:dictionary];
+}
+
 #pragma mark - Initialization
 
 - (id)initWithDictionary:(NSDictionary *)dictionary {
