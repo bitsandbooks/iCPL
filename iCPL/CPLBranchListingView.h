@@ -12,6 +12,8 @@
 
 @interface CPLBranchListingView : UITableViewController
 
-@property (strong, nonatomic) NSMutableDictionary *sections;
+- (NSDictionary *)sectionswithArray:(NSArray *)array;
+
+@property (strong, nonatomic) NSDictionary *sections;
 
 @end

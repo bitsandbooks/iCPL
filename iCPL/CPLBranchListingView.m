@@ -37,36 +37,8 @@
   
   // Load and call the application delegate (to gain access to [branches]).
   CPLAppDelegate *appDelegate = (CPLAppDelegate *)[[UIApplication sharedApplication] delegate];
-	
-	// Create sections.
-	self.sections = [[NSMutableDictionary alloc] init];
-	BOOL found; 
-	
-	// Loop through the branches and create the keys.
-  for (CPLBranch *b in appDelegate.branches) {
-    NSString *c = [b.shortName substringToIndex:1];
-    found = NO;
-    
-    for (NSString *str in [self.sections allKeys]) {
-      if ([str isEqualToString:c]) {
-        found = YES;
-      }
-    }
-		
-		if (!found) {
-      [self.sections setValue:[[NSMutableArray alloc] init] forKey:c];
-		}
-  } // end for loop
-	
-	// Loop through again and sort the branches into their respective keys.
-	for (CPLBranch *b in appDelegate.branches) {
-		[[self.sections objectForKey:[b.shortName substringToIndex:1]] addObject:b];
-	}
-	
-	// Sort each section array.
-	for (NSString *key in [self.sections allKeys]) {
-		[[self.sections objectForKey:key] sortUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:SHORTNAME_KEY ascending:YES]]]; // Huh?
-	}
+  
+  sections = [self sectionswithArray:appDelegate.branches];
 	
 	[super viewDidLoad];
 }
@@ -181,6 +153,41 @@
   // Release any retained subviews of the main view.
   // e.g. self.myOutlet = nil;
 	sections = nil;
+}
+
+#pragma mark - Utility methods
+
+- (NSDictionary *)sectionswithArray:(NSArray *)array
+{
+	NSMutableDictionary *tempSections = [[NSMutableDictionary alloc] init];
+	BOOL found;
+	
+	// Loop through the branches and create the keys.
+  for (CPLBranch *b in array) {
+    NSString *c = [b.shortName substringToIndex:1];
+    found = NO;
+    
+    for (NSString *str in [tempSections allKeys]) {
+      if ([str isEqualToString:c]) found = YES;
+    } // end for
+		
+		if (!found) [tempSections setValue:[[NSMutableArray alloc] init] forKey:c];
+  } // end for
+	
+	// Loop through again and sort the branches into their respective keys.
+	for (CPLBranch *b in array) {
+		[[tempSections objectForKey:[b.shortName substringToIndex:1]] addObject:b];
+	}
+	
+	// Sort each section array alphabetically.
+	for (NSString *key in [tempSections allKeys]) {
+		[[tempSections objectForKey:key] sortUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:SHORTNAME_KEY ascending:YES]]];
+	}
+  
+  NSDictionary *theDictionary = [NSDictionary dictionaryWithDictionary:tempSections];
+  tempSections = nil;
+  
+  return theDictionary;
 }
 
 @end
