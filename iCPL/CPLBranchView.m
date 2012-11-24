@@ -54,7 +54,7 @@
         );
     
 	// Give the view a title for the navigation bar.
-	self.navigationItem.title	= branch.shortName;
+	self.navigationItem.title	= @"Branch Details";
 	
 	// Put the actionButton on the right side of the navigation bar.
 	self.navigationItem.rightBarButtonItem = self.actionButton;

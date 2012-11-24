@@ -53,14 +53,18 @@
 
 #pragma mark - Utility methods
 
-- (UIImage  *)image { // Returns the branch's image.
-	NSString *theImagePath = [NSString stringWithFormat:@"branchImages/%@.png", self.abbrev];
+- (UIImage *)image { // Returns the branch's image.
+	NSString *theImagePath = [NSString stringWithFormat:
+                            @"%@/branchImages/%@.png",
+                            ASSETS_FOLDER, self.abbrev];
 	UIImage  *image = [UIImage imageNamed:theImagePath];
 	
 	if (image == nil) {
 		NSLog(@"WARNING: branch image failed to load; using default image instead.");
 		image = [UIImage imageWithContentsOfFile:
-             [[NSBundle mainBundle] pathForResource:@"branchImages/NONE" ofType:@"png"]];
+             [[NSBundle mainBundle] pathForResource:
+              [NSString stringWithFormat:@"%@/branchImages/NONE", ASSETS_FOLDER]
+                                             ofType:@"png"]];
 	}
 	
 	return image;
@@ -88,7 +92,8 @@
   
   NSDictionary *allSchedules =
   [[NSDictionary alloc] initWithContentsOfFile:
-   [[NSBundle mainBundle] pathForResource:SERVICEHOURS_FILE
+   [[NSBundle mainBundle] pathForResource:
+    [NSString stringWithFormat:@"%@/%@", ASSETS_FOLDER, SERVICEHOURS_FILE]
                                    ofType:@"plist"]];
   
   NSArray *branchSchedule = [allSchedules objectForKey:scheduleType];
@@ -108,8 +113,9 @@
 - (NSString *)scheduleFull {
   NSMutableString *fullString = [NSMutableString stringWithFormat:@""];
   
-  NSString *path = [[NSBundle mainBundle] pathForResource:SERVICEHOURS_FILE
-                                                   ofType:@"plist"];
+  NSString *path = [[NSBundle mainBundle] pathForResource:
+                    [NSString stringWithFormat:@"%@/%@",
+                     ASSETS_FOLDER, SERVICEHOURS_FILE] ofType:@"plist"];
   NSDictionary *tempDict = [[NSDictionary alloc] initWithContentsOfFile:path];
   NSArray *tempSchedule = [tempDict objectForKey:scheduleType];
   

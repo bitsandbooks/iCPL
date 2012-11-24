@@ -25,6 +25,7 @@
 		D48F70C314CDF82000ABB169 /* CPLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D48F70C214CDF82000ABB169 /* CPLAppDelegate.m */; };
 		D49EE39D14E9BC4000198FF6 /* CPLBranchListingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D49EE39B14E9BC4000198FF6 /* CPLBranchListingView.m */; };
 		D49EE39E14E9BC4000198FF6 /* CPLBranchListingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49EE39C14E9BC4000198FF6 /* CPLBranchListingView.xib */; };
+		D4A4179A165C42AD00273AC1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A41799165C42AD00273AC1 /* Default-568h@2x.png */; };
 		D4B2063D16540B5900DD3EC3 /* icplassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B2063C16540B5900DD3EC3 /* icplassets */; };
 		D4F997C014EA18970073C784 /* TODO.md in Resources */ = {isa = PBXBuildFile; fileRef = D4F997BF14EA18970073C784 /* TODO.md */; };
 		D4FB071A14CDFB6500FE4B0D /* CPLFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FB071814CDFB6500FE4B0D /* CPLFirstView.m */; };
@@ -59,6 +60,7 @@
 		D49EE39A14E9BC4000198FF6 /* CPLBranchListingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLBranchListingView.h; sourceTree = "<group>"; };
 		D49EE39B14E9BC4000198FF6 /* CPLBranchListingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLBranchListingView.m; sourceTree = "<group>"; };
 		D49EE39C14E9BC4000198FF6 /* CPLBranchListingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPLBranchListingView.xib; sourceTree = "<group>"; };
+		D4A41799165C42AD00273AC1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		D4B2063C16540B5900DD3EC3 /* icplassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icplassets; sourceTree = SOURCE_ROOT; };
 		D4F997BF14EA18970073C784 /* TODO.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.md; sourceTree = "<group>"; };
 		D4FB071714CDFB6500FE4B0D /* CPLFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLFirstView.h; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				D4124AE314EA1B7D00A244C2 /* Default.png */,
 				D4124AE514EA1B9200A244C2 /* Default@2x.png */,
+				D4A41799165C42AD00273AC1 /* Default-568h@2x.png */,
 			);
 			name = "Launch Images";
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				D4124AEA14EA1B9C00A244C2 /* 114.png in Resources */,
 				D438B37016012C7A00C11B77 /* CPLBranchFullScheduleView.xib in Resources */,
 				D4B2063D16540B5900DD3EC3 /* icplassets in Resources */,
+				D4A4179A165C42AD00273AC1 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
