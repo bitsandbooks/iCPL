@@ -127,4 +127,14 @@
   return fullString;
 }
 
+- (NSString *)mapURL {
+  NSMutableString *theString = [NSMutableString stringWithFormat:@"%@, Chicago, IL %@", streetAddress, zipCode];
+  [theString replaceOccurrencesOfString:@" " withString:@"+" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [theString length])];
+  NSLog(@"addressString = %@", theString);
+  
+  NSString *theMapURL = [NSString stringWithFormat:@"http://maps.apple.com/?q=%@", theString];
+  
+  return theMapURL;
+}
+
 @end

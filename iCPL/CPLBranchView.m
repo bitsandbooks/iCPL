@@ -119,7 +119,10 @@
 }
 
 - (IBAction)mapButtonTapped:(id)sender {
-  // Do something!
+  
+  NSLog(@"INSTANCE REPORT: Map button tapped.");
+  
+  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[branch mapURL]]];
 }
 
 - (IBAction)addToContactsButtonTapped:(id)sender {

@@ -18,6 +18,7 @@
 - (NSString *)phoneUrl;
 - (NSString *)scheduleToday;
 - (NSString *)scheduleFull;
+- (NSString *)mapURL;
 
 @property (strong, nonatomic) NSString *fullName;
 @property (strong, nonatomic) NSString *shortName;
