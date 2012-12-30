@@ -65,8 +65,11 @@
 	
 	// Set text labels.
 	fullNameLabel.text = branch.fullName;
-	streetAddressTextView.text = [NSString stringWithFormat:@"%@\nChicago, IL %@",
-                                branch.streetAddress, branch.zipCode];
+  fullNameLabel.numberOfLines = 1;
+  fullNameLabel.adjustsFontSizeToFitWidth = YES;
+  
+	streetAddressTextView.text = [NSString stringWithFormat:@"%@\nChicago, IL %@", branch.streetAddress, branch.zipCode];
+  
   scheduleLabel.text = branch.scheduleToday;
   
   
@@ -86,21 +89,26 @@
 		case 0: // Calling the branch.
 			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:branch.phoneUrl]];
 			break;
+    case 1: // Mapping the branch.
+      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[branch mapURL]]];
+      break;
 	} // end switch
 }
 
 #pragma mark - IBActions
 
 - (IBAction)actionButtonTapped:(id)sender {
-  NSString *callBranchButtonTitle =
-  [NSString stringWithFormat:@"Call: %@", branch.phone];
+  NSString *callThisBranchButtonTitle = [NSString stringWithFormat:@"Call: %@", branch.phone];
+  NSString *mapThisBranchButtonTitle = @"Open in Maps";
   
-	UIActionSheet *branchActionSheet = [[UIActionSheet alloc]
-                                      initWithTitle:@"What would you like to do?"
-                                      delegate:self
-                                      cancelButtonTitle:@"Cancel"
-                                      destructiveButtonTitle:nil
-                                      otherButtonTitles:callBranchButtonTitle, nil];
+	UIActionSheet *branchActionSheet =
+  [[UIActionSheet alloc] initWithTitle:@"What would you like to do?"
+                              delegate:self
+                     cancelButtonTitle:@"Cancel"
+                destructiveButtonTitle:nil
+                     otherButtonTitles:callThisBranchButtonTitle,
+                                       mapThisBranchButtonTitle, nil];
+  
 	[branchActionSheet showInView:self.view];
 }
 
@@ -119,8 +127,6 @@
 }
 
 - (IBAction)mapButtonTapped:(id)sender {
-  
-  NSLog(@"INSTANCE REPORT: Map button tapped.");
   
   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[branch mapURL]]];
 }

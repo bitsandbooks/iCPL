@@ -16,6 +16,7 @@
 		D438B36F16012C7A00C11B77 /* CPLBranchFullScheduleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D438B36D16012C7A00C11B77 /* CPLBranchFullScheduleView.m */; };
 		D438B37016012C7A00C11B77 /* CPLBranchFullScheduleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D438B36E16012C7A00C11B77 /* CPLBranchFullScheduleView.xib */; };
 		D441D4F314CE39FF00FBF71A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D441D4F214CE39FF00FBF71A /* CoreLocation.framework */; };
+		D45901371690FD7D00964EB8 /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D45901361690FD7D00964EB8 /* GreenButton.png */; };
 		D482C2871601650D005A2FD0 /* CPLBranch.m in Sources */ = {isa = PBXBuildFile; fileRef = D482C2861601650D005A2FD0 /* CPLBranch.m */; };
 		D48F70B314CDF82000ABB169 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B214CDF82000ABB169 /* UIKit.framework */; };
 		D48F70B514CDF82000ABB169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48F70B414CDF82000ABB169 /* Foundation.framework */; };
@@ -45,6 +46,7 @@
 		D438B36E16012C7A00C11B77 /* CPLBranchFullScheduleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPLBranchFullScheduleView.xib; sourceTree = "<group>"; };
 		D441D4F214CE39FF00FBF71A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D441D50514CE3A7300FBF71A /* CPLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLConstants.h; sourceTree = "<group>"; };
+		D45901361690FD7D00964EB8 /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenButton.png; sourceTree = "<group>"; };
 		D482C2851601650D005A2FD0 /* CPLBranch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLBranch.h; sourceTree = "<group>"; };
 		D482C2861601650D005A2FD0 /* CPLBranch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLBranch.m; sourceTree = "<group>"; };
 		D48F70AE14CDF82000ABB169 /* iCPL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCPL.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 		D400D14114CDFF22009473CB /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				D45901361690FD7D00964EB8 /* GreenButton.png */,
 				D4B2063C16540B5900DD3EC3 /* icplassets */,
 				D4124AE214EA1B4300A244C2 /* Launch Images */,
 				D4124AE114EA1B2A00A244C2 /* App Icon Images */,
@@ -290,6 +293,7 @@
 				D438B37016012C7A00C11B77 /* CPLBranchFullScheduleView.xib in Resources */,
 				D4B2063D16540B5900DD3EC3 /* icplassets in Resources */,
 				D4A4179A165C42AD00273AC1 /* Default-568h@2x.png in Resources */,
+				D45901371690FD7D00964EB8 /* GreenButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

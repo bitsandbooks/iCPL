@@ -104,7 +104,7 @@
                                           forDate:[NSDate date]]
    - 1); // don't forget to subtract the 1 or you'll be a day ahead!
   
-  todayString = [NSString stringWithFormat:@"%@ today",
+  todayString = [NSString stringWithFormat:@"%@",
                              [branchSchedule objectAtIndex:(dayOfWeek)]];
   
   return todayString;
