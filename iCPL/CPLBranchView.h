@@ -10,21 +10,7 @@
 
 @class CPLBranch;
 
-@interface CPLBranchView : UIViewController <UIActionSheetDelegate> {
-  CPLBranch *branch;
-  IBOutlet UIScrollView *scrollView;
-  IBOutlet UIImageView *imageView;
-	IBOutlet UILabel *fullNameLabel;
-	IBOutlet UITextView *streetAddressTextView;
-  IBOutlet UILabel *scheduleLabel;
-  IBOutlet UIButton *fullScheduleButton;
-  IBOutlet UIButton *phoneButton;
-  IBOutlet UIButton *mapButton;
-  IBOutlet UIButton *addToContactsButton;
-  IBOutlet UIButton *addToFavoriteBranchesButton;
-  IBOutlet UIButton *branchWebViewButton;
-	IBOutlet UIBarButtonItem *actionButton;
-}
+@interface CPLBranchView : UIViewController <UIActionSheetDelegate> 
 
 - (IBAction)actionButtonTapped:(id)sender;
 - (IBAction)fullScheduleButtonTapped:(id)sender;

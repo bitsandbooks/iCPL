@@ -69,17 +69,21 @@
 	
 	return image;
 }
+
+- (NSString *)addressString {
+  return [NSString stringWithFormat:@"%@\nChicago, IL %@", streetAddress, zipCode];
+}
           
-- (NSString *)phoneUrl { // Returns the branch's phone, formatted as a URL.
-	NSString *urlString;
-	
-	urlString = [NSString stringWithFormat:@"tel://+1%@", self.phone];
+- (NSString *)phoneURL { // Returns the branch's phone, formatted as a URL.
+	NSString *urlString = [NSString stringWithFormat:@"tel://+1%@", self.phone];
+  
+  // Now, strip out all of the characters that aren't digits 0-9.
 	urlString = [urlString stringByReplacingOccurrencesOfString:@" " withString:@""];
 	urlString = [urlString stringByReplacingOccurrencesOfString:@"(" withString:@""];
 	urlString = [urlString stringByReplacingOccurrencesOfString:@")" withString:@""];
 	urlString = [urlString stringByReplacingOccurrencesOfString:@"-" withString:@""];
 	
-	NSLog(@"INSTANCE REPORT: String returned from phoneUrl: %@", urlString);
+	NSLog(@"INSTANCE REPORT: String returned from phoneURL: %@", urlString);
 	
 	return urlString;
 }

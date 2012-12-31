@@ -15,7 +15,8 @@
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 - (UIImage *)image;
-- (NSString *)phoneUrl;
+- (NSString *)addressString;
+- (NSString *)phoneURL;
 - (NSString *)scheduleToday;
 - (NSString *)scheduleFull;
 - (NSString *)mapURL;

@@ -94,13 +94,11 @@
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
 						<object class="IBUIFontDescription" key="IBUIFontDescription">
-							<string key="name">AvenirNext-Bold</string>
-							<string key="family">Avenir Next</string>
-							<int key="traits">2</int>
+							<int key="type">2</int>
 							<double key="pointSize">82</double>
 						</object>
 						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">AvenirNext-Heavy</string>
+							<string key="NSName">Helvetica-Bold</string>
 							<double key="NSSize">82</double>
 							<int key="NSfFlags">16</int>
 						</object>
@@ -124,14 +122,12 @@
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="841227818">
-							<string key="name">AvenirNext-Medium</string>
-							<string key="family">Avenir Next</string>
-							<int key="traits">0</int>
+						<object class="IBUIFontDescription" key="IBUIFontDescription" id="341883971">
+							<int key="type">1</int>
 							<double key="pointSize">36</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="717144551">
-							<string key="NSName">AvenirNext-UltraLight</string>
+						<object class="NSFont" key="IBUIFont" id="579759370">
+							<string key="NSName">Helvetica</string>
 							<double key="NSSize">36</double>
 							<int key="NSfFlags">16</int>
 						</object>
@@ -154,8 +150,8 @@
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
-						<reference key="IBUIFontDescription" ref="841227818"/>
-						<reference key="IBUIFont" ref="717144551"/>
+						<reference key="IBUIFontDescription" ref="341883971"/>
+						<reference key="IBUIFont" ref="579759370"/>
 					</object>
 				</array>
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>

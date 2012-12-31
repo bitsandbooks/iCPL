@@ -64,11 +64,13 @@
   self.scrollView.scrollEnabled = YES;
 	
 	// Set text labels.
-	fullNameLabel.text = branch.fullName;
   fullNameLabel.numberOfLines = 1;
   fullNameLabel.adjustsFontSizeToFitWidth = YES;
+  fullNameLabel.text = branch.fullName;
   
-	streetAddressTextView.text = [NSString stringWithFormat:@"%@\nChicago, IL %@", branch.streetAddress, branch.zipCode];
+  streetAddressTextView.textAlignment = UITextAlignmentLeft;
+  streetAddressTextView.contentInset = UIEdgeInsetsMake(-7,-7,0,0);
+  streetAddressTextView.text = branch.addressString;
   
   scheduleLabel.text = branch.scheduleToday;
   
@@ -87,10 +89,10 @@
 	
 	switch (buttonIndex) {
 		case 0: // Calling the branch.
-			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:branch.phoneUrl]];
+			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:branch.phoneURL]];
 			break;
     case 1: // Mapping the branch.
-      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[branch mapURL]]];
+      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:branch.mapURL]];
       break;
 	} // end switch
 }
@@ -99,7 +101,7 @@
 
 - (IBAction)actionButtonTapped:(id)sender {
   NSString *callThisBranchButtonTitle = [NSString stringWithFormat:@"Call: %@", branch.phone];
-  NSString *mapThisBranchButtonTitle = @"Open in Maps";
+  NSString *mapThisBranchButtonTitle = @"View with Maps";
   
 	UIActionSheet *branchActionSheet =
   [[UIActionSheet alloc] initWithTitle:@"What would you like to do?"
@@ -123,7 +125,7 @@
 }
 
 - (IBAction)phoneButtonTapped:(id)sender {
-  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:branch.phoneUrl]];
+  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:branch.phoneURL]];
 }
 
 - (IBAction)mapButtonTapped:(id)sender {
