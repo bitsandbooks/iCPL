@@ -8,10 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CPLBranchFullScheduleView : UIViewController {
-  NSString *fullScheduleText;
-  IBOutlet UITextView *fullScheduleTextView;
-}
+@interface CPLBranchFullScheduleView : UIViewController
 
 @property (strong, nonatomic) NSString *fullScheduleText;
 @property (strong, nonatomic) IBOutlet UITextView *fullScheduleTextView;
