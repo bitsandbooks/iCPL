@@ -39,7 +39,6 @@
   CPLAppDelegate *appDelegate = (CPLAppDelegate *)[[UIApplication sharedApplication] delegate];
   
   sections = [self sectionswithArray:appDelegate.branches];
-  NSLog(@"INSTANCE REPORT: sections has %u entries", [sections count]);
 	
 	[super viewDidLoad];
 }

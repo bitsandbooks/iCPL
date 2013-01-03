@@ -24,10 +24,6 @@
 @synthesize fullScheduleButton;
 @synthesize phoneButton;
 @synthesize mapButton;
-@synthesize addToContactsButton;
-@synthesize addToFavoriteBranchesButton;
-@synthesize branchWebViewButton;
-@synthesize actionButton;
 
 #pragma mark - Initialization
 
@@ -55,10 +51,7 @@
     
 	// Give the view a title for the navigation bar.
 	self.navigationItem.title	= @"Branch Details";
-	
-	// Put the actionButton on the right side of the navigation bar.
-	self.navigationItem.rightBarButtonItem = self.actionButton;
-	
+  
 	// Set up the scrollView.
   self.scrollView.contentSize = self.view.frame.size;
   self.scrollView.scrollEnabled = YES;
@@ -82,37 +75,7 @@
                forState:UIControlStateNormal];
 }
 
-#pragma mark - UIActionSheet setup
-
-- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
-	if (buttonIndex == actionSheet.cancelButtonIndex) return;
-	
-	switch (buttonIndex) {
-		case 0: // Calling the branch.
-			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:branch.phoneURL]];
-			break;
-    case 1: // Mapping the branch.
-      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:branch.mapURL]];
-      break;
-	} // end switch
-}
-
 #pragma mark - IBActions
-
-- (IBAction)actionButtonTapped:(id)sender {
-  NSString *callThisBranchButtonTitle = [NSString stringWithFormat:@"Call: %@", branch.phone];
-  NSString *mapThisBranchButtonTitle = @"View with Maps";
-  
-	UIActionSheet *branchActionSheet =
-  [[UIActionSheet alloc] initWithTitle:@"What would you like to do?"
-                              delegate:self
-                     cancelButtonTitle:@"Cancel"
-                destructiveButtonTitle:nil
-                     otherButtonTitles:callThisBranchButtonTitle,
-                                       mapThisBranchButtonTitle, nil];
-  
-	[branchActionSheet showInView:self.view];
-}
 
 - (IBAction)fullScheduleButtonTapped:(id)sender {
   CPLBranchFullScheduleView *fullScheduleView =
@@ -133,25 +96,6 @@
   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[branch mapURL]]];
 }
 
-- (IBAction)addToContactsButtonTapped:(id)sender {
-  // Do something!
-}
-
-- (IBAction)addToFavoriteBranchesButtonTapped:(id)sender {
-  // Do something!
-}
-
-- (IBAction)branchWebViewButtonTapped:(id)sender {
-  NSString *branchURL = [NSString stringWithFormat:@"Branch URL: %@", [branch.url absoluteString]];
-  
-  UIAlertView *alertWebView =
-    [[UIAlertView alloc] initWithTitle:@"Web View Button Tapped"
-                               message:branchURL
-                              delegate:self
-                     cancelButtonTitle:@"Dismiss"
-                     otherButtonTitles: nil];
-  [alertWebView show];
-}
 
 #pragma mark - Cleanup
 
@@ -177,10 +121,6 @@
   fullNameLabel               = nil;
   phoneButton                 = nil;
   mapButton                   = nil;
-  addToContactsButton         = nil;
-  addToFavoriteBranchesButton = nil;
-  branchWebViewButton         = nil;
-  actionButton                = nil;
   
   [super viewDidUnload];
 }

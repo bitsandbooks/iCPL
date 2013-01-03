@@ -120,7 +120,7 @@
   NSString *path = [[NSBundle mainBundle] pathForResource:
                     [NSString stringWithFormat:@"%@/%@",
                      ASSETS_FOLDER, SERVICEHOURS_FILE] ofType:@"plist"];
-  NSDictionary *tempDict = [[NSDictionary alloc] initWithContentsOfFile:path];
+  NSDictionary *tempDict = [NSDictionary dictionaryWithContentsOfFile:path];
   NSArray *tempSchedule = [tempDict objectForKey:scheduleType];
   
   for (int i = 0; i < [tempSchedule count]; i++) {

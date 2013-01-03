@@ -28,8 +28,6 @@
 		D4A4179A165C42AD00273AC1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A41799165C42AD00273AC1 /* Default-568h@2x.png */; };
 		D4B2063D16540B5900DD3EC3 /* icplassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B2063C16540B5900DD3EC3 /* icplassets */; };
 		D4F997C014EA18970073C784 /* TODO.md in Resources */ = {isa = PBXBuildFile; fileRef = D4F997BF14EA18970073C784 /* TODO.md */; };
-		D4FB071A14CDFB6500FE4B0D /* CPLFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FB071814CDFB6500FE4B0D /* CPLFirstView.m */; };
-		D4FB071B14CDFB6500FE4B0D /* CPLFirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4FB071914CDFB6500FE4B0D /* CPLFirstView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,9 +61,6 @@
 		D4A41799165C42AD00273AC1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		D4B2063C16540B5900DD3EC3 /* icplassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icplassets; sourceTree = SOURCE_ROOT; };
 		D4F997BF14EA18970073C784 /* TODO.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.md; sourceTree = "<group>"; };
-		D4FB071714CDFB6500FE4B0D /* CPLFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLFirstView.h; sourceTree = "<group>"; };
-		D4FB071814CDFB6500FE4B0D /* CPLFirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLFirstView.m; sourceTree = "<group>"; };
-		D4FB071914CDFB6500FE4B0D /* CPLFirstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPLFirstView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				D482C283160164E0005A2FD0 /* CPLBranch */,
-				D4FB071614CDFA8400FE4B0D /* First View */,
 				D49EE39814E9BC1200198FF6 /* Branch Listing */,
 			);
 			name = Classes;
@@ -217,16 +211,6 @@
 			name = "Branch Listing";
 			sourceTree = "<group>";
 		};
-		D4FB071614CDFA8400FE4B0D /* First View */ = {
-			isa = PBXGroup;
-			children = (
-				D4FB071714CDFB6500FE4B0D /* CPLFirstView.h */,
-				D4FB071814CDFB6500FE4B0D /* CPLFirstView.m */,
-				D4FB071914CDFB6500FE4B0D /* CPLFirstView.xib */,
-			);
-			name = "First View";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D48F70BD14CDF82000ABB169 /* InfoPlist.strings in Resources */,
-				D4FB071B14CDFB6500FE4B0D /* CPLFirstView.xib in Resources */,
 				D437415714E47062004F03B8 /* CPLBranchView.xib in Resources */,
 				D49EE39E14E9BC4000198FF6 /* CPLBranchListingView.xib in Resources */,
 				D4F997C014EA18970073C784 /* TODO.md in Resources */,
@@ -302,7 +285,6 @@
 			files = (
 				D48F70BF14CDF82000ABB169 /* main.m in Sources */,
 				D48F70C314CDF82000ABB169 /* CPLAppDelegate.m in Sources */,
-				D4FB071A14CDFB6500FE4B0D /* CPLFirstView.m in Sources */,
 				D437415614E47062004F03B8 /* CPLBranchView.m in Sources */,
 				D49EE39D14E9BC4000198FF6 /* CPLBranchListingView.m in Sources */,
 				D438B36F16012C7A00C11B77 /* CPLBranchFullScheduleView.m in Sources */,

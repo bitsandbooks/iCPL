@@ -7,7 +7,7 @@
  */
 
 #import "CPLAppDelegate.h"
-#import "CPLFirstView.h"
+#import "CPLBranchListingView.h"
 #import "CPLConstants.h"
 #import "CPLBranch.h"
 
@@ -24,15 +24,15 @@
 	
   // Override point for customization after application launch.
   
-  // Load initial view.
-	CPLFirstView *firstView = [[CPLFirstView alloc] initWithNibName:@"CPLFirstView" bundle:nil];
-	self.navigationController = [[[UINavigationController alloc] init] initWithRootViewController:firstView];
-	self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.0 green:0.5 blue:0.0 alpha:0.0];
-	self.window.rootViewController = self.navigationController;  
-  [self.window makeKeyAndVisible];
-  
   // Load branch data into an NSArray [branches] of CPLBranch objects.
   branches = [self loadBranches];
+  
+  // Load initial view.
+  CPLBranchListingView *branchListingView = [[CPLBranchListingView alloc] initWithNibName:@"CPLBranchListingView" bundle:nil];
+  self.navigationController = [[[UINavigationController alloc] init] initWithRootViewController:branchListingView];
+  self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.0 green:0.5 blue:0.0 alpha:0.0];
+	self.window.rootViewController = self.navigationController;  
+  [self.window makeKeyAndVisible];
   
   return YES;
 }
